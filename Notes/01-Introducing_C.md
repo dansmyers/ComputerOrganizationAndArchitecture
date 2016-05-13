@@ -79,6 +79,10 @@ By convention, `main` returns 0 if the program completed successfully or a non-z
 
 Use `printf` to output a string to the console. C strings, like Java strings, are enclosed in double quotes.
 
+```
+printf("Hello, World!\n");
+```
+
 `printf` does not automatically advance to the next line; use `\n` to print a newline. The other familiar special
 characters are also accepted: `\t` for tab, `\\` for literal backslash, and `\"` for a literal quote.
 
