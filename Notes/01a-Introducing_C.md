@@ -218,8 +218,9 @@ if (x) {
 }
 ```
 
-Note that `isEven` in the example above returns either `0` or `1`. In general, though, you should never assume that function that
-performs a logical comparison will always return `1` for a true result. Always test for equality or inequality with respect to `0`.
+In the example above `isEven` returns either `0` for a `false` result or `1` for a `true` result. This behavior is typical for
+functions that perform logical tests, but it isn't universal: you should never assume that a function always returns `1` to indicate
+a true result.
 
 This behavior is also responsible for one of the all-time classic C bugs: what happens if you accidentally type a single `=` instead
 of `==`?
