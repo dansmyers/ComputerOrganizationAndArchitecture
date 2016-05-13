@@ -256,6 +256,18 @@ Java arrays and C arrays might look and feel similar, but they're actually quite
 the `new` keyword. A C array, by contrast, is just a block of contiguous memory with a label that identifies the beginning of the
 block.
 
+```
+int a[3] = {1, 2, 3};
+
+   -------
+a: |  1  | <--|
+   -------    |
+   |  2  |    | Enough space for 3 ints
+   -------    |
+   |  3  | <--|
+   -------
+```
+
 **Array Basics**
 
 Declare an array of known size like this:
