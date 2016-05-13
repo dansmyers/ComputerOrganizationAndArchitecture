@@ -97,7 +97,7 @@ including `printf`.
 ```
 
 Statements beginning with `#` are *preprocessor directives*. They instruct the C preprocessor, the first phase of the compiler, to 
-perform certain action.
+perform certain actions.
 
 In this case, the `#include` statement instructs the preprocessor to locate the file called `stdio.h` and
 insert its contents into the source file. The angle brackets tell the preprocessor to look in the system's standard header file
@@ -112,13 +112,11 @@ location, which is usually `/usr/include`. Use quotes if the header file is in a
 Another useful preprocessor directive is `#define`, which declares a constant.
 
 ```
-#define PI 3.14159
+#define RADIUS 111.11
 ```
 
-This instructs the preprocessor to replace every occurence of `PI` in the source code with `3.14159`. C constants are capitalized, as in
-Java.
-
-Aside: an accurate double value of PI is available in `math.h`.
+This instructs the preprocessor to replace every occurence of `RADIUS` in the source code with `111.11`. C constants are capitalized, 
+as in Java.
 
 ### Variables, Functions, and Conditionals
 
@@ -322,7 +320,7 @@ problems on high profile systems.
 
 ### What's Next
 
-This note has explained some of the key concepts of C programming, with an emphasis on the features of C that are different from Java. 
+This note has explained some of the key concepts of C programming, with an emphasis on the features of C that are different from Java.
 The next note covers compiling and running C programs in the terminal environment.
 
 The next time we visit C, we'll take a look at what is arguably its most important and challenging feature: pointers.
