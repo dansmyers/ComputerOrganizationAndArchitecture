@@ -24,11 +24,10 @@ Here's what one of my teachers told me when I was learning C:
   > those chunky scissors you give to toddlers so they can pretend to cut construction paper without hurting themselves.
   
 C assumes that you know what you want to do and then allows you do it. Unfortunately, this philosophy means that C won't prevent you
-from writing code with hard-to-find bugs and critical security flaws. Good C programmers are always a little bit paranoid about the
-code they write.
+from writing code with hard-to-find bugs and critical security flaws. C rewards the paranoid.
 
 Java, through the JVM, aims to create an abstract, idealized programming environment, so you can write cross-platform code that is
-independent of the underlying system. Features like garbage collection and automated memory management support this abstration and
+independent of the underlying system. Features like garbage collection and automated memory management support this abstraction and
 reduce the work that you as a programmer need to perform to work with objects.
 
 C is arguably the "high level" language that provides the thinnest abstraction on top of assembly language---in fact, 
