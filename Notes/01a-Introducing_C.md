@@ -61,16 +61,17 @@ C was created back in the days (1972) when people wrote programs by making scrat
 concept of object-oriented programming as we understand it today. Smalltalk, one of the first true object-oriented languages, was
 introduced at about the same time as C, but OOP didn't really take off until the late 1980's and early 1990's.
 
-C programs, therefore, don't have classes, or use declarations like `public` and `private`. C does have the concept of a `struct`, which
-can be used to group related data items together, but a C `struct` is more primitive than a Java object and can't contain methods. More
-on that later.
+C programs, therefore, don't have classes or use declarations like `public` and `private`. C does have the concept of a `struct`, 
+which can be used to group related data items together, but a C `struct` is more primitive than a Java object and can't contain 
+methods. More on that later.
 
 **The `main` Function**
 
 Every C program must have a function named `main`, which serves as the entry point for the program. It is possible for `main` to take
-input arguments from the command line; we'll talk about this later.
+input arguments from the terminal; we'll talk about this later.
 
-By convention, `main` returns 0 if the program completed successfully or a non-zero value on an unsuccessful completion or error.
+By convention, `main` returns `0` if the program completed successfully. A nonzero return value indicates an unsuccessful completion 
+or an error.
 
 **Printing**
 
@@ -86,7 +87,7 @@ characters are also accepted: `\t` for tab, `\\` for literal backslash, and `\"`
 **Headers**
 
 Like Java's `import` statment, C has a way of loading additional files to incorporate useful functions into your program. These
-files are called *header files* have the `.h` extension. The `stdio.h` header contains definitions of several useful I/O functions,
+files are called *headers* and they have a `.h` extension. The `stdio.h` header contains definitions for several useful I/O functions
 including `printf`.
 
 ```
@@ -201,9 +202,9 @@ There are, however, a few important differences between C and Java types:
   - A Java `char` is 16 bits and can hold values from 0 to 65535. The C `char` is only 8 bits (one byte) and can represent values
     from 0 to 255. Again, we'll talk more about this when we discuss text encodings.
   
-  - Java guarantees that new variables are initialized to 0. C doesn't: you might get 0, or you might get a seemingly 
-    random initial value based on the contents of memory. The only way to guarantee that a new variable will be 0 is to assign the
-    value yourself.
+  - Java guarantees that new variables are initialized to 0. C doesn't: you might get 0, or you might get an arbitrary
+    initial value based on the contents of memory at the moment the variable is declared. The only way to guarantee that a new 
+    variable will be 0 is to assign the value yourself.
 
 **Conditionals**
 
