@@ -28,11 +28,16 @@ from writing code with hard-to-find bugs and critical security flaws. Good C pro
 code they write.
 
 Java, through the JVM, aims to create an abstract, idealized programming environment, so you can write cross-platform code that is
-independent of the underlying system. Features like garbage collection and automated memory management support this abstraction.
+independent of the underlying system. Features like garbage collection and automated memory management support this abstration and
+reduce the work that you as a programmer need to perform to work with objects.
 
-In constrast, C is arguably the "high level" language that provides the thinnest abstraction on top of assembly language---in fact, 
+C is arguably the "high level" language that provides the thinnest abstraction on top of assembly language---in fact, 
 some would argue that C isn't a "high level" language at all, at least by modern standards. C tends to be used when you *need* 
-an awareness of the underlying system. C also requires you to handle tasks like memory management that Java automates.
+an awareness of the underlying system. C also requires you, the programmer, to handle tasks like memory management that Java 
+automates.
+
+On the one hand, C's lack of abstraction and support for things like garbage collection is a pain. On the other hand, it forces
+you to really understand the basic programming environment provided by the OS, particularly the way that programs use memory.
 
 ### Hello, World!
 
