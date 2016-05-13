@@ -257,8 +257,17 @@ the `new` keyword. A C array, by contrast, is just a block of contiguous memory 
 block.
 
 ```
+Code
+----
 int a[3] = {1, 2, 3};
 
+Contents of memory
+------------------
+      .
+      .
+      .
+   -------
+   |     |
    -------
 a: |  1  | <--|
    -------    |
@@ -266,6 +275,11 @@ a: |  1  | <--|
    -------    |
    |  3  | <--|
    -------
+   |     |
+   -------
+      .
+      .
+      .
 ```
 
 **Array Basics**
