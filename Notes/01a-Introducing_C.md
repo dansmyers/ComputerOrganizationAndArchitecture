@@ -10,12 +10,9 @@ Many popular and critical projects are written primarily in C, including:
   - The Windows, Mac OS, and Linux kernels
   - The Perl, Ruby, and Python reference implementations
   - The Apache and nginx webservers and the sendmail e-mail server
+  - The Redis and memcached distributed caching systems
   - Doom
   
-C is an exceptionally portable language that transfers easily to new platforms. This features has made it a popular choice for 
-embedded systems development. Further, given that it compiles down to native machine code and adds relatively little overhead for
-abstractions, C is often a competitive choice for high-performance applications.
-
 ### C vs. Java
 
 Here's what one of my teachers told me when I was learning C:
@@ -23,21 +20,22 @@ Here's what one of my teachers told me when I was learning C:
   > C is like the surgeon's scalpal. It gives you great power, but lets you do a lot of damage if you aren't careful. Java is like
   > those chunky scissors you give to toddlers so they can pretend to cut construction paper without hurting themselves.
   
-C assumes that you know what you want to do and then allows you do it. Unfortunately, this philosophy means that C won't prevent you
-from writing code with hard-to-find bugs and critical security flaws. C rewards the paranoid.
+Philosophically, C assumes that you know what you want to do and that you shoud be allowed to do it. It provides only a thin
+abstraction on top of low-level assembly language and doesn't provide built-in features like automatic memory management or exception 
+handling that are part of Java.
 
-Java, through the JVM, aims to create an abstract, idealized programming environment, so you can write cross-platform code that is
-independent of the underlying system. Features like garbage collection and automated memory management support this abstraction and
-reduce the work that you as a programmer need to perform to work with objects.
+On the positive side, C's philosophy makes it useful in situations where programmers *need* to interact with lower-level system
+features, or where an application needs a degree of control over the system that would be difficult to obtain with a more abstract language.
 
-C is arguably the "high level" language that provides the thinnest abstraction on top of assembly language---in fact, 
-some would argue that C isn't a "high level" language at all, at least by modern standards. C tends to be used when you *need* 
-an awareness of the underlying system. C also requires you, the programmer, to handle tasks like memory management that Java 
-automates.
+Further, the C language is compact, so it's relatively easy to write compilers and port C to new platforms: this was one of its 
+biggest advantages in the 1970's and 1980's. C isn't "cross-platform" like Java, but you can find C code running
+in almost every environment, and it's a popular language for embedded applications. 
 
-On the one hand, C's lack of abstraction is a pain. On the other hand, it forces you to really understand the basic programming 
-environment provided by the OS, particularly the way that programs use memory. In the context of this class, which is all about
-how computers work, that's a nice feature.
+C programs are compiled all the way down to native machine code that runs directly on hardware (as opposed to being interpreted or 
+running in virtual machine like the JVM), so well-tuned C programs can be quite fast.
+
+On the negative side, C's "do what thou wilt" approach allows you to do all kinds of things that are unwise and, in the worst
+cases, catastrophically insecure and unsafe. C programming favors the paranoid.
 
 ### Hello, World!
 
