@@ -36,8 +36,9 @@ some would argue that C isn't a "high level" language at all, at least by modern
 an awareness of the underlying system. C also requires you, the programmer, to handle tasks like memory management that Java 
 automates.
 
-On the one hand, C's lack of abstraction and support for things like garbage collection is a pain. On the other hand, it forces
-you to really understand the basic programming environment provided by the OS, particularly the way that programs use memory.
+On the one hand, C's lack of abstraction is a pain. On the other hand, it forces you to really understand the basic programming 
+environment provided by the OS, particularly the way that programs use memory. In the context of this class, which is all about
+how computers work, that's a nice feature.
 
 ### Hello, World!
 
