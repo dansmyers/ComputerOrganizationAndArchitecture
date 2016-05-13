@@ -330,7 +330,7 @@ for (int i = 0; i < 10000000; i++) {
 }
 ```
 
-Trying to run code like this in Java would result in an `ArrayIndexOutOfBounds` exception at the moment you attempt to access `a[5]`.
+Trying to run this code in Java would result in an `ArrayIndexOutOfBoundsException` when you access `a[5]`.
 
 C, however, does not check that index is within the allocated size of the array. An array is simply a block of memory and an index is
 just a location beyond the start of the array, so reading and writing beyond the declared size is permitted.
