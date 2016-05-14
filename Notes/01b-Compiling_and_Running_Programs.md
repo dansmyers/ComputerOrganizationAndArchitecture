@@ -95,7 +95,8 @@ area.c:15:1: warning: control reaches end of non-void function [-Wreturn-type]
 **Always fix your warnings.** In fact, use the `-Werror` flag to force GCC to treat all warnings as errors.
 
 What's the problem here? First, read the compiler's message carefully: it gives the function and the line number containing the error.
-Line 15, it turns out, is the final line of the program with the closing `}` of `main`. 
+Line 15, it turns out, is the final line of the program with the closing `}` of `main`. The final line of the warning message is
+indicating that there's something wrong with that character.
 
 Next, think about what the error message is telling you. Perhaps `non-void function` has something to do with the return type of 
 `main`? Ah! `main` has a return type of `int`, but the program doesn't actually *return* an `int`: it just ends. Add `return 0;` to 
