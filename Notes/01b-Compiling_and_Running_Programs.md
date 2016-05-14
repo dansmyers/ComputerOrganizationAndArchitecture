@@ -60,10 +60,10 @@ prompt$ ./a.out
 area(5.000000) = 78.539750
 ```
 
-Why do you have to type `./a.out` instead of just `a.out`? *Security*. 
+Why do you have to type `./a.out` instead of just `a.out`? 
 
-A common hacker trick is to insert a malicious program into a directory and give it the same name as a popular utility like `ls`. If 
-the `./` was not required, a sysadmin could type 
+Well, a common hacker trick is to insert a malicious program into a directory and give it the same name as a popular utility like 
+`ls`. If the `./` was not required, a sysadmin could type 
 
 ```
 prompt$ ls
