@@ -65,8 +65,7 @@ prompt$ ls
 
 to list the files in the directory, but the hacker's fake `ls` would run instead of the real `ls` tool. Pwned!
 
-Of course, only naming executables `a.out` is kind of limiting. Use the `-o` flag to specify the name of the executable. In many cases 
-this will have the same name as the `.c` source file but that isn't required.
+Use the `-o` flag to specify the name of the executable. In many cases this will have the same name as the `.c` source file but that isn't required.
 
 ```
 prompt$ gcc -o area area.c
@@ -94,8 +93,7 @@ area.c:15:1: warning: control reaches end of non-void function [-Wreturn-type]
 So what's the problem here? 
 
 First, read the compiler's message carefully: it gives the function and the line number containing the error.
-Line 15, it turns out, is the final line of the program with the closing `}` of `main`. The final line of the warning message is
-indicating that there's something wrong with that character.
+Line 15, it turns out, is the final line of the program with the closing `}` of `main`. The final line of the warning message indicates that there's something wrong with that character.
 
 Next, think about what the error message is telling you. Perhaps `non-void function` has something to do with the return type of 
 `main`?
@@ -115,7 +113,7 @@ int main() {
 Technical note: some compilers (like the version of GCC on my Mac) will not generate a warning if `main` lacks a return statement. The
 ANSI C99 standard specifies that reaching the end of `main` automatically returns `0`. Therefore, whether or not you see the warning 
 depends on what standard your compiler has been set to follow. GCC has loads of flag options for controlling standards and 
-portability—we won't use them in this class.
+portability.
 
 
 ### Makefiles
