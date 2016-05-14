@@ -92,15 +92,31 @@ area.c:15:1: warning: control reaches end of non-void function [-Wreturn-type]
  ^
 ```
 
-**Always fix your warnings.** In fact, use the `-Werror` flag to force GCC to treat all warnings as errors.
+**Always fix your warnings**. They almost always indicate something in your program that could be a potential bug. Better yet, use the
+`-Werror` flag to force GCC to treat all warnings as errors.
 
 What's the problem here? First, read the compiler's message carefully: it gives the function and the line number containing the error.
 Line 15, it turns out, is the final line of the program with the closing `}` of `main`. The final line of the warning message is
 indicating that there's something wrong with that character.
 
 Next, think about what the error message is telling you. Perhaps `non-void function` has something to do with the return type of 
-`main`? Ah! `main` has a return type of `int`, but the program doesn't actually *return* an `int`: it just ends. Add `return 0;` to 
-the end of `main` to fix the warning.
+`main`? Ah! `main` has a return type of `int`, but the program doesn't actually *return* an `int`: it just ends. Adding a `return` 
+statement to the end of `main` will fix the warning.
+
+```
+int main() {
+  double r = 5.0;
+  printf("area(%f) = %f\n", r, area(r));
+  
+  return 0;  // My work here is done.
+}
+```
+
+Technical note: some compilers (like the one on my Mac) will not generate a warning if `main` lacks a return statement. The 
+ANSI C99 standard specifies that reaching the end of `main` automatically returns `0`. Earlier standards didn't have this feature. 
+Therefore, whether or not you see the warning depends on what standard your compiler has been set to follow. GCC has loads of flag 
+options for controlling standards and portability---we won't use them in this class.
+
 
 ### Makefiles
 
