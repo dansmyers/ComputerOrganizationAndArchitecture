@@ -227,8 +227,6 @@ The only cryptic part is
 the names listed in `$(TARGETS)`. The rule indicates that each name matched by `%` depends on a corresponding file with the same name 
 and a `.c` extension.
 
-The command uses the variables defined at the top of the file to specify the compiler (GCC) and flags for the build.
-
 `$@` and `$<` are a bit of Makefile magic: `$@` specifies the string to the left of the colon and `$<` is the first name to the right 
 of the colon. Therefore, `$@` specifies the name of the executable and `$<` is the source file.
 
