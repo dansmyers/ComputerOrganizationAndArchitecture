@@ -154,12 +154,10 @@ all:
     gcc -Wall -Werror -o hw3 hw3.c
     
 clean:
-    rm hw1
-    rm hw2
-    rm hw3
+    rm hw1 hw2 hw3
 ```
 
-That's it. When you run `make`, the system will execute each command. Each command is indented by *a single tab* &mdash; *not spaces*. Also notice the colon after `all`.
+That's it. When you run `make`, the system will build the project using the three commands under `all`. Each command is indented by *a single tab*&mdash;*not spaces*. Also notice the colon after `all`.
 
 The `clean` target removes the executables when you run
 
@@ -169,7 +167,84 @@ prompt$ make clean
 
 Please include a `clean` target in any Makefile you create.
 
-**Fancier Makefiles**
+`make` is fairly intelligent and only compiles source files that have changed since the last time you built the project.
+
+### Fancier Makefiles
+
+Any Makefile rule may have *dependencies* on other rules. `make` will resolve the dependencies before running the rule. The general form is
+
+```
+rule: dependencies
+    commands
+```
+
+Here's an alternate version of the previous example using dependencies to build `hw1`, `hw2`, and `hw3`.
+
+```
+all: hw1 hw2 hw3
+
+hw1:
+    gcc -Wall -Werror -o hw1 hw1.c
+
+hw2:
+    gcc -Wall -Werror -o hw2 hw2.c
+
+hw3:
+    gcc -Wall -Werror -o hw3 hw3.c
+    
+clean:
+    rm hw1 hw2 hw3
+```
+
+That seems a little cumbersome. It's more common to define the target executables using a variable. Here's a more complex example.
+
+```
+# This is a Makefile comment
+
+# The target executables
+TARGETS = hw1 hw2 hw3
+
+# Add .c to each executable name
+SOURCES = $(TARGETS:.c)
+
+# The compiler name and compiler flags
+CC = gcc
+FLAGS = -Wall -Werror
+
+# Build all of the executables
+all: $(TARGETS)
+
+%: %.c
+	$(CC) $(FLAGS) -o $@ $<
+	
+clean:
+  rm $(TARGETS)
+```
+
+The only cryptic line is
+
+```
+%:%.c
+	$(CC) $(FLAGS) -o $@ $<
+```
+
+`%` acts as a wildcard and matches any referenced rule that isn't defined elsewhere in the file. In this case, `%` will match each of 
+the names listed in `$(TARGETS)`. The rule indicates that each name matched by `%` depends on a corresponding file with the same name 
+and a `.c` extension.
+
+The command uses the variables defined at the top of the file to specify the compiler (GCC) and flags for the build. `$@` and `$<` are
+a bit of Makefile magic: `$@` specifies the string to the left of the colon and `$<` is the first name to the right of the colon.
+Therefore, `$@` specifies the name of the executable and `$<` is the source file.
+
+### Not Appearing in This Note
+
+There are a couple of important topics we have't discussed yet:
+
+  - Linking with libraries
+  - Building one executable from multiple source files
+
+We'll discuss how to to these things when they come up in our projects.
+
 
 
 
