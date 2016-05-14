@@ -113,9 +113,9 @@ int main() {
 ```
 
 Technical note: some compilers (like the one on my Mac) will not generate a warning if `main` lacks a return statement. The 
-ANSI C99 standard specifies that reaching the end of `main` automatically returns `0`. Earlier standards didn't have this feature. 
-Therefore, whether or not you see the warning depends on what standard your compiler has been set to follow. GCC has loads of flag 
-options for controlling standards and portability---we won't use them in this class.
+ANSI C99 standard specifies that reaching the end of `main` automatically returns `0`. Therefore, whether or not you see the warning 
+depends on what standard your compiler has been set to follow. GCC has loads of flag options for controlling standards and 
+portability---we won't use them in this class.
 
 
 ### Makefiles
