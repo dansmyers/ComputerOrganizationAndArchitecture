@@ -152,7 +152,7 @@ clean:
     rm hw1 hw2 hw3
 ```
 
-That's it. When you run `make`, the system will build the project using the three commands under `all`. Each command is indented by *a single tab*. *Not spaces*. Also notice the colon after `all`.
+That's it. When you run `make`, the system will build the project using the three commands under `all`. Each command is indented by **a single tab**. **Not spaces**. Also notice the colon after `all`.
 
 The `clean` target removes the executables when you run
 
