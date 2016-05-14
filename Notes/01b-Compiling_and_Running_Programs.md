@@ -43,9 +43,8 @@ The compilation process has four main phases:
      its output. The object file contains the same instructions as the assembly language file, but encoded in a binary format the CPU
      can understand.
 
-  4. The linker `ld`, which takes the object file produced in step (3) and converts it into an actual executable program. If necessary,
-     the linker also handles the work of combining multiple object files into one program or incorporating code from pre-compiled
-     libraries into the final executable.
+  4. The linker `ld`, which takes the object file produced in step (3) and converts it into an actual executable program. If 
+     necessary, the linker also handles the work of combining multiple object files into one program or incorporating code from pre-compiled libraries into the final executable.
   
 To compile, use `gcc` at the terminal command prompt and specify the source file. This produces an executable file named, by default, `a.out`. 
 
