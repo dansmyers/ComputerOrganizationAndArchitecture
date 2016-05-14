@@ -122,4 +122,55 @@ portability—we won't use them in this class.
 
 ### Makefiles
 
+Serious programmers (of which you are one) don't build projects manually. A large application, after all, might be built from hundreds
+of source files, each with its own set of headers, libraries, and dependencies.
+
+The standard automated build tool on Linux systems is called `make`.
+
+```
+prompt$ make
+```
+
+When you run  `make`, it looks for a file named `Makefile` (capital M, no extension) in the current directory. The Makefile contains a
+set of rules that `make` uses to build your project. It will also automatically accept `makefile`, or you can identify a file of your
+choice with a flag.
+
+When I was a student, we used to say that no one had ever written a Makefile from scratch. There was just one original ur-Makefile 
+carved on stone tablets by, like, the Sumerians, and then handed down from generation to generation.
+
+A Makefile contains a series of *rules*, each of which specifies a series of build commands. The default rule is called `all`, so
+running `make` with no additional arguments is equivalent to 
+
+```
+prompt$ make all
+```
+
+Suppose you've written a homework project with three source files named `hw1.c`, `hw2.c`, and `hw3.c`. You want to compile each source file into its own executable. Here's a Makefile that accomplishes this task:
+
+```
+all:
+    gcc -Wall -Werror -o hw1 hw1.c
+    gcc -Wall -Werror -o hw2 hw2.c
+    gcc -Wall -Werror -o hw3 hw3.c
+    
+clean:
+    rm hw1
+    rm hw2
+    rm hw3
+```
+
+That's it. When you run `make`, the system will execute each command. Each command is indented by *a single tab* &mdash *not spaces*. Also notice the colon after `all`.
+
+The `clean` target removes the executables when you run
+
+```
+prompt$ make clean
+```
+
+Please include a `clean` target in any Makefile you create.
+
+**Fancier Makefiles**
+
+
+
 
