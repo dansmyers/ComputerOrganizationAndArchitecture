@@ -159,7 +159,7 @@ clean:
     rm hw3
 ```
 
-That's it. When you run `make`, the system will execute each command. Each command is indented by *a single tab* &mdash *not spaces*. Also notice the colon after `all`.
+That's it. When you run `make`, the system will execute each command. Each command is indented by *a single tab* &mdash; *not spaces*. Also notice the colon after `all`.
 
 The `clean` target removes the executables when you run
 
