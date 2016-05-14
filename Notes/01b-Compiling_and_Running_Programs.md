@@ -166,7 +166,7 @@ Please include a `clean` target in any Makefile you create.
 
 ### Fancier Makefiles
 
-Any Makefile rule may have *dependencies* on other rules. `make` will resolve the dependencies before running the rule. The general form is
+Any Makefile rule may have *dependencies* on other rules. `make` will resolve the dependencies before running the rule.
 
 ```
 rule: dependencies
@@ -191,7 +191,7 @@ clean:
     rm hw1 hw2 hw3
 ```
 
-That seems a little cumbersome. It's more common to define the target executables using a variable. Here's a more complex example.
+That seems a little cumbersome. It's more common to define the target executables using a variable. Here's our final example:
 
 ```
 # This is a Makefile comment
@@ -216,7 +216,7 @@ clean:
   rm $(TARGETS)
 ```
 
-The only cryptic line is
+The only cryptic part is
 
 ```
 %:%.c
