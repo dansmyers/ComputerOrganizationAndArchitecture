@@ -134,14 +134,13 @@ choice with a flag.
 When I was a student, we used to say that no one had ever written a Makefile from scratch. There was just one original ur-Makefile 
 carved on stone tablets by, like, the Sumerians, and then handed down from generation to generation.
 
-A Makefile contains a series of *rules*, each of which specifies a series of build commands. The default rule is called `all`, so
-running `make` with no additional arguments is equivalent to 
+A Makefile contains a series of *rules*, each of which specifies a series of build commands. The default rule is called `all`. Running `make` with no additional arguments is equivalent to 
 
 ```
 prompt$ make all
 ```
 
-Suppose you've written a homework project with three source files named `hw1.c`, `hw2.c`, and `hw3.c`. You want to compile each source file into its own executable. Here's a Makefile that accomplishes this task:
+Suppose you've written a homework project with three source files named `hw1.c`, `hw2.c`, and `hw3.c` and you need to compile each source file into its own executable. Here's a Makefile:
 
 ```
 all:
