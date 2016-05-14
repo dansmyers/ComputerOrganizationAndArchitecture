@@ -92,7 +92,7 @@ area.c:15:1: warning: control reaches end of non-void function [-Wreturn-type]
  ^
 ```
 
-** Always fix your warnings.** In fact, use the `-Werror` flag to force GCC to treat all warnings as errors.
+**Always fix your warnings.** In fact, use the `-Werror` flag to force GCC to treat all warnings as errors.
 
 What's the problem here? First, read the compiler's message carefully: it gives the function and the line number containing the error.
 Line 15, it turns out, is the final line of the program with the closing `}` of `main`. 
