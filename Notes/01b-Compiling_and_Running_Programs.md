@@ -102,7 +102,9 @@ Line 15, it turns out, is the final line of the program with the closing `}` of 
 indicating that there's something wrong with that character.
 
 Next, think about what the error message is telling you. Perhaps `non-void function` has something to do with the return type of 
-`main`? Ah! `main` has a return type of `int`, but the program doesn't actually *return* an `int`: it just ends. Adding a `return` 
+`main`?
+
+Ah! `main` has a return type of `int`, but the program doesn't actually *return* an `int`: it just ends. Adding a `return` 
 statement to the end of `main` will fix the warning.
 
 ```
@@ -157,7 +159,7 @@ clean:
     rm hw1 hw2 hw3
 ```
 
-That's it. When you run `make`, the system will build the project using the three commands under `all`. Each command is indented by *a single tab*&mdash;*not spaces*. Also notice the colon after `all`.
+That's it. When you run `make`, the system will build the project using the three commands under `all`. Each command is indented by *a single tab*. *Not spaces*. Also notice the colon after `all`.
 
 The `clean` target removes the executables when you run
 
