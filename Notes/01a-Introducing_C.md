@@ -346,6 +346,6 @@ problems on high profile systems.
 ### What's Next
 
 This note has explained some of the key concepts of C programming, with an emphasis on the features of C that are different from Java.
-The next note covers compiling and running C programs in the terminal environment.
+The next notes introduce Linux and then cover compiling and running C programs in the terminal environment.
 
 The next time we visit C, we'll take a look at what is arguably its most important and challenging feature: pointers.
