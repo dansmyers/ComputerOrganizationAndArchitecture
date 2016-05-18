@@ -1,9 +1,5 @@
 # Linux and the Terminal Environment
 
-
-### History
-
-
 ### The Terminal and the Shell
 
 If all of your previous experience has been on Windows or Mac OS a Linux system may feel very odd at first.
@@ -19,7 +15,8 @@ with typed commands than they would be with graphical menus.
 The program that receives and interpreting your commands is called the *shell*. The shell is also responsible for launching new 
 programs. The most default shell program on most Linux systems is called `bash`.
 
-The shell program prints a prompt for your commands, which typically identifies your username and the current working directory (more on that below). On Cloud9 my prompt looks like this:
+The shell program prints a prompt for your commands, which typically identifies your username and the current working directory (more 
+on that below). On Cloud9 my prompt looks like this:
 
 ```
 dmyers@cms230:~/workspace $
@@ -45,7 +42,8 @@ position of the object relative to the root. For example, the path
 ```
 
 identifies a file named `01b-Linux_and_the_Shell.md`, which resides in a directory called `workspace`, which is itself in a directory 
-called `dmyers`. The `dmyers` directory is located in the `home` directory under the root, `/`. Here's a picture; I've added a few more directories at each level to illustrate the tree structure.
+called `dmyers`. The `dmyers` directory is located in the `home` directory under the root, `/`. Here's a picture&mdash;I've added a
+few more directories at each level to illustrate the tree structure:
 
 ```                          
                           / (the root dir)
@@ -76,11 +74,13 @@ The top-level directories right beneath `/` are fairly standard across systems. 
 each system account. The example shows three home directories for three different users. `bin` is short for *binaries* and stores 
 common executable programs.
 
-If you're using Cloud9, your user name will always be `ubuntu` and the default location for your files will be `/home/ubuntu/workspace`.
+If you're using Cloud9, your user name will always be `ubuntu` and the default location for your files will be 
+`/home/ubuntu/workspace`.
 
-### Moving Around
+### Moving Around and Creating Directories
 
-At any given time, the shell program recognizes one *working directory*. This is the directory that you are currently "in" and all of your commands will be executed with respect to it.
+The shell program recognizes one *working directory* at any given time. This is the directory that you are currently "in" and all of 
+your commands will be executed with respect to it.
 
 The `pwd` command prints the shell's present working directory.
 
@@ -94,19 +94,105 @@ You can list the contents of the current directory using `ls`. Your Cloud9 direc
 
 ```
 prompt$ ls
-Makefile  hello-c-world.c  hello-cpp-world.cc
+Makefile  README.md  hello-c-world.c  hello-cpp-world.cc
 prompt$
 ```
 
+To make a new directory use `mkdir` and supply the name of the new directory:
 
+```
+prompt$ mkdir Project1
+prompt$ ls
+Makefile  Project1/  README.md  hello-c-world.c  hello-cpp-world.cc
+prompt$
+```
 
-### Unix Philosophy
+Note that `mkdir` does not produce any output when it executes: it just creates the new directory, finishes, and then the prompt 
+reappears. In the Unix world, *silence is golden*. Programs that run correctly generally finish and exit without producing unnecessary
+output.
 
-In his book *The Art of Unix Programming*, Eric S. Raymond sums up several key ideas that have informed the design of Unix throughout 
-its history.
+Now suppose you're ready to work on Project 1. First, you need to change to the `Project1` directory. The `cd` command changes the 
+working directory to the location you specify. You can type an absolute path or a relative path that specifies the location of the new
+directory with respect to the current one.
 
+```
+prompt$ cd Project1
+```
 
+Here's a tip: you can use TAB to autocomplete a name once you've typed enough characters to uniquely identify the item you want.
 
+One way to create a new file is to `touch` it.
 
+```
+prompt$ touch hw1.c
+prompt$ ls
+hw1.c
+prompt$
+```
 
-### Useful Commands
+### Command-Line Arguments
+
+Most commands can take arguments that control their behavior. The standard form is for argument flags to be preceded by a `-`.
+
+Two useful arguments for the `ls` command are `-l` and `-a`. `-l` specifies the "long" listing format, which gives more information 
+about each item in the listing. `-a` displays "hidden" files, which have filenames beginning with a a dot and don't appear in a normal listing.
+
+```
+prompt$ ls -l -a
+total 8
+drwxr-xr-x 2 ubuntu ubuntu 4096 May 18 01:53 ./
+drwxrwxr-x 4 ubuntu ubuntu 4096 May 15 19:11 ../
+-rw-r--r-- 1 ubuntu ubuntu    0 May 18 01:53 hw1.c
+prompt$
+```
+
+Aside: it's possible to combine the basic flags into one argument: `ls -la`
+
+The first column in the long listing shows the permissions for each file, specifying who is allowed to read, write, and execute it. 
+More on permissions later.
+
+The second column specifies the number of "links" to the file. Again, we'll defer discussion of links for now.
+
+The third and fourth columns specify the owner of the file and the owner's group. In the Cloud0 environment these will always by `ubuntu`.
+
+The fifth column is the sie of the file in bytes and the other columns list the last time the file was modified.
+
+There are two special entries, `.` and `..`:
+
+  - `.` is a shorthand reference to the current directory, in this case `/home/ubuntu/workspace/Project1`
+  - `..` always references the parent directory, which is `/home/ubuntu/workspace`
+
+If you need to move higher in the directory hierarchy you can do so using `cd ..`:
+
+```
+prompt$ cd ..
+prompt$ pwd
+/home/ubuntu/workspace
+prompt$
+```
+
+### Removing Files
+
+Use the `rm` command to remove files.
+
+```
+prompt$ rm hw1.c
+```
+
+You can use `*` as a wildcard to match all files matching a certain patter. For example, to remove all `.c` files in the current directory,
+
+```
+promtp$ rm *.c
+```
+
+`rm *` by itself will remove all files in the current directory.
+
+`rm` will refuse to remove diretories. Instead can use either `rmdir` or use the `-f` flag to "force" `rm`to perform
+the operation.
+
+```
+prompt$ rmdir Example1
+prompt rm -f Example2
+```
+
+### What's Next
