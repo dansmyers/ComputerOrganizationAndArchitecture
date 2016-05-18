@@ -166,7 +166,7 @@ Please include a `clean` target in any Makefile you create.
 
 ### Fancier Makefiles
 
-A Makefile rule may have *dependencies* on other rules. `make` resolves the dependencies before running the rule. The basic format lists dependencies on the same line as the rule name, after the colon.
+A Makefile rule may have *dependencies* on other rules. `make` resolves the dependencies before running the rule. The general format lists dependencies on the same line as the rule name, after the colon.
 
 ```
 rule: dependencies
