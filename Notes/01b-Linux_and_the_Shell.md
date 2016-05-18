@@ -15,8 +15,7 @@ with typed commands than they would be with graphical menus.
 The program that receives and interpreting your commands is called the *shell*. The shell is also responsible for launching new 
 programs. The most default shell program on most Linux systems is called `bash`.
 
-The shell program prints a prompt for your commands, which typically identifies your username and the current working directory (more 
-on that below). On Cloud9 my prompt looks like this:
+The shell program prints a prompt for your commands, which typically identifies your username and the current working directory. On Cloud9, my prompt looks like this:
 
 ```
 dmyers@cms230:~/workspace $
@@ -32,7 +31,7 @@ when I need to indicate a command prompt. The commands you type will appear to t
 
 ### Paths and Directories
 
-The Linux file system is organized as a tree. The top level directory is called the *root directory* and denoted by `/`.
+The Linux file system is organized as a tree. The top level directory is called the *root directory* and is denoted by `/`.
 
 Every file and directory on the system has a *path* that describes its place in the file system tree. An *absolute path* gives the 
 position of the object relative to the root. For example, the path
