@@ -108,12 +108,12 @@ prompt$
 ```
 
 Note that `mkdir` does not produce any output when it executes: it just creates the new directory, finishes, and then the prompt 
-reappears. In the Unix world, *silence is golden*. Programs that run correctly generally finish and exit without producing unnecessary
+reappears. In the Unix world, *silence is golden*. Programs that run correctly tend to finish and exit without producing unnecessary
 output.
 
-Now suppose you're ready to work on Project 1. First, you need to change to the `Project1` directory. The `cd` command changes the 
-working directory to the location you specify. You can type an absolute path or a relative path that specifies the location of the new
-directory with respect to the current one.
+Now suppose that you're ready to work on Project 1. First, you need to change to the `Project1` directory. The `cd` command changes 
+the working directory to the location you specify. You can type an absolute path or a relative path that specifies the location of the
+new directory with respect to the current one.
 
 ```
 prompt$ cd Project1
