@@ -213,7 +213,7 @@ all: $(TARGETS)
 	$(CC) $(FLAGS) -o $@ $<
 	
 clean:
-  rm $(TARGETS)
+  	rm $(TARGETS)
 ```
 
 The only cryptic part is
