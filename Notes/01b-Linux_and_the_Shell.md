@@ -132,10 +132,10 @@ prompt$
 
 ### Command-Line Arguments
 
-Most commands can take arguments that control their behavior. The standard form is for argument flags to be preceded by a `-`.
+Most commands can take arguments that control their behavior.
 
 Two useful arguments for the `ls` command are `-l` and `-a`. `-l` specifies the "long" listing format, which gives more information 
-about each item in the listing. `-a` displays "hidden" files, which have filenames beginning with a a dot and don't appear in a normal listing.
+about each item. `-a` displays "hidden" files, which have filenames beginning with a a dot and don't appear in a normal listing.
 
 ```
 prompt$ ls -l -a
@@ -146,7 +146,7 @@ drwxrwxr-x 4 ubuntu ubuntu 4096 May 15 19:11 ../
 prompt$
 ```
 
-Aside: it's possible to combine the basic flags into one argument: `ls -la`.
+It's possible to combine multiple basic flags into one argument, like`ls -la`.
 
 **The Listing Format**
 
@@ -156,7 +156,7 @@ The second column specifies the number of "links" to the file. We'll defer discu
 The third and fourth columns specify the owner of the file and the owner's group. In the Cloud9 environment these will always be
 `ubuntu`.
 
-The fifth column is the size of the file in bytes. Tthe other columns list the last time the file was modified.
+The fifth column is the size of the file in bytes. The other columns list the last time the file was modified.
 
 **The Parent Directory**
 
