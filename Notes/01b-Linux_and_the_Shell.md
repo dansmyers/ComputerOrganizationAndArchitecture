@@ -183,14 +183,14 @@ Use the `rm` command to remove files.
 prompt$ rm hw1.c
 ```
 
-You can use `*` as a wildcard to match all files matching a certain patter. For example, to remove all `.c` files in the current
+Use `*` as a wildcard to match all files having a certain pattern. For example, to remove all `.c` files in the current
 directory,
 
 ```
 promtp$ rm *.c
 ```
 
-`rm *` by itself will remove all files in the current directory.
+`rm *`removes all files in the current directory. **Be careful with this!**
 
 `rm` will refuse to remove directories. Instead, use either `rmdir` or give `rm` the `-f` flag to "force" it to perform
 the operation.
