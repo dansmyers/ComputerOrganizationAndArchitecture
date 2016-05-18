@@ -192,7 +192,7 @@ promtp$ rm *.c
 
 `rm *` by itself will remove all files in the current directory.
 
-`rm` will refuse to remove diretories. Instead can use either `rmdir` or use the `-f` flag to "force" `rm`to perform
+`rm` will refuse to remove directories. Instead, use either `rmdir` or give `rm` the `-f` flag to "force" it to perform
 the operation.
 
 ```
