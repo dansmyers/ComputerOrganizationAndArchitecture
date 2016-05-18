@@ -5,17 +5,18 @@
 If all of your previous experience has been on Windows or Mac OS a Linux system may feel very odd at first.
 
 The most obvious point of departure is the *terminal*, the place where you type commands for the system to execute. Windows and Mac 
-systems do have built-in terminals&mdash;Windows calls its terminal the Command Prompt&mdash;but they are designed to be operated 
-through a graphical user interface (GUI). 
+systems do have built-in terminals&mdash;Windows calls its terminal the Command Prompt&mdash;but they favor graphical user interfaces
+(GUIs) for most tasks.
 
-Linux systems are pretty much the opposite: most modern distributions support GUIs, but it's still traditional for serious work to be 
+Linux systems are pretty much the opposite: most modern distributions support GUIs, but it's traditional for all serious work to be 
 done in the terminal environment. Many configuration and maintenance tasks (common in the server realm) are actually easier to handle 
 with typed commands than they would be with graphical menus.
 
-The program that receives and interpreting your commands is called the *shell*. The shell is also responsible for launching new 
-programs. The most default shell program on most Linux systems is called `bash`.
+The program that receives your commands, interprets them, and launches new programs is called the *shell*. The default shell program 
+on most Linux systems is called `bash`.
 
-The shell program prints a prompt for your commands, which typically identifies your username and the current working directory. On Cloud9, my prompt looks like this:
+The shell program prints a prompt for your commands, which typically identifies your username and the current working directory. On
+Cloud9, my prompt looks like this:
 
 ```
 dmyers@cms230:~/workspace $
