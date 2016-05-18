@@ -146,18 +146,22 @@ drwxrwxr-x 4 ubuntu ubuntu 4096 May 15 19:11 ../
 prompt$
 ```
 
-Aside: it's possible to combine the basic flags into one argument: `ls -la`
+Aside: it's possible to combine the basic flags into one argument: `ls -la`.
 
-The first column in the long listing shows the permissions for each file, specifying who is allowed to read, write, and execute it. 
-More on permissions later.
+**The Listing Format**
 
-The second column specifies the number of "links" to the file. Again, we'll defer discussion of links for now.
+The first column in the listing shows the permissions for each file, specifying who is allowed to read, write, and execute it. 
+The second column specifies the number of "links" to the file. We'll defer discussion of these two items for now.
 
-The third and fourth columns specify the owner of the file and the owner's group. In the Cloud0 environment these will always by `ubuntu`.
+The third and fourth columns specify the owner of the file and the owner's group. In the Cloud9 environment these will always be
+`ubuntu`.
 
-The fifth column is the sie of the file in bytes and the other columns list the last time the file was modified.
+The fifth column is the size of the file in bytes. Tthe other columns list the last time the file was modified.
 
-There are two special entries, `.` and `..`:
+**The Parent Directory**
+
+There are two special entries in the listing, `.` and `..`. These are considered "hidden" files, so they only appear when you run `ls`
+with the `-a` option.
 
   - `.` is a shorthand reference to the current directory, in this case `/home/ubuntu/workspace/Project1`
   - `..` always references the parent directory, which is `/home/ubuntu/workspace`
@@ -179,7 +183,8 @@ Use the `rm` command to remove files.
 prompt$ rm hw1.c
 ```
 
-You can use `*` as a wildcard to match all files matching a certain patter. For example, to remove all `.c` files in the current directory,
+You can use `*` as a wildcard to match all files matching a certain patter. For example, to remove all `.c` files in the current
+directory,
 
 ```
 promtp$ rm *.c
@@ -195,4 +200,10 @@ prompt$ rmdir Example1
 prompt rm -f Example2
 ```
 
-### What's Next
+### In the Future
+
+You will get plenty of practice working with the shell throughout this course. For now, refer back to this note for a refresher while 
+you're working on the first assignment.
+
+The next note covers compiling and running C program from the command line. After reading it you'll be ready to write your first Linux
+programs!
