@@ -112,8 +112,8 @@ reappears. In the Unix world, *silence is golden*. Programs that run correctly t
 output.
 
 Now suppose that you're ready to work on Project 1. First, you need to change to the `Project1` directory. The `cd` command changes 
-the working directory to the location you specify. You can type an absolute path or a relative path that specifies the location of the
-new directory with respect to the current one.
+the working directory to the location you specify. If you don't supply a full absolute path, the shell will treat the path as 
+*relative* and resolve it with respect to the current working directory.
 
 ```
 prompt$ cd Project1
