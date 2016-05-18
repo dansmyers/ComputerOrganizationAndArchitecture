@@ -74,7 +74,7 @@ The top-level directories right beneath `/` are fairly standard across systems. 
 each system account. The example shows three home directories for three different users. `bin` is short for *binaries* and stores 
 common executable programs.
 
-If you're using Cloud9, your user name will always be `ubuntu` and the default location for your files will be 
+If you're using Cloud9, your username will always be `ubuntu` and the default location for your files will be 
 `/home/ubuntu/workspace`.
 
 ### Moving Around and Creating Directories
