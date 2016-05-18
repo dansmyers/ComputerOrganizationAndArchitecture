@@ -119,7 +119,7 @@ the working directory to the location you specify. If you don't supply a full ab
 prompt$ cd Project1
 ```
 
-Here's a tip: you can use TAB to autocomplete a name once you've typed enough characters to uniquely identify the item you want.
+Here's a tip: you can use TAB to autocomplete a name once you've typed enough characters.
 
 One way to create a new file is to `touch` it.
 
