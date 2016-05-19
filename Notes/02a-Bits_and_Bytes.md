@@ -109,8 +109,8 @@ bigger than 1 million (slightly less than 5% larger, in fact). This pattern hold
 
 ### Bytes and Larger Units
 
-Even if all information in a compuer is ultimately a sequence of bits, it's typically inconvenient to reason about and work with
-individual 0/1 values. All modern CPUs store and manipulate larger groupings.
+Even if all information in a compuer is ultimately a sequence of bits, it's inconvenient to reason about and work with
+individual 0/1 values. All modern CPUs are designed to access and manipulate larger groups of bits.
 
 The most important unit is the ***byte***, which is defined to be 8 bits. A single byte can encode 256 distinct values. Most CPUs and
 memories, as well as the memory model of the C programming language, treat a single byte as the basic unit of access.
@@ -118,4 +118,7 @@ memories, as well as the memory model of the C programming language, treat a sin
 Interestingly, early computers had variable concepts of how large a byte should be, typically treating the size of a single text 
 character as the basic unit of access. The industry didn't really standardize on the 8-bt byte until IBM introduced the very 
 successsful System/360 mainframe in the 1960s.
+
+In C, the `char` data type represents a single 8-bit byte. We wil explore the relationship between bytes and text characters in a
+future note.
 
