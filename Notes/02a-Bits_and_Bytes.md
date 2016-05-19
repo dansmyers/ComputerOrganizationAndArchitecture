@@ -27,12 +27,12 @@ When current is applied to the base terminal, the transistor switches "on" and a
 emitter.
 
 Multiple transistors may be combined together to create logic circuits that implement the basic operations AND, OR, and NOT. These 
-basic can be further combined to design complex circuits that add, compare, switch, store, and perform all of the other tasks that are 
+basic can be further combined to design complex circuits that add, compare, switch, store, and perform all of the other tasks that are
 required for a computer to operate.
 
-We won't actually study the design of digital logic circuits in the course because Dr. Carrington covers it in Applied Discrete 
-Mathematics. For now, we'll just accept (using our powers of abstraction) that we have the capability to create the basic physical 
-hardware of a computer.
+We won't actually study the design of digital logic circuits in the course &mdash; Dr. Carrington covers logic design as part of 
+Applied Discrete Mathematics. For now, we'll just accept (using our powers of abstraction) that we have the capability to create the 
+basic physical hardware of a computer.
 
 ### Bits
 
