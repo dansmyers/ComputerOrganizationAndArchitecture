@@ -38,8 +38,8 @@ hardware of a computer.
 
 We can recognize two basic states in any digital logic circuit:
   
-  1. the *presence* of a significant electrical voltage
-  2. the *absence* of any significant electrical voltage
+  1. The *presence* of a significant electrical voltage
+  2. The *absence* of any significant electrical voltage
 
 This recognition gives rise to the concept of a *binary digit* or ***bit***.
 
@@ -66,20 +66,56 @@ example, the 32-bit sequence
 could represent a single signed `int`, or an unsigned `int`, or four `char` values, or two `short` values, or a machine language
 instruction, or a `float`. The interpretation of the bit string depends upon the context in which it's used.
 
+### Bits and Powers of 2
+
 Suppose that you have a grouping of *N* bits. How many distinct combinations can that grouping represent? Each bit may take one of two 
 values, 0 or 1, so there are two choices for each of the *N* positions.
 
-  - a single bit can represent 2 values (0 and 1)
-  - two bits can represent 4 values (00, 01, 10, and 11)
-  - three bits can represent 8 values (000, 001, 010, 011, 100, 101, 110, 111)
+  - A single bit can encode two values (0 and 1)
+  - Two bits can encode four values (00, 01, 10, and 11)
+  - Three bits can encode eight values (000, 001, 010, 011, 100, 101, 110, and 111)
   
 In general, an *N* bit sequence can represent *2^N* distinct values.
 
+Here are all the powers of 2 from 0 to 20:
+
+```
+2^0  = 1
+2^1  = 2
+2^2  = 4
+2^3  = 8
+2^4  = 16
+2^5  = 32
+2^6  = 64
+2^7  = 128
+2^8  = 256
+2^9  = 512
+2^10  = 1024
+2^11  = 2048
+2^12  = 4096
+2^13  = 8192
+2^14  = 16384
+2^15  = 32768
+2^16  = 65536
+2^17  = 131072
+2^18  = 262144
+2^19  = 524288
+2^20 = 1048576
+```
+
+For back-of-the-envelope calculations, it's helpful to remember that 2^10 is a little bigger than 1000 and that 2^20 is a little 
+bigger than 1 million (slightly less than 5% larger, in fact). This pattern holds at higher values, although it becomes less accurate:
+2^30 is about 7.5% larger than 1 billion and 2^40 is about 10% larger than 1 trillion.
 
 ### Bytes and Larger Units
 
-Even if all information in a compuer is ultimately a sequence of bits, it's typically inconvenient to reason about and work with individual 0/1 values. All modern CPUs store and manipulate larger groupings.
+Even if all information in a compuer is ultimately a sequence of bits, it's typically inconvenient to reason about and work with
+individual 0/1 values. All modern CPUs store and manipulate larger groupings.
 
-The most important unit is the *byte*, which is defined to be 8 bits.
+The most important unit is the ***byte***, which is defined to be 8 bits. A single byte can encode 256 distinct values. Most CPUs and
+memories, as well as the memory model of the C programming language, treat a single byte as the basic unit of access.
 
+Interestingly, early computers had variable concepts of how large a byte should be, typically treating the size of a single text 
+character as the basic unit of access. The industry didn't really standardize on the 8-bt byte until IBM introduced the very 
+successsful System/360 mainframe in the 1960s.
 
