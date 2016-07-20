@@ -153,10 +153,16 @@ scale datacenters, like the kind used at Google and Facebook, may store petabyte
 Beyond the fundamental confusion of using definitions that are different from the rest of the scientific world, there are a few 
 complications in working with bits and bytes that you need to be aware of.
 
-  1. In the late 1990's, the International Electrotechnical Commission (IEC), a standards body, got fed up with the whole "kilo- is 1024" thing and introduced new units to refer to power-of-2 based groupings. In their system, 2^10 bytes is a *kibibyte* (KiB), 2^20 is a *mebibyte* (MiB), and 2^30 is a *gibibyte* (GiB). 
+  1.  In most cases, a lowercase *b* in a unit indicates that it represents *bits* instead of *bytes*. Bit-based units of Kb, Mb, or 
+  Gb are typically used for data transfer rates. Byte-based units are used for file sizes and storage capacities. For example, you 
+  might transfer a 1 MB web page over a 10 Mb/s ethernet link.
+
+  2. In the late 1990's, the International Electrotechnical Commission (IEC), a standards body, got fed up with the whole "kilo- is 
+  1024" thing and introduced new units to refer to power-of-2 based groupings. In their system, 2^10 bytes is a *kibibyte* (KiB), 2^20
+  is a *mebibyte* (MiB), and 2^30 is a *gibibyte* (GiB). 
    
-  These units never really caught on with most of the industry&mdash;partly because "kibibyte" is just ridiculously twee&mdash;but you'll see them from time to time on StackOverflow and other Internet resources.
+  These units never really caught on with most of the industry&mdash;partly because "kibibyte" is just a ridiculously twee thing to say&mdash;but you'll see them from time to time on StackOverflow and other Internet resources.
   
-  2. 
-  
-  3. *The capitalist system is lying to you*.
+  3. *The capitalist system is lying to you*. Storage manufactuers have long used the standard 1000-based SI units to size their products. A "1 TB" hard disk might be designed to hold 1 trillion bytes, which is about 10% less than 2^40.
+
+  This interaction of marketing terms and technical device sizing can get quite convoluted. For example, the old 1.44 MB floppy disks held neither 1.44 * 2^20 bytes nor 1.44 million bytes. Their actual storage capacity was 1.44 thousand KB, that is, 1440 * 2^10&mdash;or 1.44 kilokibibytes, if you prefer that, you rascal.
