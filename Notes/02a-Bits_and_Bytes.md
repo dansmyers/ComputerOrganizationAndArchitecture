@@ -27,9 +27,9 @@ You can think of a transistor as a switch.
 When current is applied to the base terminal, the transistor switches "on" and allows current to flow from the collector to the 
 emitter.
 
-Multiple transistors may be combined together to create logic circuits that implement the basic operations AND, OR, and NOT. These 
-basic can be further combined to design complex circuits that add, compare, switch, store, and perform all of the other tasks that are
-required for a computer to operate.
+Multiple transistors may be combined together to create logic circuits that implement the basic logical operations AND, OR, and NOT. 
+These basic functions can be further combined to design complex circuits that add, compare, switch, store, and perform all of the 
+other tasks that are required for a computer to operate.
 
 We won't actually study the design of digital logic circuits in the course &mdash; Dr. Carrington covers logic design as part of 
 Applied Discrete Mathematics. For now, we'll just accept (using our powers of abstraction) that we have the capability to create the 
@@ -44,18 +44,18 @@ We can recognize two basic states in any digital logic circuit:
 
 This recognition gives rise to the concept of a *binary digit* or ***bit***.
 
-A single bit represents a basic unit of information having only two possible values, which we'll label as 0 (representing falseness or 
+A single bit represents a basic unit of information having only two possible values, which we'll label as 0 (representing falseness or
 absence) and 1 (representing truth or presence).
 
-The meaning of "significant electrical voltage" depends on the technology used to implement the system's logic gates. It's common for a
-logical level of 0 to be represented by a voltage close to 0 and for a logical level of 1 to be represented by a voltage of +3.5 V.
+The meaning of "significant electrical voltage" depends on the technology used to implement the system's logic gates. It's common for 
+a logical level of 0 to be represented by a voltage close to 0 and for a logical level of 1 to be represented by a voltage of +3.5 V.
 
 ### Everything is Bits
 
 **All information in a computer system, regardless of its source, type, or use, is represented as a sequence of bits**.
 
 Numbers, text strings, program instructions, images, audio, video, web pages, spreadsheets, databases, and every other kind of
-information used by any computer program must be encoded as a sequence of bits.
+information used by any computer program must ultimately be encoded as a sequence of bits.
 
 This truth has an important corollary: the meaning of any particular string of bits depends on the context in which it's read. For 
 example, the 32-bit sequence
@@ -69,7 +69,7 @@ instruction, or a `float`. The interpretation of the bit string depends upon the
 
 ### Bits and Powers of 2
 
-Suppose that you have a grouping of *N* bits. How many distinct combinations can that grouping represent? Each bit may take one of two 
+Suppose that you have a grouping of *N* bits. How many distinct combinations can that grouping represent? Each bit may take one of two
 values, 0 or 1, so there are two choices for each of the *N* positions.
 
   - A single bit can encode two values (0 and 1)
@@ -111,13 +111,13 @@ bigger than 1 million (slightly less than 5% larger, in fact). This pattern hold
 ### Bytes and Larger Units
 
 Even if all information in a compuer is ultimately a sequence of bits, it's inconvenient to reason about and work with
-individual 0/1 values. All modern CPUs are designed to access and manipulate larger groups of bits.
+individual 0/1 values. All CPUs are designed to access and manipulate larger groups of bits.
 
 The most important unit is the ***byte***, which is defined to be 8 bits. A single byte can encode 256 distinct values. Most CPUs and
 memories, as well as the memory model of the C programming language, treat a single byte as the basic unit of access.
 
 Interestingly, early computers had variable concepts of how large a byte should be, typically treating the size of a single text 
-character as the basic unit of access. The industry didn't really standardize on the 8-bt byte until IBM introduced the very 
+character as the basic unit of access. The industry didn't really standardize on the 8-bit byte until IBM introduced the very 
 successsful System/360 mainframe in the 1960s.
 
 In C, the `char` data type represents a single 8-bit byte. We wil explore the relationship between bytes and text characters in a
