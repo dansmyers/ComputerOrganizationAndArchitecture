@@ -197,12 +197,12 @@ the operation.
 
 ```
 prompt$ rmdir Example1
-prompt rm -f Example2
+prompt$ rm -f Example2
 ```
 
 ### In the Future
 
-You will get plenty of practice working with the shell throughout this course. For now, refer back to this note for a refresher while 
+You will get plenty of practice working with the shell throughout this course. Refer back to this note for a refresher while 
 you're working on the first assignment.
 
 The next note covers compiling and running C program from the command line. After reading it you'll be ready to write your first Linux
