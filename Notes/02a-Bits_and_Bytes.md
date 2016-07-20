@@ -145,8 +145,11 @@ The same rule applies to the standard higher prefixes:
  - a zettabyte (ZB) is 2^70 bytes
  - a yottabyte (YB) is 2^80 bytes
 
-A typical modern system might have 2, 4, or 8 GB of main memory avaiable. A consumer-grade hard disk is about 1 TB. Current large 
-scale datacenters, like the kind used at Google and Facebook, may store petabytes of information.
+Recall that 2^20 is about 5% bigger than 1 million, 2^30 is about 7.5% bigger than 1 billion, and 2^40 is almost 10% bigger than 1 
+trillion.
+
+For context, a typical modern system might have 2, 4, or 8 GB of main memory avaiable. A consumer-grade hard disk is about 1 TB. 
+Current large scale datacenters, like the kind used at Google and Facebook, may store petabytes of information.
 
 **Nothing is Easy**
 
