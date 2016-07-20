@@ -123,3 +123,22 @@ System/360 mainframe in the 1960's.
 In C, the `char` data type represents a single 8-bit byte. We wil explore the relationship between bytes and text characters in a
 future note.
 
+**Kilo, Mega, Giga, Tera and the Rest of the Gang**
+
+If you walk a kilometer you've walked 1000 meters. The prefix *kilo-*, in normal scientific usage, indicates 1000 of a basic unit 
+&mdash; kilograms, kilowatts, etc.
+
+Computer engineers decided, however, to use the prefix *kilo-* represent 2^10 (1024). Therefore, a kilobyte (KB) is 1024 bytes, *not* 
+1000. This could be justified because computer design and powers of 2 are intimately linked and also because 1024 is *real close* to 1000, right?
+
+The same rule applies to the standard higher prefixes:
+
+ - a megabyte (MB) is 2^20 bytes
+ - a gigabyte (GB) is 2^30 bytes
+ - a terabyte (TB) is 2^40 bytes
+ - a petabyte (PB) is 2^50 bytes
+ - an exabyte (EB) is 2^60 bytes
+ - a zettabyte (ZB) is 2^70 bytes
+ - a yottabyte (YB) is 2^80 bytes
+
+Current large scale datacenters, like the kind used at Google and Facebook may store petabytes of information.
