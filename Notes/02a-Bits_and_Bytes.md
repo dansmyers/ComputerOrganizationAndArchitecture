@@ -27,9 +27,9 @@ You can think of a transistor as a switch.
 When current is applied to the base terminal, the transistor switches "on" and allows current to flow from the collector to the 
 emitter.
 
-Multiple transistors can combine together to create logic circuits that implement the basic logical operations AND, OR, and NOT. 
+Multiple transistors can combine together to create circuits that implement the basic logical operations AND, OR, and NOT. 
 These basic functions can be further combined to design complex circuits that add, compare, switch, store, and perform all of the 
-other tasks that are required for a computer to operate.
+other tasks that are required for computation.
 
 We won't actually study the design of digital logic circuits in the course &mdash; Dr. Carrington covers logic design as part of 
 Applied Discrete Mathematics. For now, we'll just accept (using our powers of abstraction) that we have the capability to create the 
