@@ -172,5 +172,5 @@ complications in working with bits and bytes that you need to be aware of.
   products. A "1 TB" hard disk might be designed to hold 1 trillion bytes, which is about 10% less than 2^40.
 
   This interaction of marketing terms and technical device sizing can get quite convoluted. For example, the old 1.44 MB floppy disks
-  held neither 1.44 * 2^20 bytes nor 1.44 million bytes. Their actual storage capacity was 1.44 thousand KB, that is, 1440 * 2^10. You
-  could also call it 1.44 kilokibibytes, if you prefer that, you rascal.
+  held neither 1.44 * 2^20 bytes nor 1.44 million bytes. Their actual storage capacity was 1.44 thousand KB, that is, 1440 * 2^10
+  bytes. You could also call it 1.44 kilokibibytes, if you prefer that, you rascal.
