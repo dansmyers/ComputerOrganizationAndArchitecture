@@ -169,7 +169,7 @@ complications in working with bits and bytes that you need to be aware of.
   say&mdash;but you'll see them from time to time on StackOverflow and other Internet resources.
   
   3. *The capitalist system is lying to you*. Storage manufactuers have long labeled their products using the standard 1000-based SI 
-  units. A disk labeled and sold as "1 TB" might hold 1 trillion bytes, but that's about 10% less than 2^40. Marketing!
+  units. A disk labeled and sold as "1 TB" might hold 1 trillion bytes, but that's about 10% smaller than a true 2^40 byte TB.
 
   This interaction of marketing terms and technical device sizing can get quite convoluted. For example, the old 1.44 MB floppy disks
   held neither 1.44 * 2^20 bytes nor 1.44 million bytes. Their actual storage capacity was 1.44 thousand KB, that is, 1440 * 2^10
