@@ -149,7 +149,7 @@ Recall that 2^20 is about 5% bigger than 1 million, 2^30 is about 7.5% bigger th
 trillion.
 
 For context, a typical modern system might have 2, 4, or 8 GB of main memory avaiable. A consumer-grade hard disk is about 1 TB. 
-Current large scale datacenters, like the kind used at Google and Facebook, may store petabytes of information.
+Large-scale datacenters, like the kind used at Google and Facebook, may store petabytes of information.
 
 **Nothing is Easy**
 
@@ -168,8 +168,8 @@ complications in working with bits and bytes that you need to be aware of.
   These units never really caught on with most of the industry&mdash;partly because "kibibyte" is just a ridiculously twee thing to 
   say&mdash;but you'll see them from time to time on StackOverflow and other Internet resources.
   
-  3. *The capitalist system is lying to you*. Storage manufactuers have long used the standard 1000-based SI units to size their
-  products. A "1 TB" hard disk might be designed to hold 1 trillion bytes, which is about 10% less than 2^40.
+  3. *The capitalist system is lying to you*. Storage manufactuers have long labeled their products using the standard 1000-based SI 
+  units. A disk labeled and sold as "1 TB" might hold 1 trillion bytes, but that's about 10% less than 2^40. Marketing!
 
   This interaction of marketing terms and technical device sizing can get quite convoluted. For example, the old 1.44 MB floppy disks
   held neither 1.44 * 2^20 bytes nor 1.44 million bytes. Their actual storage capacity was 1.44 thousand KB, that is, 1440 * 2^10
