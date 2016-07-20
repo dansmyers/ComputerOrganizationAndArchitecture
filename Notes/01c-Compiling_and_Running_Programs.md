@@ -73,7 +73,7 @@ prompt$ ./area
 area(5.000000) = 78.539750
 ```
 
-Make sure to put the executable name right after the `-o` flag. Running `gcc -o area.c area` will just give you an error.
+Make sure to put the executable name right after the `-o` flag. Running `gcc -o area.c area` gives an error.
 
 ### Errors and Warnings
 
