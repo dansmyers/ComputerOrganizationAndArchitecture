@@ -2,7 +2,7 @@
 
 ### The Terminal and the Shell
 
-If all of your previous experience has been on Windows or Mac OS a Linux system may feel very odd at first.
+If all of your previous experience has been on Windows or Mac OS a Linux system may feel odd at first.
 
 The most obvious point of departure is the *terminal*, the place where you type commands for the system to execute. Windows and Mac 
 systems do have built-in terminals&mdash;Windows calls its terminal the Command Prompt&mdash;but they favor graphical user interfaces
