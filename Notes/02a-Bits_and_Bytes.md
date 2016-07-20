@@ -27,7 +27,7 @@ You can think of a transistor as a switch.
 When current is applied to the base terminal, the transistor switches "on" and allows current to flow from the collector to the 
 emitter.
 
-Multiple transistors may be combined together to create logic circuits that implement the basic logical operations AND, OR, and NOT. 
+Multiple transistors can combine together to create logic circuits that implement the basic logical operations AND, OR, and NOT. 
 These basic functions can be further combined to design complex circuits that add, compare, switch, store, and perform all of the 
 other tasks that are required for a computer to operate.
 
