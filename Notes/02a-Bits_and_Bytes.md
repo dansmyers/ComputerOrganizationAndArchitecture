@@ -133,7 +133,8 @@ If you walk a kilometer you've walked 1000 meters. The prefix *kilo-*, in normal
 &mdash; kilograms, kilowatts, etc.
 
 Computer engineers decided, however, to use the prefix *kilo-* represent 2^10 (1024). Therefore, a kilobyte (KB) is 1024 bytes, *not* 
-1000. This could be justified because computer design and powers of 2 are intimately linked and also because 1024 is *real close* to 1000, right?
+1000. This could be justified because computer design and powers of 2 are intimately linked. Besides, 1024 is *real close* to 1000,
+what could go wrong?
 
 The same rule applies to the standard higher prefixes:
 
