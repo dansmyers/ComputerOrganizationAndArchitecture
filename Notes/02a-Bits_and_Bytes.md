@@ -54,8 +54,8 @@ a logical level of 0 to be represented by a voltage close to 0 and for a logical
 
 **All information in a computer system, regardless of its source, type, or use is represented as a sequence of bits**.
 
-Numbers, text strings, program instructions, images, audio, video, web pages, spreadsheets, databases, and every other kind of
-information used by any computer program must ultimately be encoded as sequences of bits.
+Numbers, text strings, program instructions, images, audio, video, web pages, spreadsheets, databases, and all other kinds of
+information used by computer programs must ultimately be encoded as sequences of bits.
 
 This truth has an important corollary: the meaning of any particular string of bits depends on its context. For 
 example, the 32-bit sequence
