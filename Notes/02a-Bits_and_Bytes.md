@@ -116,9 +116,8 @@ individual 0/1 values. All CPUs are designed to access and manipulate larger gro
 The most important unit is the ***byte***, which is defined to be 8 bits. A single byte can encode 256 distinct values. Most CPUs and
 memories, as well as the memory model of the C programming language, treat a single byte as the basic unit of access.
 
-Interestingly, early computers had variable concepts of how large a byte should be, typically treating the size of a single text 
-character as the basic unit of access. The industry didn't really standardize on the 8-bit byte until IBM introduced the very 
-successsful System/360 mainframe in the 1960s.
+Early computers had variable concepts of how large a byte should be, often treating the size of a single text 
+character as the basic unit of access. The industry didn't standardize on the 8-bit byte until IBM introduced the successsful System/360 mainframe in the 1960s.
 
 In C, the `char` data type represents a single 8-bit byte. We wil explore the relationship between bytes and text characters in a
 future note.
