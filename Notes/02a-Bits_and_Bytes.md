@@ -81,26 +81,26 @@ In general, an *N* bit sequence can represent *2^N* distinct values.
 Here are all the powers of 2 from 0 to 20:
 
 ```
-2^0  = 1
-2^1  = 2
-2^2  = 4
-2^3  = 8
-2^4  = 16
-2^5  = 32
-2^6  = 64
-2^7  = 128
-2^8  = 256
-2^9  = 512
-2^10  = 1024
-2^11  = 2048
-2^12  = 4096
-2^13  = 8192
-2^14  = 16384
-2^15  = 32768
-2^16  = 65536
-2^17  = 131072
-2^18  = 262144
-2^19  = 524288
+2^0 = 1
+2^1 = 2
+2^2 = 4
+2^3 = 8
+2^4 = 16
+2^5 = 32
+2^6 = 64
+2^7 = 128
+2^8 = 256
+2^9 = 512
+2^10 = 1024
+2^11 = 2048
+2^12 = 4096
+2^13 = 8192
+2^14 = 16384
+2^15 = 32768
+2^16 = 65536
+2^17 = 131072
+2^18 = 262144
+2^19 = 524288
 2^20 = 1048576
 ```
 
@@ -110,14 +110,15 @@ bigger than 1 million (slightly less than 5% larger, in fact). This pattern hold
 
 ### Bytes and Larger Units
 
-Even if all information in a compuer is ultimately a sequence of bits, it's inconvenient to reason about and work with
-individual 0/1 values. All CPUs are designed to access and manipulate larger groups of bits.
+Everything may be bits, but it's inconvenient to reason about and work with individual 0/1 values. Therefore, all CPUs are designed to
+access and manipulate larger groups of bits.
 
 The most important unit is the ***byte***, which is defined to be 8 bits. A single byte can encode 256 distinct values. Most CPUs and
 memories, as well as the memory model of the C programming language, treat a single byte as the basic unit of access.
 
 Early computers had variable concepts of how large a byte should be, often treating the size of a single text 
-character as the basic unit of access. The industry didn't standardize on the 8-bit byte until IBM introduced the successsful System/360 mainframe in the 1960s.
+character as the basic unit of access. The industry didn't standardize on the 8-bit byte until IBM introduced the successsful
+System/360 mainframe in the 1960's.
 
 In C, the `char` data type represents a single 8-bit byte. We wil explore the relationship between bytes and text characters in a
 future note.
