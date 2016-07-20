@@ -8,19 +8,20 @@ electrical signals passing through circuits that implement logical operations. T
 You can think of a transistor as a switch.
 
 ``` 
-         power
-           |
-           |
-           |  collector
-          /
+          power
+            |
+            |
+            |  collector
+          --
   base   |
 ---------|
          |
-          \
-           v  emitter
-           |
-           |
-        ground
+          --
+            |
+            v  emitter
+            |
+            |
+          ground
 ```
 
 When current is applied to the base terminal, the transistor switches "on" and allows current to flow from the collector to the 
