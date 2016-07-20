@@ -39,7 +39,7 @@ cases, catastrophically insecure and unsafe. C programming favors the paranoid.
 
 ### Hello, World!
 
-The noble and most ancient example problem.
+The noble and most ancient example program.
 
 ```
 // Print Hello, World! to the console
