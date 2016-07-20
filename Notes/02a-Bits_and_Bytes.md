@@ -123,6 +123,10 @@ System/360 mainframe in the 1960's.
 In C, the `char` data type represents a single 8-bit byte. We wil explore the relationship between bytes and text characters in a
 future note.
 
+A four-bit grouping is called a *nibble*...
+
+...because it's half of a byte! No, seriously. I didn't make that up. It really is called a nibble.
+
 **Kilo, Mega, Giga, Tera and the Rest of the Gang**
 
 If you walk a kilometer you've walked 1000 meters. The prefix *kilo-*, in normal scientific usage, indicates 1000 of a basic unit 
@@ -141,4 +145,14 @@ The same rule applies to the standard higher prefixes:
  - a zettabyte (ZB) is 2^70 bytes
  - a yottabyte (YB) is 2^80 bytes
 
-Current large scale datacenters, like the kind used at Google and Facebook may store petabytes of information.
+A typical modern system might have 2, 4, or 8 GB of main memory avaiable. A consumer-grade hard disk is about 1 TB. Current large 
+scale datacenters, like the kind used at Google and Facebook, may store petabytes of information.
+
+**Nothing is Easy**
+
+Beyond the fundamental confusion of using definitions that are different from the rest of the scientific world, there are a few 
+complications in working with bits and bytes that you need to be aware of.
+
+  1. In the late 1990's, the International Electrotechnical Commission (IEC), a standards body, got fed up with the whole "kilo- is 1024" thing and introduced new units to refer to power-of-2 based groupings. In their system, 2^10 bytes is a *kibibyte* (KiB), 2^20 is a *mebibyte* (MiB), and 2^30 is a *gibibyte* (GiB). These units never really caught on with most of the industry&mdash;partly because "kibibyte" is just ridiculously twee&mdash;but you'll see them from time to time on StackOverflow and other Internet resources.
+  2. 
+  3. *The capitalist system is lying to you*.
