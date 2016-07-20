@@ -131,8 +131,8 @@ When you run  `make`, it looks for a file named `Makefile` (capital M, no extens
 set of rules that `make` uses to build your project. It will also automatically accept `makefile`, or you can identify a file of your
 choice with a flag.
 
-When I was a student, we used to say that no one had ever written a Makefile from scratch. There was just one original ur-Makefile 
-carved on stone tablets by, like, the Sumerians, and then handed down from generation to generation.
+When I was a student, we said that no one had ever written a Makefile from scratch. There was just one original ur-Makefile 
+carved on stone tablets by, like, the Sumerians, and then handed down and modified from generation to generation.
 
 A Makefile contains a series of *rules*, each of which specifies a series of build commands. The default rule is called `all`. Running `make` with no additional arguments is equivalent to 
 
