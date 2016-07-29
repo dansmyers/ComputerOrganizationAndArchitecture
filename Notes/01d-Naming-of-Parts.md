@@ -8,24 +8,23 @@ There had been many attempts, going all the way back to the 17th and 18th centur
 notable breakthrough came in 1801 when the Frenchman Joseph Marie Jacquard designed a programmable loom that used punched cards to 
 encode weaving patterns.
 
-The English engineer Charles Babbage designed two important computing machines: the Difference Engine, a mechanical calculator that he 
-began designing in 1822, and the more powerful Analytical Engine, which he first described in 1837. The latter was the first machine 
+The English engineer Charles Babbage designed two important computing machines: the difference engine, a mechanical calculator that he 
+began designing in 1822, and the more powerful analytical engine, which he first described in 1837. The latter was the first machine 
 capable of true general-purpose computation.
 
-The Analytical Engine's design implemented all the essential elements of a computer&mdash;including arithmetic, logic, branching 
-control operations, and memory&mdash;using only mechanical parts. It even included a printer!
+The analytical engine's design implemented all the essential elements of a computer&mdash;including arithmetic, logic, branching 
+control operations, and memory&mdash;using only mechanical parts. It even had a printer!
 
-Despite considerable funding from the British government, Babbage never actually completed any of his machines. This was due, in part, 
-to the difficulty of manufacturing the precision components his designs required with the tools of the day. A working 
-Difference Engine was finally constructed in the 1990's using 19th Century manufacturing tolerances, demonstrating that Babbage's 
-designs were actually feasible.
+Babbage never actually completed any of his machines, due, in part, to the difficulty of manufacturing the required precision 
+components with the tools of the day. A working difference engine was finally constructed in the 1990's using 19th Century
+manufacturing tolerances, demonstrating the feasibility of Babbage's designs.
 
-In addition to his work on the Engines, Babbage made contributions to cryptography and assisted Isambard Kingdom Brunel in the
-construction of the Great Western Railway, one of the great engineering feats of the Victorian era. He also led a public campaign 
+In addition to his work on the engines, Babbage made contributions to cryptography and assisted Isambard Kingdom Brunel in the
+construction of the Great Western Railway, one of the great engineering feats of the Victorian Era. He also led a public campaign 
 against street musicians, whom he loathed.
 
-Lady Ada Lovelace, one of Babbage's collaborators, designed the first algorithm intended to execute on the Analytical Engine. She is 
-therefore regarded as the first computer programmer. The Ada programming language is named in her honor.
+Lady Ada Lovelace, one of Babbage's collaborators, designed the first algorithm intended to execute on the analytical engine and is
+therefore regarded as the first computer programmer. The Ada language is named in her honor.
 
 Lady Ada's scientific accomplishment was due, in part, to terrible parenting. Her father was Lord Byron, the tempestuous Romantic poet,
 who abandoned his family when Ada was only one month old. He died&mdash;tempestuously and Romantically&mdash;of infection eight years
