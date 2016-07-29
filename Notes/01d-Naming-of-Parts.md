@@ -20,7 +20,7 @@ components with the tools of the day. A working difference engine was finally co
 manufacturing tolerances, demonstrating the feasibility of Babbage's designs.
 
 In addition to his work on the engines, Babbage made contributions to cryptography and assisted Isambard Kingdom Brunel in the
-construction of the Great Western Railway, one of the great engineering feats of the Victorian Era. He also led a public campaign 
+construction of the Great Western Railway, one of the great engineering feats of the Victorian Era. He also led public campaigns 
 against street musicians, whom he loathed.
 
 Lady Ada Lovelace, one of Babbage's collaborators, designed the first algorithm intended to execute on the analytical engine and is
