@@ -110,6 +110,6 @@ This architecture is more of a conceptual model than a real computer design.
            |                         |                   |
            |                         |                   |
 -------------------------       ----------               v
-|  Additional off-chip  |       |  Disk  |          to the Internet
+|  Additional off-chip  |       |  Disk  |         To the Internet
 |       devices         |       ----------
 ------------------------- 
