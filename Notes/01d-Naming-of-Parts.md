@@ -86,10 +86,10 @@ This architecture is more of a conceptual model than a real computer design.
 |         |
 -----------
      |                   ----------------                          ------------
-     |  Front-side bus   |              |        Memory bus        |   Main   |
+     |  Front-side bus   |              |        Memory bus        |          |
 -------------------------|  I/O Bridge  |--------------------------|  Memory  |
-                         |              |                          ------------
-                         ----------------
+                         |              |                          |          |
+                         ----------------                          ------------
                                 |
                                 |              Main system bus (PCI)
 -------------------------------------------------------------------------------
