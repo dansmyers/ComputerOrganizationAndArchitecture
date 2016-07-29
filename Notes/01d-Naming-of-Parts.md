@@ -91,7 +91,7 @@ This architecture is more of a conceptual model than a real computer design.
                          |              |                          |          |
                          ----------------                          ------------
                                 |
-                                |              Main system bus (PCI)
+                                |          Main system bus (PCI)
 -------------------------------------------------------------------------------
                    |                   |                        |
                    |                   |                        |
@@ -100,7 +100,7 @@ This architecture is more of a conceptual model than a real computer design.
                    |               ---------           ---------------------
                    |
                    |
-                   |                  Peripheral I/O bus
+                   |                    Peripheral I/O bus
 -------------------------------------------------------------------------------            
            |                         |                       |
            |                         |                       |
