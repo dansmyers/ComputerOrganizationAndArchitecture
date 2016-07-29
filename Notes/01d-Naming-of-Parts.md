@@ -80,11 +80,11 @@ This architecture is more of a conceptual model than a real computer design.
 
 ```
 
-------------
-|          |
-|   CPU    |
-|          |
-------------
+-----------
+|         |
+|   CPU   |
+|         |
+-----------
      |                   ----------------                          ------------
      |  Front-side bus   |              |        Memory bus        |   Main   |
 -------------------------|  I/O Bridge  |--------------------------|  Memory  |
