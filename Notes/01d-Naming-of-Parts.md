@@ -15,9 +15,9 @@ the first machine capable of true general-purpose computation.
 The analytical engine's design implemented all the essential elements of a computer&mdash;including arithmetic, logic, branching 
 control operations, and memory&mdash;using only mechanical parts. It even had a printer!
 
-Babbage never actually completed any of his machines. A working difference engine was finally constructed in the 1990's using 19th 
-Century manufacturing tolerances, demonstrating the feasibility of Babbage's designs. Babbage did build one part of the analytical 
-engine, but a complete system has never been constructed.
+Despite decades of work and funding from the British government, Babbage never actually completed any of his machines. A working 
+difference engine was finally constructed in the 1990's using 19th Century manufacturing tolerances, demonstrating the feasibility of 
+Babbage's designs. Babbage did build one part of the analytical engine, but a complete system has never been constructed.
 
 In addition to his work on the engines, Babbage made contributions to cryptography and assisted Isambard Kingdom Brunel in the
 construction of the Great Western Railway, one of the great engineering feats of the Victorian Era. He also led public campaigns 
