@@ -13,7 +13,8 @@ calculator that he began designing in 1822, and the more powerful analytical eng
 the first machine capable of true general-purpose computation.
 
 The analytical engine's design implemented all the essential elements of a computer&mdash;including arithmetic, logic, branching 
-control operations, and memory&mdash;using only mechanical parts. It even had a printer!
+control operations, and memory&mdash;using only mechanical parts. It even had a printer! The engine stored its programs on punched 
+cards, similar to Jacquard's loom.
 
 Despite decades of work and funding from the British government, Babbage never actually completed any of his machines. A working 
 difference engine was finally constructed in the 1990's using 19th Century manufacturing tolerances, demonstrating the feasibility of 
@@ -74,5 +75,32 @@ An implied seventh organ is the *bus* that connects all of the other organs toge
                           ------------------------
 ```
 
+This architecture is more of a conceptual model than a real computer design.
 
-Translating the basic von Neumann
+
+```
+
+------------
+|          |
+|   CPU    |
+|          |
+------------
+     |                   ----------------                          ------------
+     |  Front-side bus   |              |        Memory bus        |   Main   |
+-------------------------|  I/O Bridge  |--------------------------|  Memory  |
+                         |              |                          ------------
+                         ----------------
+                                |
+                                |              Main system bus (PCI)
+-------------------------------------------------------------------------------
+           |                   |      
+           |                   |
+       ---------           ----------
+       |  USB  |           |  SATA  |
+       ---------           ----------
+           |                   |
+           |                   |
+-------------------------  ----------  
+|  Additional off-chip  |  |  Disk  |
+|       devices         |  ----------
+------------------------- 
