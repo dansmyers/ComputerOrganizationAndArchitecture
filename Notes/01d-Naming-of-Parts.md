@@ -102,14 +102,14 @@ This architecture is more of a conceptual model than a real computer design.
                    |
                    |                            Peripheral I/O bus
 -------------------------------------------------------------------------------            
-           |                         |                   |
-           |                         |                   |
-       ---------                ----------     -----------------------
-       |  USB  |                |  SATA  |     |  Network interface  |
-       ---------                ----------     -----------------------
-           |                         |                   |
-           |                         |                   |
--------------------------       ----------               v
-|  Additional off-chip  |       |  Disk  |         To the Internet
+           |                         |                       |
+           |                         |                       |
+       ---------                ----------         -----------------------
+       |  USB  |                |  SATA  |         |  Network interface  |
+       ---------                ----------         -----------------------
+           |                         |                       |
+           |                         |                       |
+-------------------------       ----------                   v
+|  Additional off-chip  |       |  Disk  |             To the Internet
 |       devices         |       ----------
 ------------------------- 
