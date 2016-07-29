@@ -35,6 +35,7 @@ allegedly, one with his half-sister (tempestuous!). Her experience with Byron so
 pushed her daughter to study science and mathematics instead.
 
 **ENIAC and EDVAC**
+
 The first general-purpose programmable electronic computer was the ENIAC ("Electronic Numerical Integrator and Calculator") designed 
 by John Mauchley and J. Presper Eckhert at the University of Pennsylvania. Construction began on the system in 1943 and it was unveiled
 to the public in February of 1946. The U.S. Army financed the system (at a cost of $7 million in today's currency) to automate the 
