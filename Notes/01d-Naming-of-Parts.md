@@ -2,10 +2,7 @@
 
 ### History
 
-The first general-purpose programmable electronic computer was the ENIAC ("Electronic Numerical Integrator and Calculator") designed 
-by John Mauchley and J. Presper Eckhert at the University of Pennsylvania. Construction began on the system in 1943 and it was unveiled
-to the public in February of 1946. The U.S. Army financed the system (at a cost of $7 million in today's currency) to automate the 
-construction of artillery ballistics tables.
+**Pre-20th Century**
 
 There had been earlier attempts, going all the way back to the 17th and 18th centuries, to design automated computing machines. One
 notable breakthrough came in 1801 when the Frenchman Joseph Marie Jacquard designed a automated loom that used punched cards to encode
@@ -40,9 +37,15 @@ Lady Ada's scientific accomplishment was due, in part, to terrible parenting. He
 who abandoned his family when Ada was only one month old. He died&mdash;tempestuously and Romantically&mdash;of infection eight years
 later while fighting in the Greek War of Independence.
 
-Byron fathered multiple illegetimate children and carried on numerous affairs during his marriage, possibly including one with his 
-half-sister (!). Her experience with Byron soured Lady Ada's mother on the literary men, and she pushed her daughter to study science
-and mathematics instead.
+Byron fathered multiple illegitimate children during his life and carried on numerous affairs during his marriage, including, 
+allegedly, one with his half-sister (tempestuous!). Her experience with Byron soured Lady Ada's mother on the literary men, and she
+pushed her daughter to study science and mathematics instead.
+
+**ENIAC and EDVAC**
+The first general-purpose programmable electronic computer was the ENIAC ("Electronic Numerical Integrator and Calculator") designed 
+by John Mauchley and J. Presper Eckhert at the University of Pennsylvania. Construction began on the system in 1943 and it was unveiled
+to the public in February of 1946. The U.S. Army financed the system (at a cost of $7 million in today's currency) to automate the 
+construction of artillery ballistics tables.
 
 ### The von Neumann Architecture
 
