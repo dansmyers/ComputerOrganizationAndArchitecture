@@ -8,27 +8,31 @@ There had been many attempts, going all the way back to the 17th and 18th centur
 notable breakthrough came in 1801 when the Frenchman Joseph Marie Jacquard designed a programmable loom that used punched cards to 
 encode weaving patterns.
 
-The English engineer Charles Babbage designed two important computing machines: the difference engine, a mechanical calculator that he 
-began designing in 1822, and the more powerful analytical engine, which he first described in 1837. The latter was the first machine 
-capable of true general-purpose computation.
+The English engineer Charles Babbage (1791-1871) designed two important computing machines: the difference engine, a mechanical 
+calculator that he began designing in 1822, and the more powerful analytical engine, which he first described in 1837. The latter was 
+the first machine capable of true general-purpose computation.
 
 The analytical engine's design implemented all the essential elements of a computer&mdash;including arithmetic, logic, branching 
 control operations, and memory&mdash;using only mechanical parts. It even had a printer!
 
-Babbage never actually completed any of his machines, due, in part, to the difficulty of manufacturing the required precision 
-components with the tools of the day. A working difference engine was finally constructed in the 1990's using 19th Century
-manufacturing tolerances, demonstrating the feasibility of Babbage's designs.
+Babbage never actually completed any of his machines. A working difference engine was finally constructed in the 1990's using 19th 
+Century manufacturing tolerances, demonstrating the feasibility of Babbage's designs. Babbage did build one part of the analytical 
+engine, but a complete system has never been constructed.
 
 In addition to his work on the engines, Babbage made contributions to cryptography and assisted Isambard Kingdom Brunel in the
 construction of the Great Western Railway, one of the great engineering feats of the Victorian Era. He also led public campaigns 
-against street musicians, whom he loathed.
+against the nuisance of street musicians, whom he loathed.
 
-Lady Ada Lovelace, one of Babbage's collaborators, designed the first algorithm intended to execute on the analytical engine and is
-therefore regarded as the first computer programmer. The Ada language is named in her honor.
+Despite his present-day reputation as "the Father of the Computer," Babbage's work was not influential in its own 
+time. The important ideas he proposed were eventually reinvented, 100 years later, by the first electronic computer designers in the
+1940's.
+
+Lady Ada Lovelace (1815-1852), one of Babbage's collaborators, designed the first algorithm intended to execute on the analytical
+engine and is therefore regarded as the first computer programmer. The Ada language is named in her honor.
 
 Lady Ada's scientific accomplishment was due, in part, to terrible parenting. Her father was Lord Byron, the tempestuous Romantic poet,
-who abandoned his family when Ada was only one month old. He died&mdash;tempestuously and Romantically&mdash;of infection eight years
-later while fighting in the Greek War of Independence.
+who abandoned his family in 1816 when Ada was only one month old. He died&mdash;tempestuously and Romantically&mdash;of infection eight
+years later while fighting in the Greek War of Independence.
 
 Byron fathered multiple illegitimate children during his life and carried on numerous affairs during his marriage, including, 
 allegedly, one with his half-sister (tempestuous!). Her experience with Byron soured Lady Ada's mother on literary pursuits, and she
