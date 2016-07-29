@@ -4,41 +4,35 @@
 
 **Pre-20th Century**
 
-There had been earlier attempts, going all the way back to the 17th and 18th centuries, to design automated computing machines. One
-notable breakthrough came in 1801 when the Frenchman Joseph Marie Jacquard designed a automated loom that used punched cards to encode
-weaving patterns.
+There had been many attempts, going all the way back to the 17th and 18th centuries, to design automated calculating machines. One
+notable breakthrough came in 1801 when the Frenchman Joseph Marie Jacquard designed a programmable loom that used punched cards to 
+encode weaving patterns.
 
-The English engineer Charles Babbage designed two important computing machines: the Difference Engine, which he began 
-designing in 1822, and the more powerful Analytical Engine, which he first described in 1837.
+The English engineer Charles Babbage designed two important computing machines: the Difference Engine, a mechanical calculator that he 
+began designing in 1822, and the more powerful Analytical Engine, which he first described in 1837. The latter was the first machine 
+capable of true general-purpose computation.
 
-The Difference Engine was a mechanical calculator that used gears and wheels to evaluate polynomial functions. At the time,
-scientifc and engineering calculations were performed by human "computers" who relied on tables of function
-evaluations&mdash;logarithms, trigonmetric functions, and so forth&mdash;for their work. Babbage designed the Difference Engine to 
-automate the construction of these tables. 
+The Analytical Engine's design implemented all the essential elements of a computer&mdash;including arithmetic, logic, branching 
+control operations, and memory&mdash;using only mechanical parts. It even included a printer!
 
-Although the Difference Engine was impressive for its time, Babbage's reputation as "the Father of the Computer" rests on the 
-Analytical Engine, the first machine capable of true general purpose ("Turing-complete") computation. The Engine's design implemented 
-all the essential elements of a computer&mdash;including arithmetic, logic, branching control operations, and memory&mdash;using only 
-mechanical parts. It even included a printer!
-
-Despite considerable funding from the British government, Babbage never actually completed any of his machines. This was due, at least 
-in part, to the difficulty of manufacturing the precision components his designs required with the tools of the day. A working 
-Difference Enging was finally constructed in the 1990's using 19th Century manufacturing tolerances, demonstrating that Babbage's 
+Despite considerable funding from the British government, Babbage never actually completed any of his machines. This was due, in part, 
+to the difficulty of manufacturing the precision components his designs required with the tools of the day. A working 
+Difference Engine was finally constructed in the 1990's using 19th Century manufacturing tolerances, demonstrating that Babbage's 
 designs were actually feasible.
 
 In addition to his work on the Engines, Babbage made contributions to cryptography and assisted Isambard Kingdom Brunel in the
-construction of the Great Western Railway, one of the signifant engineering feats of the age. He also led a campaign to ban street 
-musicians, whom he loathed.
+construction of the Great Western Railway, one of the great engineering feats of the Victorian era. He also led a public campaign 
+against street musicians, whom he loathed.
 
-One of Babbage's collaborators on the Analytical Engine was Lady Ada Lovelace, who designed the first algorithm intended to execute on 
-a machine. She is therefore regarded as the first programmer. The Ada programming language is named in her honor.
+Lady Ada Lovelace, one of Babbage's collaborators, designed the first algorithm intended to execute on the Analytical Engine. She is 
+therefore regarded as the first computer programmer. The Ada programming language is named in her honor.
 
 Lady Ada's scientific accomplishment was due, in part, to terrible parenting. Her father was Lord Byron, the tempestuous Romantic poet,
 who abandoned his family when Ada was only one month old. He died&mdash;tempestuously and Romantically&mdash;of infection eight years
 later while fighting in the Greek War of Independence.
 
 Byron fathered multiple illegitimate children during his life and carried on numerous affairs during his marriage, including, 
-allegedly, one with his half-sister (tempestuous!). Her experience with Byron soured Lady Ada's mother on the literary men, and she
+allegedly, one with his half-sister (tempestuous!). Her experience with Byron soured Lady Ada's mother on literary pursuits, and she
 pushed her daughter to study science and mathematics instead.
 
 **ENIAC and EDVAC**
