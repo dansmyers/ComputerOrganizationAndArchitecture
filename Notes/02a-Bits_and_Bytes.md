@@ -123,9 +123,9 @@ System/360 mainframe in the 1960's.
 In C, the `char` data type represents a single 8-bit byte. We wil explore the relationship between bytes and text characters in a
 future note.
 
-A four-bit grouping is called a *nibble*...
+A four-bit grouping is called a *nibble*...because it's half of a byte! Thank you. I'll be here all week. Tip your waitstaff!
 
-...because it's half of a byte! No, seriously. I didn't make that up. It really is called a nibble.
+No, seriously. It really is called a nibble. I didn't make that up.
 
 **Kilo, Mega, Giga, Tera and the Rest of the Gang**
 
@@ -174,3 +174,5 @@ complications in working with bits and bytes that you need to be aware of.
   This interaction of marketing terms and technical device sizing can get quite convoluted. For example, the old 1.44 MB floppy disks
   held neither 1.44 * 2^20 bytes nor 1.44 million bytes. Their actual storage capacity was 1.44 thousand KB, that is, 1440 * 2^10
   bytes. You could also call it 1.44 kilokibibytes if you prefer that, you rascal.
+  
+### May I Have a Word?
