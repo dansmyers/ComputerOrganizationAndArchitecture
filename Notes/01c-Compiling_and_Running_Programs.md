@@ -237,7 +237,7 @@ There are a couple of important topics we haven't discussed:
   - Linking with libraries
   - Building one executable from multiple source files
 
-We'll discuss how to do these things when they come up in our projects.
+We'll explain these things when they come up in our projects.
 
 
 
