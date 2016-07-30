@@ -5,7 +5,7 @@
 If all of your previous experience has been on Windows or Mac OS, a Linux system may feel odd at first.
 
 The most obvious point of departure is the *terminal*, the place where you type commands for the system to execute. Windows and Mac 
-systems do have built-in terminals&mdash;Windows calls its terminal the Command Prompt&mdash;but they favor graphical user interfaces
+systems do have built-in terminals&mdash;it's called the Command Prompt in Windows&mdash;but they favor graphical user interfaces
 (GUIs) for most tasks.
 
 Linux systems are pretty much the opposite: most modern distributions support GUIs, but it's traditional for all serious work to be 
