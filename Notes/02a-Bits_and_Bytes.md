@@ -110,20 +110,19 @@ bigger than 1 million (slightly less than 5% larger, in fact). This pattern hold
 
 ### Bytes and Larger Units
 
-Everything may be bits, but it's inconvenient to reason about and work with individual 0/1 values. Therefore, all CPUs are designed to
-access and manipulate larger groups of bits.
+Everything may be bits, but it's inconvenient to work with individual 0/1 values. Therefore, CPUs always access and manipulate larger 
+groups of bits.
 
 The most important unit is the ***byte***, which is defined to be 8 bits. A single byte can encode 256 distinct values. Most CPUs and
-memories, as well as the memory model of the C programming language, treat a single byte as the basic unit of access.
+memories, as well as the C memory model, treat a single byte as the basic unit of access. In C, the `char` data type represents a single 8-bit byte.
 
-Early computers had variable concepts of how large a byte should be, often treating the size of a single text 
+Early computers had variable concepts of how large a byte should be, often using size of a single text 
 character as the basic unit of access. The industry didn't standardize on the 8-bit byte until IBM introduced the successsful
 System/360 mainframe in the 1960's.
 
-In C, the `char` data type represents a single 8-bit byte. We wil explore the relationship between bytes and text characters in a
-future note.
+A four-bit grouping is called a *nibble*...because it's half of a byte! 
 
-A four-bit grouping is called a *nibble*...because it's half of a byte! Thank you. I'll be here all week. Tip your waitstaff!
+Thank you. I'll be here all week. Tip your waitstaff!
 
 No, seriously. It really is called a nibble. I didn't make that up.
 
