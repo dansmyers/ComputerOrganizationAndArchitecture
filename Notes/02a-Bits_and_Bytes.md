@@ -179,8 +179,8 @@ complications in working with bits and bytes that you need to be aware of.
 If you've played old videogames, you've probably come across references to the "8-bit era" or "16-bit era" of gaming. If you're 
 downloading programs for a modern system, you may notice that you sometimes have a choice of "32-bit" or "64-bit" versions.
 
-These "bits" refer to the *word size* of the system architecture. A system's word size is its basic unit of access. This influences a 
-number of aspects of the system:
+The number of "bits" a system has is its *word size*: the size of its basic unit of access. This influences several aspects of a
+system's design.
 
   - Registers hold a word of data
   - Integers are typically word-sized
