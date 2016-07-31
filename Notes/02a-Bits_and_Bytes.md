@@ -187,8 +187,8 @@ system's design.
   - Every memory address is word-sized, which determines the amount of memory a running program can access
   - Many architectures use the word as the size of a machine language instruction
 
-Therefore an "8-bit" videogame console used a processor designed to store and manipulate data in 8-bit units. Most modern PC systems 
-have a 64-bit word size, having switched over from 32-bits over the last several years.
+The "8-bit" videogame consoles, like the original Nintendo Entertainment System, used a processor designed to store and manipulate
+data in 8-bit units. Most modern PC systems are 64-bit.
 
 ### Next
 
