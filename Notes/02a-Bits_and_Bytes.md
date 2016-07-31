@@ -176,11 +176,10 @@ complications in working with bits and bytes that you need to be aware of.
   
 ### May I Have a Word?
 
-If you've played old videogames, you've probably come across references to the "8-bit era" or "16-bit era" of gaming. If you're 
-downloading programs for a modern system, you may notice that you sometimes have a choice of "32-bit" or "64-bit" versions.
+If you've played old videogames, you've probably come across references to the "8-bit era" or "16-bit era" of gaming. When
+downloading programs for your computer, you may sometimes have a choice of "32-bit" or "64-bit" versions.
 
-The number of "bits" a system has is its *word size*: the size of its basic unit of access. This influences several aspects of a
-system's design.
+These "bits" refer to the systems's *word size*: its basic unit of access. Word size influences several things:
 
   - Registers hold a word of data
   - Integers are typically word-sized
