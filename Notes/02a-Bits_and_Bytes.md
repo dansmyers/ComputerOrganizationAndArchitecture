@@ -150,15 +150,15 @@ trillion.
 For context, a typical modern system might have 2, 4, or 8 GB of main memory avaiable. A consumer-grade hard disk is about 1 TB. 
 Large-scale datacenters, like the kind used at Google and Facebook, may store petabytes of information.
 
-**Nothing is Easy**
+**Nothing Is Easy**
 
 Beyond the fundamental confusion of using definitions that are different from the rest of the scientific world, there are a few 
 complications in working with bits and bytes that you need to be aware of.
 
-  1.  In most cases, a lowercase *b* in a unit indicates that it represents *bits* instead of *bytes*. Bit-based units of Kb, Mb, or 
-  Gb are typically used for data transfer rates, while byte-based units are used for file sizes and storage capacities. For example, 
-  you might transfer a 1 MB web page over a 10 Mb/s ethernet link. Generations of students have forgotten this fact and failed their 
-  networking exams!
+  1.  Bits vs. Bytes. In most cases, a lowercase *b* in a unit indicates that it represents *bits* instead of *bytes*. Bit-based units
+  of Kb, Mb, or Gb are typically used for data transfer rates, while byte-based units are used for file sizes and storage capacities. 
+  For example, you might transfer a 1 MB web page over a 10 Mb/s ethernet link. Generations of students have forgotten this fact and 
+  failed their networking exams!
 
   2. In the late 1990's, the International Electrotechnical Commission (IEC), a standards body, got fed up with the whole "kilo- is 
   1024" thing and introduced new units to refer to power-of-2 based groupings. In their system, 2^10 bytes is a *kibibyte* (KiB), 2^20
