@@ -175,3 +175,45 @@ complications in working with bits and bytes that you need to be aware of.
   bytes. You could also call it 1.44 kilokibibytes if you prefer that, you rascal.
   
 ### May I Have a Word?
+
+Every executing program must store its code and data in memory allocated for it by the operating system. The memory available to a
+program is called its *address space*, and is, conceptually, a **big linear array of bytes**. 
+
+Every byte in the address space has an associated index, beginning with byte 0 and extending down to a maximum index determined by the
+system architecture.
+
+The AS is divided into three regions:
+
+  1. The first section stores the program's code and any static data is uses, like hard-coded text strings.
+ 
+  2. The second section is called the *heap* and is used for dynamically-allocated data, like objects created using the `new` keyword. The heap grows can grow downwards and shrink upwards as more data is allocated and deallocated.
+  
+  3. The third region is the *stack*: it's used to store local variables and to keep track of function calls.
+  
+We'll talk more about how the heap and stack work in future lectures.
+
+```
+Conceptual model of a program's address space (AS).
+
+--------------------------------  <-- 0  Code begins at memory byte 0
+|                              |
+|     Code and static data     |
+|                              |
+--------------------------------
+|                              |  Heap stores dynamically allocated data
+|            Heap              |  (like objects created with new)
+|                              |
+--------------------------------
+|              |               |
+|              |               | Heap grows and shrinks as dynamic data is
+|              v               | allocated and deallocated
+|                              |
+|              ^               | Stack grows and shrinks as the program calls
+|              |               | and returns from functions
+|              |               |
+--------------------------------
+|                              | Stack stores local variables and keeps track
+|            Stack             | of function calls
+|                              |
+--------------------------------  <-- Size of the AS is determined by the system architecture
+```
