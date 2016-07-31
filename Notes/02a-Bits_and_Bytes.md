@@ -184,7 +184,7 @@ system's design.
 
   - Registers hold a word of data
   - Integers are typically word-sized
-  - Every memory address is word-sized, hence, the amount of memory a running program can access is determined by the word size
+  - Every memory address is word-sized, which determines the amount of memory a running program can access
   - Many architectures use the word as the size of a machine language instruction
 
 Most PC systems have a 64-bit word size, having switched over from 32-bits over the last several years.
