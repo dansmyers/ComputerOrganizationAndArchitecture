@@ -52,7 +52,7 @@ a logical level of 0 to be represented by a voltage close to 0 and for a logical
 
 ### Everything is Bits
 
-**All information in a computer system, regardless of its source, type, or use is represented as a sequence of bits**.
+**Any information in a computer system, regardless of its source, type, or use is represented as a sequence of bits**.
 
 Numbers, text strings, program instructions, images, audio, video, web pages, spreadsheets, databases, and all other kinds of
 information used by computer programs must ultimately be encoded as sequences of bits.
