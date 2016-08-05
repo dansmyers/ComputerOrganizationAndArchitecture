@@ -2,11 +2,26 @@
 
 ### Pre-20th Century
 
+**Early Calculating Machines**
+
+The earliest calculating machine was the abacus, a standard tool for merchants and engineers around the world since ancient times and 
+still in use in some places today.
+
+The first mechnical calculating machines were invented in the 17th Century, driven by the demands of both science and commerce. Wilhelm
+Schickard proposed an (incomplete) design for a "calculating clock" in the 1620's.
+
+The French mathematician Blaise Pascal invented the first working adding/subtracting mechanical calculator, dubbed the "Pascaline," in
+the 1640's. Pascal was inspired to the invention by his father's work as a tax collector. 
+
+Gottfreid Wilhelm von Liebniz, one of the inventors of Calculus, created a four-function mechanical calculator called the "Stepped 
+Reckoner" in the 1690's. Conincidentally, Stepped Reckoner was the L.A. hair metal band I played lead guitar for in 1987. I was five.
+
+Neither Pascal's nor Leibniz's machines were programmable. A breakthrough in programmability came in 1801 when the Frenchman Joseph 
+Marie Jacquard designed a programmable loom that used punched cards to encode weaving patterns.
+
 **Babbage's Engines**
 
-There had been many attempts, going all the way back to the 17th and 18th centuries, to design automated calculating machines. One
-notable breakthrough came in 1801 when the Frenchman Joseph Marie Jacquard designed a programmable loom that used punched cards to 
-encode weaving patterns.
+There had been many attempts, going all the way back to the 17th and 18th centuries, to design automated calculating machines.
 
 The English engineer Charles Babbage (1791-1871) designed two important computing machines: the difference engine, a mechanical 
 calculator that he began designing in 1822, and the more powerful analytical engine, which he first described in 1837. The latter was 
