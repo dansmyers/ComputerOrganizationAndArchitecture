@@ -97,7 +97,7 @@ who you ask, predated von Neumann's involvement in the project. However, because
 mathematician), von Neumann got all of the public credit for the ideas it contained. There's a lesson here for would-be graduate
 students&mdash;get your name on the paper!
 
-Today, almost all computers are based on the design ideas described in the *First Draft*. With apologies to Mauchley, Eckhert, and the
+Today, almost all computers are based on the designs described in the *First Draft*. With apologies to Mauchley, Eckhert, and the
 rest of their team, any computer that uses a single memory to store both program instructions and data is said to have a 
 *von Neumann architecture*.
 
