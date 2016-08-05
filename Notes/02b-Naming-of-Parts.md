@@ -1,6 +1,9 @@
 # Naming of Parts
 
-### The von Neumann Architecture
+### The von Neumann Architecture and the Stored Program Concept
+
+As you'll recall from the last note, John von Neumann wrote *First Draft of a Report on the EDVAC* in 1945, which became the first
+public description of a stored program computer.
 
 Von Neumann's report described a computer built from six basic "organs":
 
@@ -29,8 +32,7 @@ An implied seventh organ is the *bus* that connects all of the other organs toge
                           ------------------------
 ```
 
-This architecture is more of a conceptual model than a real computer design.
-
+Earlier computers, like the ENIAC, had to encode their programs in the physical connections between logical components.
 
 ```
 
