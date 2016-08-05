@@ -80,3 +80,13 @@ The first general-purpose programmable electronic computer was the ENIAC ("Elect
 by John Mauchley and J. Presper Eckhert at the University of Pennsylvania. Construction began on the system in 1943 and it was unveiled
 to the public in February of 1946. The U.S. Army financed the system (at a cost of $7 million in today's currency) to automate the 
 construction of artillery ballistics tables.
+
+ENIAC's logic circuits were built from more than 17000 vacuum tubes. It was roughly 100 feet long, 30 feet wide, and 8 feet high. 
+"Programming" ENIAC required disconnecting and rebuildling its internal logical connections to specify the seqeunce of operations for 
+the new program.
+
+The next significant American computer was the EDVAC ("Electronic Discrete Variable Automatic Computer") designed by Mauchley and 
+Eckhert from 1944 to 1949. EDVAC improved on ENIAC's design by storing its program in *memory*, rather than in its physical hardware.
+This **stored program concept** is a key aspect of all modern computers.
+
+One member of the EDVAC team
