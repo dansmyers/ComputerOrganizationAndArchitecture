@@ -5,15 +5,14 @@
 **Early Calculating Machines**
 
 The earliest calculating machine was the abacus, a standard tool for merchants and engineers around the world since ancient times and 
-still in use in some places today.
+still in use in some places today. The first mechnical calculating machines were invented in the 17th Century, driven by the demands of
+both science and commerce. 
 
-The first mechnical calculating machines were invented in the 17th Century, driven by the demands of both science and commerce. Wilhelm
-Schickard proposed an (incomplete) design for a "calculating clock" in the 1620's.
+Wilhelm Schickard, a German professor of both Biblical Hebrew and astronomy, proposed an (incomplete) design for a "calculating clock" 
+in the 1620's. The first working adding/subtracting mechanical calculator was invented by Blaise Pascal in the 1640's. The "Pascaline,"
+as it came to be known, was inspired by his father's work as a tax collector.
 
-The French mathematician Blaise Pascal invented the first working adding/subtracting mechanical calculator, dubbed the "Pascaline," in
-the 1640's. Pascal was inspired to the invention by his father's work as a tax collector. 
-
-Gottfreid Wilhelm von Liebniz, one of the inventors of Calculus, created a four-function mechanical calculator called the "Stepped 
+Gottfreid Liebniz, one of the inventors of Calculus, created a four-function mechanical calculator called the "Stepped 
 Reckoner" in the 1690's. Conincidentally, Stepped Reckoner was the L.A. hair metal band I played lead guitar for in 1987. I was five.
 
 Neither Pascal's nor Leibniz's machines were programmable. A breakthrough in programmability came in 1801 when the Frenchman Joseph 
@@ -77,9 +76,9 @@ did not work directly on Colossus.
 **ENIAC and EDVAC**
 
 The first general-purpose programmable electronic computer was the ENIAC ("Electronic Numerical Integrator and Calculator") designed 
-by John Mauchley and J. Presper Eckhert at the University of Pennsylvania. Construction began on the system in 1943 and it was unveiled
-to the public in February of 1946. The U.S. Army financed the system (at a cost of $7 million in today's currency) to automate the 
-construction of artillery ballistics tables.
+by John Mauchley and J. Presper Eckhert at the University of Pennsylvania. Construction began on the system in 1943 and it was
+unveiled to the public in February of 1946. The U.S. Army financed the system (at a cost of $7 million in today's currency) to
+automate the construction of artillery ballistics tables.
 
 ENIAC's logic circuits were built from more than 17000 vacuum tubes. It was roughly 100 feet long, 30 feet wide, and 8 feet high. 
 "Programming" ENIAC required disconnecting and rebuildling its internal logical connections to specify the seqeunce of operations for 
@@ -89,4 +88,22 @@ The next significant American computer was the EDVAC ("Electronic Discrete Varia
 Eckhert from 1944 to 1949. EDVAC improved on ENIAC's design by storing its program in *memory*, rather than in its physical hardware.
 This **stored program concept** is a key aspect of all modern computers.
 
-One member of the EDVAC team
+Hungarian-American mathematician John von Neumann was a consulting member of the EDVAC team. One of the most prominent scientists of
+his day, von Neumann worked on the Manhattan Project, invented game theory, and wrote the first merge sort program. In 1945, von
+Neumann wrote *First Draft of a Report on the EDVAC*, which became the first public document describing the design of a
+stored-program computer. The report was controversial. 
+
+For one thing, it amounted to a public disclosure (in the legal sense) of the EDVAC's invention, which scuttled Mauchley and Eckhert's
+plans to patent its design. For another, many of the concepts in the report were developed by the entire EDVAC team and, depending on
+who you ask, predated von Neumann's involvement in the project. However, because he was the sole author of the report (and a famous
+mathematician), von Neumann got all of the public credit for the ideas it contained. There's a lesson here for would-be graduate
+students&mdash;get your name on the paper!
+
+Today, almost all computers are based on the design ideas described in the *First Draft*. With apologies to Mauchley, Eckhert, and the
+rest of their team, any computer that uses a single memory to store both program instructions and data is said to have a 
+*von Neumann architecture*.
+
+### Next Time
+
+In the next note, we'll take a closer look at the "von Neumann" architecture and talk about the key hardware components of every
+computer.
