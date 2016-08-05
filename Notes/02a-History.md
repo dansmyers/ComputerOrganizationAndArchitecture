@@ -36,8 +36,8 @@ difference engine was finally constructed in the 1990's using 19th Century manuf
 Babbage's designs. Babbage did build one part of the analytical engine, but a complete system has never been constructed.
 
 In addition to his work on the engines, Babbage made contributions to cryptography and assisted Isambard Kingdom Brunel in the
-construction of the Great Western Railway, one of the great engineering feats of the Victorian Era. He is credited as the inventor of 
-the "cow catcher" on the front of old-time steam locomotives. He also led public campaigns against the nuisance of street musicians, 
+construction of the Great Western Railway, one of the great engineering feats of the Victorian Era, and invented the "cow catcher" on 
+the front of old-time steam locomotives. He also led public campaigns against the nuisance of street musicians, 
 whom he loathed.
 
 Despite his present-day reputation as "the Father of the Computer," Babbage's work was not influential in its own 
@@ -61,8 +61,18 @@ pushed her daughter to study science and mathematics instead.
 
 **World War II**
 
+The German enginer Konrad Zuse invented a series of calculating machines using electromechnical relays: switches that are activated by 
+electrical signals. Zuse began building his first machine, the Z1, in his parents' living room. His last War-era machine, the Z3, was 
+the first binary and programmable computer. It lacked conditional branching, so it was not practially capable of true general-purpose 
+computation. 
 
+The German government did not grasp the potential of the computer and gave Zuse only limited support, denying him funds to build a 
+fully electronic version of his designs. The Z3 was destroyed by Allied bombing raids on Berlin in 1943.
 
+British codebreakers at Bletchley Park created a series of electronic machines called *Colossus* to perform cryptanalysis of German
+communications. Colossus was designed for cipher analysis, not general-purpose computation, but it was the first programmable,
+fully-electronic computing machine. Alan Turing was part of the team at Bletchley Park and inspired some aspects of its design, but he 
+did not work directly on Colossus.
 
 **ENIAC and EDVAC**
 
