@@ -36,8 +36,9 @@ difference engine was finally constructed in the 1990's using 19th Century manuf
 Babbage's designs. Babbage did build one part of the analytical engine, but a complete system has never been constructed.
 
 In addition to his work on the engines, Babbage made contributions to cryptography and assisted Isambard Kingdom Brunel in the
-construction of the Great Western Railway, one of the great engineering feats of the Victorian Era. He also led public campaigns 
-against the nuisance of street musicians, whom he loathed.
+construction of the Great Western Railway, one of the great engineering feats of the Victorian Era. He is credited as the inventor of 
+the "cow catcher" on the front of old-time steam locomotives. He also led public campaigns against the nuisance of street musicians, 
+whom he loathed.
 
 Despite his present-day reputation as "the Father of the Computer," Babbage's work was not influential in its own 
 time. The important ideas he proposed were eventually reinvented, 100 years later, by the first electronic computer designers in the
@@ -59,6 +60,9 @@ pushed her daughter to study science and mathematics instead.
 ### Early Electronic Computers
 
 **World War II**
+
+
+
 
 **ENIAC and EDVAC**
 
