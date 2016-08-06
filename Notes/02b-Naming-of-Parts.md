@@ -42,6 +42,8 @@ memory where they can be read just like data. This **stored program concept** is
 architecture designs.
 
 ### A General System Architecture
+
+
 ```
 -----------
 |         |
