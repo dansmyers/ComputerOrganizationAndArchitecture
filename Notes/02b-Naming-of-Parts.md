@@ -84,7 +84,7 @@ The CPU is the driver of all the activity in a computer system. It interprets in
 interaction with memory and I/O devices.
 
 When we speak of "computer architecture," we're usually referring to the design of the CPU. For example: 
-  - What instructions does it implement?
+  - What basic instructions can it execute?
   - How are those instructions implemented as physical hardware?
   - What performance-enhancing features does it support?
 
