@@ -86,15 +86,19 @@ interaction with memory and I/O devices.
 
 When we speak of "computer architecture," we're usually referring to the design of the CPU. For example: 
   - What instructions does it implement?
-  - How are those instructions implemented as actual logic circuits?
+  - How are those instructions implemented as physical hardware?
   - What performance-enhancing features does it support?
 
 Modern CPUs are among the most complex system ever devised by humans. From a programmer's perspective, however, the CPU can be thought of as a collection of a few key elements:
 
   - An **arithmetic-logic unit (ALU)** that performs calculations and comparisons.
+  
   - **Control logic** that decodes instructions.
+  
   - **Registers**, temporary storage locations for individual data values that are currently being used in calculations. There are also specialized registers that store important state information for an executing program. The Raspberry Pi 3's CPU has 17 32-bit registers, of which 12 are used for general computation and 5 have specialized functions.
+  
   - **Cache**, a small, fast block of memory built into the CPU that stores frequently accessed data. Cache exists to bridge the gap between the CPU and main memory. An intelligent caching strategy keeps important data close to the CPU and prevents time-consuming transfers to and from main memory. We'll have a lot more to say about caching later in the course.
+  
   - A **clock** to control the timing and synchronization of the CPU's operations. The clock signal is provided by a quartz crystal that oscillates regularly between low and high voltages when supplied with a current. CPU clock frequencies are measured in gigahertz (GHz)&mdash;a 1 GHz signal completes 1 billion oscillations per second. 
   
   Clock speed is *one* factor influencing CPU performance. Within a single family of CPU designs, clock speed may be used to differentiate between more expensive and cheaper designs. You can't, however, make meaningful performance comparisons between CPUs of different families using clock speed alone.
