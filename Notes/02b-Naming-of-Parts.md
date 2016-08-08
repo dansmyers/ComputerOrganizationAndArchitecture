@@ -105,9 +105,9 @@ Modern CPUs are among the most complex system ever devised by humans. From a pro
 
   An "overclocked" CPU is one that has been tweaked to run at a higher-than-normal clock frequency: this increases the CPU's performance, but generates additional heat that must be dissipated by heat sinks and fans.
 
-Each *core* of the CPU is an independent computational unit, having its own ALU, control logic, registers, and (in some cases) cache. Low-cost embedded processors are typically *single-core*, but most laptop and server CPUs are *multi-core*: the CPU contains multiple independent processing units, each capable of fetching and executing its own stream of instructions. 
+Each **core** of the CPU is an independent computational unit, having its own ALU, control logic, registers, and (in some cases) cache. Low-cost embedded processors are typically **single-core**, but most laptop and server CPUs are **multi-core**: the CPU contains multiple independent processing units, each capable of fetching and executing its own stream of instructions. 
 
-A multi-core system can execute multiple tasks in parallel and share data across its cores through main memory. This can enhance the performance of some applications, but keeping multiple threads of a program synchronized across multiple cores is not easy.
+A multi-core system can execute multiple tasks in parallel, and share data across its cores through main memory. It's challenging, however, to keep multiple threads of a program synchronized across multiple cores. The Raspberry Pi 3's CPU has four cores.
 
 ### Main Memory
 
