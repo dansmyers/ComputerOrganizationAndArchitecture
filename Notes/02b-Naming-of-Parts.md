@@ -43,7 +43,6 @@ architecture designs.
 
 ### A General System Architecture
 
-
 ```
 -----------
 |         |
@@ -82,9 +81,23 @@ architecture designs.
 
 ### The Central Processing Unit (CPU)
 
+The CPU is the driver of all the activity in a computer system. It interprets instructions, performs calculations, and supervises 
+interaction with memory and I/O devices.
 
-### Main Memory (RAM)
+Here are some of the common components that make up a CPU:
+
+  - The **arithmetic-logic unit (ALU)** that performs calculations and comparisons
+  - **Registers**, temporary storage locations for individual data values that are currently being used in calculations. There are also specialized registers that store important state information for an executing program. The Raspberry Pi 3's CPU has 17 32-bit registers, of which 12 are used for general computation and 5 have specialized functions.
+  - **Cache**, a small, fast block of memory built into the CPU that stores frequently accessed data. Cache exists to bridge the gap between the CPU and main memory. An intelligent caching strategy keeps important data close to the CPU and prevents time-consuming transfers to and from main memory. We'll have a lot more to say about caching later in the course.
 
 
 
-### I/O Devices
+
+### Main Memory
+
+**Dynamic Random Access Memory (DRAM)**
+
+**How Programs Use Memory**
+
+
+### Buses and I/O Devices
