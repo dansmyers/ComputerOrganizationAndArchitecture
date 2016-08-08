@@ -35,11 +35,10 @@ An implied seventh organ is the *bus* that connects all of the other organs toge
 ```
 
 Earlier computers, like the ENIAC, had to encode their programs in the physical connections between logical components. "Programming"
-such a computer, therefore, required taking apart its hardware and rebuilding it to implement a new sequence of operations.
+such a computer required taking apart its hardware and rebuilding it to implement a new sequence of operations. 
 
-This approach clearly limited productivity. Computer designers quickly hit on a better solution: storing the program's instructions in
-memory where they can be read just like data. This **stored program concept** is the foundation of almost all modern computer
-architecture designs.
+This approach clearly limited productivity, so computer designers quickly hit on a better solution: storing the program's instructions
+in memory where they can be read just like data. The **stored program concept** is now the foundation of almost all modern computer architectures.
 
 ### A General System Architecture
 
