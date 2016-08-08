@@ -98,7 +98,7 @@ Modern CPUs are among the most complex system ever devised by humans. From a pro
   
   - **Cache**, a small, fast block of memory built into the CPU that stores frequently accessed data. Cache exists to bridge the gap between the CPU and main memory. An intelligent caching strategy keeps important data close to the CPU and prevents time-consuming transfers to and from main memory. We'll have a lot more to say about caching later in the course.
   
-  - A **clock** to control the timing and synchronization of the CPU's operations. The clock signal is provided by a quartz crystal that oscillates regularly between low and high voltages when supplied with a current. CPU clock frequencies are measured in gigahertz (GHz)&mdash;a 1 GHz signal completes 1 billion oscillations per second. 
+  - A **clock** that controls the timing and synchronization of the CPU's operations. The clock signal is provided by a quartz crystal that oscillates regularly between low and high voltages when supplied with a current. CPU clock frequencies are measured in gigahertz (GHz)&mdash;a 1 GHz signal completes 1 billion oscillations per second. 
   
   Clock speed is *one* factor influencing CPU performance. Within a single family of CPU designs, clock speed may be used to differentiate between more expensive and cheaper designs. You can't, however, make meaningful performance comparisons between CPUs of different families using clock speed alone.
 
