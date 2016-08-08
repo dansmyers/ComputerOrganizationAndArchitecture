@@ -91,11 +91,11 @@ When we speak of "computer architecture," we're usually referring to the design 
 
 Modern CPUs are among the most complex system ever devised by humans. From a programmer's perspective, however, the CPU can be thought of as a collection of a few key elements:
 
-  - An **arithmetic-logic unit (ALU)** that performs calculations and comparisons.
+  - An **arithmetic-logic unit (ALU)** that performs calculations and comparisons. This is the modern version of von Neumann's central arithmetical organ.
   
-  - **Control logic** that decodes instructions.
+  - **Control logic** that fetches and decodes instructions. This is the spiritual successor to von Neumann's central control organ.
   
-  - **Registers**, temporary storage locations for individual data values that are currently being used in calculations. There are also specialized registers that store important state information for an executing program. The Raspberry Pi 3's CPU has 17 32-bit registers, of which 12 are used for general computation and 5 have specialized functions.
+  - **Registers**, temporary storage locations for individual data values that are currently being used in calculations. The Raspberry Pi 3's CPU has 17 registers, of which 12 are used for general computation and 5 have specialized functions. We'll talk about the Pi's register set when we introduce assembly language programming.
   
   - **Cache**, a small, fast block of memory built into the CPU that stores frequently accessed data. Cache exists to bridge the gap between the CPU and main memory. An intelligent caching strategy keeps important data close to the CPU and prevents time-consuming transfers to and from main memory. We'll have a lot more to say about caching later in the course.
   
@@ -105,7 +105,9 @@ Modern CPUs are among the most complex system ever devised by humans. From a pro
 
   An "overclocked" CPU is one that has been tweaked to run at a higher-than-normal clock frequency: this increases the CPU's performance, but generates additional heat that must be dissipated by heat sinks and fans.
 
+Each *core* of the CPU is an independent computational unit, having its own ALU, control logic, registers, and (in some cases) cache. Low-cost embedded processors are typically *single-core*, but most laptop and server CPUs are *multi-core*: the CPU contains multiple independent processing units, each capable of fetching and executing its own stream of instructions. 
 
+A multi-core system can execute multiple tasks in parallel and share data across its cores through main memory. This can enhance the performance of some applications, but keeping multiple threads of a program synchronized across multiple cores is not easy.
 
 ### Main Memory
 
