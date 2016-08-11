@@ -83,8 +83,8 @@ ENIAC's logic circuits were built from more than 17000 vacuum tubes. It was roug
 the new program.
 
 The next significant American computer was the EDVAC ("Electronic Discrete Variable Automatic Computer") designed by Mauchley and 
-Eckhert from 1944 to 1949. EDVAC improved on ENIAC's design by storing its program in *memory*, rather than in its physical hardware.
-This **stored program concept** is a key aspect of all modern computers.
+Eckhert from 1944 to 1949. EDVAC improved on ENIAC's design by **storing its program in memory**, rather than in its physical 
+hardware. This **stored program concept** is a key aspect of all modern computers.
 
 Hungarian-American mathematician John von Neumann was a consulting member of the EDVAC team. One of the most prominent scientists of
 his day, von Neumann worked on the Manhattan Project, invented game theory, and wrote the first merge sort program. In 1945, von
