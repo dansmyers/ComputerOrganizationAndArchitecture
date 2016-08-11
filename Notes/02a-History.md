@@ -99,7 +99,7 @@ students&mdash;get your name on the paper!
 
 Today, almost all computers are based on the designs described in the *First Draft*. With apologies to Mauchley, Eckhert, and the
 rest of their team, any computer that uses a single memory to store both program instructions and data is said to have a 
-*von Neumann architecture*.
+**von Neumann architecture**.
 
 ### Next Time
 
