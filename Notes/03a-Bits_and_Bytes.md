@@ -113,7 +113,7 @@ larger than 1 million (slightly less than 5% larger, in fact). This pattern hold
 Everything may be bits, but it's inconvenient to work with individual 0/1 values. Therefore, CPUs always access and manipulate larger 
 groups of bits.
 
-The most important unit is the ***byte***, which is defined to be 8 bits. A single byte can encode 256 distinct values. In C, the
+The most important unit is the **byte**, which is defined to be 8 bits. A single byte can encode 256 distinct values. In C, the
 `char` data type represents a single 8-bit byte.
 
 Early computers had variable concepts of how large a byte should be, often using size of a single text 
