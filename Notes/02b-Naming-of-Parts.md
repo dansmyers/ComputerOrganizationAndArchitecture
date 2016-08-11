@@ -38,9 +38,10 @@ Earlier computers, like the ENIAC, had to encode their programs in the physical 
 such a computer required taking apart its hardware and rebuilding it to implement a new sequence of operations. 
 
 This approach clearly limited productivity, so computer designers quickly hit on a better solution: storing the program's instructions
-in memory where they can be read just like data. The **stored program concept** is now the foundation of almost all modern computer architectures.
+in memory where they can be read just like data. The **stored program concept** is the foundation of all modern computer 
+architectures.
 
-### A General System Architecture
+### An Example System Architecture
 
 ```
 -----------
