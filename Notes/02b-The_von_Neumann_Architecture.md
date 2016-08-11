@@ -1,4 +1,4 @@
-# The von Neumann Architecture and the Stored Program Concept
+# The von Neumann Architecture
 
 As you'll recall from the last note, John von Neumann wrote *First Draft of a Report on the EDVAC* in 1945, which became the first
 public description of a stored program computer.
@@ -31,6 +31,8 @@ An implied seventh organ is the *bus* that connects all of the other organs toge
                           |  Persistent Storage  |
                           ------------------------
 ```
+
+### The Stored Program Concept
 
 Earlier computers, like the ENIAC, had to encode their programs in the physical connections between logical components. "Programming"
 such a computer required taking apart its hardware and rebuilding it to implement a new sequence of operations. 
