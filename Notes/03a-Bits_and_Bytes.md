@@ -179,7 +179,7 @@ complications in working with bits and bytes that you need to be aware of.
 If you've played old videogames, you've probably come across references to the "8-bit era" or "16-bit era" of gaming. When
 downloading programs for your computer, you may sometimes have a choice of "32-bit" or "64-bit" versions.
 
-These "bits" refer to the systems's *word size*: its basic unit of access. Word size influences several things:
+These "bits" refer to the systems's **word size**: its basic unit of access. Word size influences several things:
 
   - Registers hold a word of data
   - Integers are typically word-sized
