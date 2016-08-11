@@ -119,7 +119,7 @@ When a program runs, the memory available to it is, conceptually, a **big linear
 Each byte in the address space has an index, beginning with index 0 and extending to some maximum index that depends on the total number of bytes. In an architecture with a 32-bit address space, each program has, conceptually, 2^32 total bytes of memory available and the maximum byte index is 2^32 - 1.
 
 The memory available to a program is divided into three regions:
-  1. The top of the address space stores the program's code and any static data it uses, like hardcoded strings.
+  1. The top of the address space stores the program's **code** and any static data it uses, such as hardcoded strings.
   
   2. The second region is called the **heap** and stores dynamically allocated data items that are created and deleted as the program runs. In a Java program, this would include objects created with the `new` keyword. The heap grows downwards (toward higher memory addresses) as more dynamic data is allocated and shrinks upwards as items are deallocated.
   
@@ -152,10 +152,16 @@ A canonical 32-bit address space
 |  function call history)   |
 |                           |
 -----------------------------  Byte index 2^32 - 1
+```
 
+**Virtual Memory**
 
+The previous discussion made it sound like every program runs in its own private 4 GB address space when it executes. This is, in fact, an illusion. A typical desktop computer might have 2-8 GB of total physical RAM available, but run dozens of programs simultaneously&mdash;there isn't enough RAM for each program to have its own private address space.
 
+Instead, all programs running on the system are actually *sharing* the underlying physical memory in a way that maintains the *illusion* of a large private address space for each program. This illusion is called **virtual memory** and is implemented by the OS and the hardware working together as a team. 
 
+Virtual memory is complex, but it allows every program to execute without worrying about how other programs are using memory. This frees application programmers (that's us) from worrying about tedious low-level memory management issues, which is a very good thing.
 
+We'll study VM in detail in CMS 330 when we discuss operating systems. For now, you may assume that every program runs with a private address space like the one in the diagram.
 
 ### Buses and I/O Devices
