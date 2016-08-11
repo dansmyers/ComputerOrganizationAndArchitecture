@@ -68,7 +68,7 @@ fully electronic version of his designs. The Z3 was destroyed by Allied bombing 
 
 British codebreakers at Bletchley Park created a series of electronic machines called *Colossus* to perform cryptanalysis of German
 communications. Colossus was designed for cipher analysis, not general-purpose computation, but it was the first programmable,
-fully-electronic computing machine. Alan Turing was part of the team at Bletchley Park and inspired some aspects of its design, but he
+fully-electronic computing machine. Alan Turing was part of the team at Bletchley Park and inspired some aspects of its design, but 
 did not work directly on Colossus.
 
 **ENIAC and EDVAC**
