@@ -174,3 +174,12 @@ Virtual memory is complex, but it allows every program to execute without worryi
 We'll study VM in detail in CMS 330 when we discuss operating systems. For now, you may assume that every program runs with a private address space like the one in the diagram.
 
 ### Buses and I/O Devices
+
+A bus is, physically, just a group of wires that connect components on the computer. Rather than a single bus, like in von Neumann's design, modern computers typically have a hierarchy of buses, with faster, shorter buses at higher levels and slower, larger buses at lower levels. The fastest connection is reserved for main memory, which helps keep the CPU supplied with data and instructions.
+
+An important parameter of a bus is its **width**, the number of bits it can move in a single transfer. A bus with a width of one is called a *serial* bus: it transfers only one bit at at time. Older buses, like PCI, had widths of 32 or 64 bits. It turns out, however, that designing large parallel buses is hard, because synchronizing transfers on 32 or 64 different wires is difficult and electrical "crosstalk" between wires leads to errors. The trend, therefore, has been towards highly optimizied serial buses, like USB ("Universal Serial Bus") and PCI Express, that drive bits through a system at very high clock speeds with low error rates.
+
+
+
+
+
