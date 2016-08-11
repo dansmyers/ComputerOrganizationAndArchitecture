@@ -197,8 +197,12 @@ Hard disks have excellent cost/bit characteristics: a commercial-grade 1 TB disk
 A side view of a disk drive with two platters and four surfaces.
 
 Each surface has its own dedicated read/write head and arm.
-                
-----            |
+
+arms and read/write heads
+        |
+        |
+        |        
+----    v      |
    |--------[]  |
    |     ----------------  platter
    |--------[]  |
