@@ -175,11 +175,55 @@ We'll study VM in detail in CMS 330 when we discuss operating systems. For now, 
 
 ### Buses and I/O Devices
 
+**Another One Rides the Bus**
+
 A bus is, physically, just a group of wires that connect components on the computer. Rather than a single bus, like in von Neumann's design, modern computers typically have a hierarchy of buses, with faster, shorter buses at higher levels and slower, larger buses at lower levels. The fastest connection is reserved for main memory, which helps keep the CPU supplied with data and instructions.
 
-An important parameter of a bus is its **width**, the number of bits it can move in a single transfer. A bus with a width of one is called a *serial* bus: it transfers only one bit at at time. Older buses, like PCI, had widths of 32 or 64 bits. It turns out, however, that designing large parallel buses is hard, because synchronizing transfers on 32 or 64 different wires is difficult and electrical "crosstalk" between wires leads to errors. The trend, therefore, has been towards highly optimizied serial buses, like USB ("Universal Serial Bus") and PCI Express, that drive bits through a system at very high clock speeds with low error rates.
+An important parameter of a bus is its **width**, the number of bits it can move in a single transfer. A bus with a width of one is called a **serial bus**: it transfers only one bit at at time. Older buses, like PCI, had widths of 32 or 64 bits. It turns out, however, that designing large parallel buses is hard, because synchronizing transfers on 32 or 64 different wires is difficult and electrical "crosstalk" between wires leads to errors. The trend, therefore, has been towards highly optimizied serial buses, like USB ("Universal Serial Bus") and PCI Express, that drive bits through a system at very high clock speeds with low error rates.
+
+**Persistant Storage Devices**
+
+DRAM is volatile: it only stores information as long as the computer is powered. Computers also need non-volatile storage to persist information between power cycles. The most important persistant storage device is the **rotating magnetic hard disk**, followed by **solid-state drives (SSDs)**.
+
+A hard disk drive consists of one or more *platters*, each with two surfaces. Like a CD or an old-school vinyl record, each surface is divided into a large number of concentric *tracks*, each each track is divided into thousands of 512-byte *sectors*. Sectors are the basic unit of data storage on a hard disk.
+
+The platters are mounted to a central spindle that continuously spins at speeds of up to 15000 RPM while the drive is powered on.
+
+The surface of each platter is coated with a magnetically active material. Each platter surface has a *read/write head* that can rad the data in a sector by sensing its magnetic properties or write to a sector by changing its magnetic characteristics. Each head is attached to a motorized arm that can seek across the surface of the platter to reach different tracks. The combination of seeking and rotation allows the head to read and write any sector on the surface.
+
+Hard disks have excellent cost/bit characteristics: a commercial-grade 1 TB disk costs less than $100. The downside is that they are **slow**, with a typical access time of 10 ms.
+
+```
+A side view of a disk drive with two platters and four surfaces.
+
+Each surface has its own dedicated read/write head and arm.
+                
+----            |
+   |--------[]  |
+   |     ----------------  platter
+   |--------[]  |
+   |            |
+   |--------[]  |
+   |     ----------------  platter
+   |--------[]  |
+   |            |
+----         spindle
+```
+
+A solid-state drive is based on **flash memory**, a nonvolatile storage technology. Unlike disk, flash drives have no mechnical parts. The primary advantage of flash is its speed: an average read may take only 100 microseconds, 100 times faster than disk. It has three primary disadvantages:
+
+  1. Flash is still quite a bit more expensive that disk on a cost/bit basis.
+  
+  2. A flash cell can only be written when it's in a special "erased" state. Writing sometimes requires juggling data around the drive in order to free up a sufficiently large block of "erased" cells in the right place for a new write. For this reason, flash write performance is highly variable. In some cases, flash writes can be an order of magnitude *slower* than disk.
+  
+  3. Writing to a flash cell actually degrades the cell and, after a certain point, renders it unusable. All SSDs implement "wear-leveling" protocols to spread the effect of writes across the entire drive and keep any one block from decying too quickly. This is usually not an issue for home users, but it has implications for companies like Facebook that use SSDs in the their datacenters.
 
 
+### Coming Attractions
+
+This note has been a high-level overview of several key concepts in computer architecture. We'll revisit many of these ideas throughout the course, so you'll get to see them again from different angles.
+
+Now that we're familiar with the basics of computer organization, we'll dive into the issue data storage and representation, starting with the most basic units of information: bits and bytes.
 
 
 
