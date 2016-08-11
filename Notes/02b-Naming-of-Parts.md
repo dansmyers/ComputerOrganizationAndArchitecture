@@ -110,7 +110,15 @@ A multi-core system can execute multiple tasks in parallel, and share data acros
 
 ### Main Memory
 
-**Dynamic Random Access Memory (DRAM)**
+**Dynamic Random-Access Memory (DRAM)**
+
+The basic technology for main memories is **dynamic random-access memory (DRAM)**. The memory is "random-access" in the sense that it is possible to read data values in arbitrary order with no performance penalty. Other storage devices, like hard disks and tape drives, are not random-access and work best when large blocks of data are read sequentially.
+
+A DRAM module is organized as a two-dimensional grid of cells. Each cell uses a single capacitor and a transistor to store one bit. The charges in the capacitors steadily decay, so the data stored in the memory must be *refreshed* every few hundred milliseconds. For this reason, DRAM is **volatile** memory: any data it stores is lost when the computer loses power. **Non-volatile** storage, like flash drives and hard disks, persist data during power loss.
+
+The chief advantage of DRAM is its simplicity. The single capacitor-transistor circuit is compact, so billions of bits can be stored on a single chip, making DRAM very efficient from a cost/bit perspective.
+
+An alternative memory technology is **static random-access memory (SRAM)**. Each SRAM cell uses six transistors to store a single bit. SRAM is faster than DRAM and does not require refresh cycles, but the complexity of its circuit means that it cannot achieve the high densities and cost/bit efficiency of DRAM. SRAM is commonly used in CPU cache memories.
 
 **How Programs Use Memory**
 
