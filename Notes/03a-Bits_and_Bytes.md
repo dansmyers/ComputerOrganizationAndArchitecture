@@ -104,8 +104,8 @@ Here are all the powers of 2 from 0 to 20:
 2^20 = 1048576
 ```
 
-For back-of-the-envelope calculations, it's helpful to remember that 2^10 is a little bigger than 1000 and that 2^20 is a little 
-bigger than 1 million (slightly less than 5% larger, in fact). This pattern holds at higher values, although it becomes less accurate:
+For back-of-the-envelope calculations, it's helpful to remember that 2^10 is a little larger than 1000 and that 2^20 is a little 
+larger than 1 million (slightly less than 5% larger, in fact). This pattern holds at higher values, although it becomes less accurate:
 2^30 is about 7.5% larger than 1 billion and 2^40 is about 10% larger than 1 trillion.
 
 ### Bytes and Larger Units
