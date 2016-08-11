@@ -114,5 +114,48 @@ A multi-core system can execute multiple tasks in parallel, and share data acros
 
 **How Programs Use Memory**
 
+When a program runs, the memory available to it is, conceptually, a **big linear array of bytes**. This array is called the program's **address space**.
+
+Each byte in the address space has an index, beginning with index 0 and extending to some maximum index that depends on the total number of bytes. In an architecture with a 32-bit address space, each program has, conceptually, 2^32 total bytes of memory available and the maximum byte index is 2^32 - 1.
+
+The memory available to a program is divided into three regions:
+  1. The top of the address space stores the program's code and any static data it uses, like hardcoded strings.
+  
+  2. The second region is called the **heap** and stores dynamically allocated data items that are created and deleted as the program runs. In a Java program, this would include objects created with the `new` keyword. The heap grows downwards (toward higher memory addresses) as more dynamic data is allocated and shrinks upwards as items are deallocated.
+  
+  3. The third region is the **stack**, which stores local variables and keeps track of the program's history of function calls. Like the heap, the stack can grow and shrink as the program executes. We'll spend more time in the future discussing the stack's role in program execution.
+
+```
+A canonical 32-bit address space
+
+-----------------------------  Byte index 0
+|    Code and static data   |
+|                           |
+----------------------------- 
+|           Heap            |
+|  (dynamically-allocated)  |
+|                           |
+-----------------------------
+|             |             |
+|             |             | Heap grows and shrinks as data is dynamically allocated
+|             v             | and freed by the program (new in Java, malloc and free
+|                           | in C).
+|     Unallocated space     |         
+|                           |
+|             ^             | Stack grows and shrinks as the program calls and returns
+|             |             | from functions.
+|             |             |
+-----------------------------
+|           Stack           |
+|                           |
+|   (local variables and    |
+|  function call history)   |
+|                           |
+-----------------------------  Byte index 2^32 - 1
+
+
+
+
+
 
 ### Buses and I/O Devices
