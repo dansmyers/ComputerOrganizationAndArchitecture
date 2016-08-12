@@ -40,5 +40,3 @@ such a computer required taking apart its hardware and rebuilding it to implemen
 This approach clearly limited productivity, so computer designers quickly hit on a better solution: storing the program's instructions
 in memory where they can be read just like data. The **stored program concept** is the foundation of all modern computer 
 architectures.
-
-### Running Programs: the Fetch-Decode-Execute Cycle
