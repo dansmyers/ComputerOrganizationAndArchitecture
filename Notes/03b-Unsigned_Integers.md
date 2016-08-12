@@ -18,7 +18,7 @@ Our traditional decimal number system, where each digit corresponds to a power o
 
 Actually, lest I besmirch his memory, I should point out that Mr. Ledford was a great teacher, that I loved shop class, and that he lost his finger in an accident that had nothing to do with woodworking.
 
-There's no reason, however, to restrict ourselves to a base-10 number system. Computers use a **base-2 number system** also called the **binary system**. Each position in a binary number corresponds to a power of 2, and each digit can take one of two values, 0 or 1.
+There's no reason, however, to restrict ourselves to a base-10 number system. Computers use a **base-2 number system**, also called the **binary number system**. Each position in a binary number corresponds to a power of 2, and each digit can take one of two values, 0 or 1.
 
 For example, the unsigned binary number 10111 can be converted into a decimal number by adding up the appropriate powers of 2:
 
