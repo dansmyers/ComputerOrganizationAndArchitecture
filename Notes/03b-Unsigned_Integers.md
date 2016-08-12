@@ -16,7 +16,7 @@ Each digit of the number corresponds to a multiple of a power of 10:
 
 Our traditional decimal number system, where each digit corresponds to a power of 10, is called the **base-10 number system**. We could also call it a "positional number system with radix 10." Ten is a good base for a number system, because humans (with the exception of my high school shop teacher, Mr. Ledford) have ten fingers.
 
-Actually, lest I besmirch his memory, I should point out that Mr. Ledford was a great teacher, that I loved shop class, and that he lost his finger in an accident that nothing to do with woodworking.
+Actually, lest I besmirch his memory, I should point out that Mr. Ledford was a great teacher, that I loved shop class, and that he lost his finger in an accident that had nothing to do with woodworking.
 
 There's no reason, however, to restrict ourselves to a base-10 number system. Computers use a **base-2 number system** also called the **binary system**. Each position in a binary number corresponds to a power of 2, and each digit can take one of two values, 0 or 1.
 
