@@ -13,7 +13,7 @@ You will need to purchase the following items:
   
   -  A micro SD card with at least 16 GB of space (less than $15)
 
-All of these items are available from Amazon or other online retailers. AdaFruit and the PiHut are speciality vendors that focus specifically on the Raspberry Pi.
+All of these items are available from Amazon or other online retailers. AdaFruit and the PiHut are vendors that focus specifically on the Raspberry Pi.
 
 Make sure you purchase the Model 3B! There are still old Model 2's around as well as the Model 0, which is intended for lower-cost embedded projects. Neither of those will work for this course.
 
