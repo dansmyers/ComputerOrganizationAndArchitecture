@@ -21,7 +21,7 @@ Make sure you purchase the Model 3B! There are still old Model 2's around as wel
 
 If you search for Raspberry Pi SD cards, you will come across references to cards that come "pre-loaded with NOOBS." NOOBS ("New Out-of-the-Box System") is a program that can boot your Pi and install the Raspbian OS with minimal effort on your part. This is great, but you need an HDMI monitor or TV and a USB keyboard to interact with NOOBS and perform the setup. We don't have that many monitors, so we can't use it to perform the initial OS install in class. Therefore, you **don't** need to purchase an SD card with NOOBS.
 
-I will collect everyone's blank SD cards and format them to install the Raspbian OS. We'll then be able to boot all the Pis directly to Raspbian in class without connecting to a monitor.
+I will collect everyone's blank SD cards and format them to install Raspbian. We'll then be able to boot all the Pis directly to Raspbian in class without connecting to a monitor.
 
 **Kits**
 
