@@ -25,11 +25,11 @@ I will collect everyone's blank SD cards and format them to install Raspbian. We
 
 **Kits**
 
-You can purchase kits that include the Raspberry Pi, power supply, SD card, a case, and a few other peripherals for about $70. I did not have good luck with the kits sold by Canakit and I don't recommend them&mdash;among other issues, the SD card was not properly formatted. If you choose to purchase a kit, read the reviews before committing.
+You can purchase kits that include the Raspberry Pi, power supply, SD card, a case, and a few other peripherals for about $70. I did not have good luck with the kits sold by Canakit and I don't recommend them&mdash;among other issues, the Pi didn't fit in the case. If you choose to purchase a kit, read the reviews before committing.
 
 **Sensors**
 
-We will do a little Internet of Things work at the end of the course, using the Raspberry Pi to create a small platform that can create and share data on its environment. This project may require you to purchase a few additional inexpensive sensor components.
+We will do a little Internet of Things work at the end of the course, using the Raspberry Pi to create a small platform that can collect and share data on its environment. This project may require you to purchase a few additional inexpensive sensor components.
 
 ### Things You Might Want to Buy
 
