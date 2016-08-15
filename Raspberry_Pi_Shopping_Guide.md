@@ -1,9 +1,9 @@
-### Raspberry Pi Shopping Guide
+# Raspberry Pi Shopping Guide
 
-# About the Raspberry Pi
+### About the Raspberry Pi
 
 
-# Things You Have to Buy
+### Things You Have to Buy
 
 You will need to purchase the following items:
 
@@ -31,7 +31,7 @@ You can purchase kits that include the Raspberry Pi, power supply, SD card, a ca
 
 We will do a little Internet of Things work at the end of the course, using the Raspberry Pi to create a small platform that can create and share data on its environment. This project may require you to purchase a few additional inexpensive sensor components.
 
-# Things You Might Want to Buy
+### Things You Might Want to Buy
 
   - An additional ethernet cable to connect your Pi to a laptop or desktop when you aren't in the computer lab
   
@@ -41,9 +41,9 @@ We will do a little Internet of Things work at the end of the course, using the 
   
   - A toolbox, shoebox, or other container to store all your equipment
 
-# Connecting to the Raspberry Pi
+### Connecting to the Raspberry Pi
 
-During class, we'll use the Mac desktops in room 310 for our labs. Each desktop has an ethernet cable that we'll connect to the Pi's ethernet port. This creates a local network connection between the Pi and the Mac and you'll be able to log in to the Pi from the Mac's terminal application. We'll set up a Wi-fi connection to FoxNet in our first lab, so you'll be able to access the Internet from the Pi or log into it over the wireless network.
+During class, we'll use the Mac desktops in room 310 for our labs. Each desktop has an ethernet cable that we'll connect to the Pi's ethernet port: this creates a local network connection between the Pi and the Mac and you'll be able to log in to the Pi from the Mac's terminal application. We'll set up a Wi-fi connection to FoxNet in our first lab, so you'll also be able to access the Internet from the Pi and log into it over the wireless network.
 
 If you want to work with your Pi outside of the computer lab, you have a few options. Read the list below and think about which setup will work best for you.
 
