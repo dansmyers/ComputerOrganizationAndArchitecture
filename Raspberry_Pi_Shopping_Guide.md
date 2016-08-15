@@ -37,7 +37,7 @@ We will do a little Internet of Things work at the end of the course, using the 
   
   - An adaptor to connect an ethernet cable to your laptop if it doesn't have a dedicated ethernet port
   
-  - USB keyboard, mouse, and HDMI cable to use your Pi with an exterminal monitor or TV
+  - USB keyboard, mouse, and an HDMI cable if you want to use your Pi with an exterminal monitor or TV
   
   - A case
   
