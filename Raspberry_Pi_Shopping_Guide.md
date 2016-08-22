@@ -6,6 +6,7 @@ The Raspberry Pi is a low-cost, yet full-featured, credit card-sized computer de
 
 The heart of the Raspberry Pi is a system-on-a-chip (SoC), manufactured by Broadcom. The SoC integrates an ARM processor, GPU, and memory. ARM is the most popular archtecture for embedded and mobile systems. Working with the Pi will give you insight into how a large and important class of computer systems are designed and programmed.
 
+The standard OS for the Pi is Raspbian Linux, a variant of Debian, one of the most popular Linux distributions. The Pi uses a micro SD card for persistant storage of the OS and your files.
 
 ### Things You Have to Buy
 
