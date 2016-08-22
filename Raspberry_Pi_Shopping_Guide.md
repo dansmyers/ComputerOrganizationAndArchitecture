@@ -2,6 +2,10 @@
 
 ### About the Raspberry Pi
 
+The Raspberry Pi is a low-cost, yet full-featured, credit card-sized computer designed by the Raspberry Pi Foundation, based in Cambridge, UK. It was originally designed to support computer science education, but has become popular with makers and engineers for its relatively low price and ease of use.
+
+The heart of the Raspberry Pi is a system-on-a-chip (SoC), manufactured by Broadcom. The SoC integrates an ARM processor, GPU, and memory. ARM is the most popular archtecture for embedded and mobile systems. Working with the Pi will give you insight into how a large and important class of computer systems are designed and programmed.
+
 
 ### Things You Have to Buy
 
