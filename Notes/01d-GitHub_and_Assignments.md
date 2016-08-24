@@ -18,9 +18,9 @@ First, sign up for a GitHub account, if you haven't already done so. I'll wait r
 
 Welcome back.
 
-I've created a GitHub organizational account for our course named `rollinscms230`. GitHub gives me the ability to create assignments on the rollinscms230 account. When I create an assignment, GitHub automatically generates a link that I will send to you. When you click on that link, GitHub will create a new repo under `rollinscms230` to hold your assignment files.
+I've created a GitHub organizational account for our course named `rollinscms230`. When I create an assignment on this account, GitHub automatically generates a link that I will send to you. Click on that link and GitHub will create a new repo under `rollinscms230` to hold your assignment files.
 
-For example, suppose I've created an assignment named `project1`. Clicking on the link will create a new repo named `rollinscms230/project1-dansmyers`. I can visit the repo by going to 
+For example, suppose I've created an assignment named `project1`. Clicking on the link will create a new repo tied to my GitHub username, `rollinscms230/project1-dansmyers`. I can visit the repo in my web browser at
 
 ```
 http://github.com/rollinscms230/project1-dansmyers
