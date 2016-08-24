@@ -62,7 +62,9 @@ Suppose that you've made a new file called `problem1.c` and you're ready to push
 
 First, you must keep in mind that the two repos are independent of each other. Changes in one are **not** automatically tracked by the other. Any time you **create or change** a file on Cloud9, you must manually push those changes back to GitHub.
 
-The basic plan has two main steps. First, you'll **commit** the changes you've made to the local Cloud9 repo. Second, you'll **push** the changes you've made in the local repo to the GitHub repo.
+This process has two steps. First, you'll **commit** the changes you've made to the local Cloud9 repo. Second, you'll **push** the changes you've made in the local repo to the GitHub repo.
+
+**Don't Fear Commitment**
 
 To commit a file to the repo, you first **stage** it with the **add** command:
 
@@ -88,7 +90,11 @@ This will produce output similar to
  create mode 100644 problem1.c
  ```
  
- The file has now been added to the local repo. To push it to the remote GitHub repo, use
+ The file has now been added to the local repo. 
+ 
+ **<TBD: Pun About Pushing>**
+ 
+ To push it to the remote GitHub repo, use
  
  ```
  prompt$ git push origin master
