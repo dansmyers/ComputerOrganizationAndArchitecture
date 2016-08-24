@@ -64,7 +64,8 @@ First, you must keep in mind that the two repos are independent of each other. C
 
 This process has two steps. First, you'll **commit** the changes you've made to the local Cloud9 repo. Second, you'll **push** the changes you've made in the local repo to the GitHub repo.
 
-**Don't Fear Commitment**
+
+**Commitment**
 
 To commit a file to the repo, you first **stage** it with the **add** command:
 
@@ -92,8 +93,8 @@ This will produce output similar to
  
  The file has now been added to the local repo. 
  
- **<TBD: Pun About Pushing>**
- 
+**Push**
+
  To push it to the remote GitHub repo, use
  
  ```
