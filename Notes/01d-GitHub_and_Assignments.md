@@ -6,7 +6,7 @@ Git is a **version control system** designed to manage source code for large dis
 
 Every large software project uses version control to track changes to its codebase. A modern VCS will track changes to files, allow for rollback to earlier working versions of the project, and control who is allowed to add and modify the project's files.
 
-The basic organizational unit of Git is the **repository**. A single repo stores the files for a single project.
+The basic organizational unit of Git is the **repository**, or **repo**. A single repo stores the files for a single project.
 
 Git uses a **distributed** approach to source control, where multiple peers may each have their own indpendent copy of the repository, similar to peer-to-peer filesharing services like BitTorrent. For example, you may have a repository of your project stored in your Cloud9 workspace and a repository on GitHub. As you edit your project files on Cloud9, you can **push** changes from that repo into the GitHub repo.
 
