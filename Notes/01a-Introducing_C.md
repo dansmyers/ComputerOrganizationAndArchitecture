@@ -137,7 +137,8 @@ int isEven(int n) {
 }
 
 int main() {
-  for (int i = 0; i < 10; i++) {
+  int i;
+  for (i = 0; i < 10; i++) {
     if (isEven(i)) {
       printf("%d is even.\n", i);
     }
