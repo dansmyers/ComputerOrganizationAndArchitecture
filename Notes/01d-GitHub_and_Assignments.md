@@ -73,7 +73,7 @@ To commit a file to the repo, you first **stage** it with the **add** command:
 prompt$ git add problem1.c
 ```
 
-This indicates to Git that you intend to add `problem1.c` to the local repo on the next commit action. If you have more files that you've created or changed, add them in a similar way&mdash;you commit multiple files in one action.
+This indicates to Git that you intend to add `problem1.c` to the local repo on the next commit action. If you have more files that you've created or changed, add them in a similar way&mdash;you can commit multiple files in one action.
 
 Once the file has been added to the staging area, you can commit to the local repo with
 
