@@ -54,11 +54,11 @@ Unpacking objects: 100% (9/9), done.
 Checking connectivity... done.
 ```
 
-The result will be a new directory named `project1-dansmyers` that contains all of the files in the initial repo. You can `cd` into this directory and begin working on your project.
+The result will be a new directory named `project1-dansmyers` that contains all of the files in the initial repo. `cd` into this directory and begin working on your project.
 
 ### Pushing Changes
 
-Suppose that you've made a new file called `problem1.c1` and you're ready to push it from the local Cloud9 repo to the GitHub repo.
+Suppose that you've made a new file called `problem1.c` and you're ready to push it from the local Cloud9 repo to the GitHub repo.
 
 First, you must keep in mind that the two repos are independent of each other. Changes in one are **not** automatically tracked by the other. Any time you **create or change** a file on Cloud9, you must manually push those changes back to GitHub.
 
