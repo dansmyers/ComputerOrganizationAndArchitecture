@@ -95,13 +95,13 @@ This will produce output similar to
  
 **Push**
 
- To push it to the remote GitHub repo, use
+ To push to the remote GitHub repo, use
  
  ```
  prompt$ git push origin master
  ```
  
-For murky reasons, the local copy of the repository (the source of the pushed files) is referred to as `master` and the remote location (the target of the push operation) is `origin`. The command specifies that any changes to `master` should be pushed to `origin` to bring them into sync.
+For murky reasons, the local copy of the repository (the source of the pushed files) is referred to as `master` and the remote location (the target of the push operation) is `origin`. The command specifies that any changes that have been committed to `master` should be pushed to `origin` to bring them into sync.
 
 You'll be prompted again for your GitHub credentials, then see some output like this:
 
