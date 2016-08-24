@@ -113,7 +113,7 @@ To https://github.com/rollinscms230/project1-dansmyers
 
 Refreshing the GitHub repo at `http://github.com/rollinscms230/project1-dansmyers` shows that `problem1.c` has now appeared.
 
-One techinlca point: the push operation is automatically configured to refer to the GitHub-based repo that we cloned with our first command. If we had not started by cloning a remote repo, or if we wanted to push to a different repo, we'd need to use additional commands to configure the target of the push.
+One technical point: the push operation is automatically configured to refer to the GitHub-based repo that we cloned with our first command. If we had not started by cloning a remote repo, or if we wanted to push to a different repo, we'd need to use additional commands to configure the target of the push.
 
 ### Git With It
 
