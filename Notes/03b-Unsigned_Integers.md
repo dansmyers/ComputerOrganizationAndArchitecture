@@ -122,18 +122,18 @@ Suppose you want to convert 74 into binary.
     
 Here's another example: 41.
 
-  1. The largest power of 2 smaller than 41 is 32.
+    - The largest power of 2 smaller than 41 is 32.
     
-  2. 41 - 32 = 9
+    - 41 - 32 = 9
     
-  3. The largest power of 2 smaller than 9 is 8.
+    - The largest power of 2 smaller than 9 is 8.
     
-  4. 9 - 8 = 1
+    - 9 - 8 = 1
     
-  5. 1 is 2^0 and we're done.
+    - 1 is 2^0 and we're done.
     
-  6. Write down the sum: 41 = 32 + 8 + 1.
+    - Write down the sum: 41 = 32 + 8 + 1.
     
-  7. Convert to a binary number: 101001
+    - Convert to a binary number: 101001
     
 ### Hex and Octal
