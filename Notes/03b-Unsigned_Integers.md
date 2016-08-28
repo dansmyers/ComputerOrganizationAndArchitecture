@@ -36,7 +36,7 @@ Answer: 0 to 2^N - 1, because an N-bit sequence can represent 2^N distinct value
 
 **Distinguishing Between Decimal and Binary**
 
-Suppose you see a number like 1011&mdash;is it decimal one-thousand-and-eleven, or binary eleven? The difference will often be clear just from the context, but if it isn't, it's conventional to append a little subscript to identify the base of the number.
+Consider the number 1011. Is it decimal one-thousand-and-eleven, or binary eleven? The correct value will often be clear from the context, but if it isn't, it's conventional to append a little subscript to identify the base of the number.
 
 ```
 1011_2 --> binary number with a 2 subscript
@@ -63,6 +63,43 @@ The rest of the table is left as an exercise...
 
 ### Binary Arithmetic
 
+Add binary numbers the same way you add decimal numbers, with the slight complication that sums bigger than 1 require the carry of a 1 to the next column:
+
+```
+          1 <---- carrry
+  1        1
++ 0     +  1
+----    ------
+  1       10
+```
+
+Here's the example of adding `0111` (decimal 7) and `0011` (decimal 3):
+
+```
+  111  <---- carries
+  0111
++   11
+-------
+  1010
+```
+
+The algorithm fom binary multiplication is the same as decimal multiplication. Here's the example of multiplying `100` (decimal 4) by `101` (decimal 5):
+
+```
+    100
+  x 101
+  ------
+    100
+   000
++ 100
+---------
+  10100
+```
+
+Think about how to perform binary subtraction and division.
+
 ### Converting Decimal to Binary
+
+
 
 ### Hex and Octal
