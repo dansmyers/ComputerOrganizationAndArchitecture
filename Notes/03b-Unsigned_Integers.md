@@ -83,7 +83,7 @@ Here's the example of adding `0111` (decimal 7) and `0011` (decimal 3):
   1010
 ```
 
-The algorithm fom binary multiplication is the same as decimal multiplication. Here's the example of multiplying `100` (decimal 4) by `101` (decimal 5):
+The binary multiplication algorithm is the same as the one for decimal multiplication. Here's the example of multiplying `100` (decimal 4) by `101` (decimal 5):
 
 ```
     100
@@ -100,6 +100,40 @@ Think about how to perform binary subtraction and division.
 
 ### Converting Decimal to Binary
 
+Converting binary to decimal is easy: just add up the relevant powers of 2, as in the examples above. Converting a decimal number into binary is slightly trickier.
 
+Suppose you want to convert 74 into binary. 
 
+    1. Start by finding the largest power of 2 that is **less than or equal to** 74: 64.
+    
+    2. Take the difference: 74 - 64 = 10.
+    
+    3. Repeat, finding the largest power of 2 that's less than or equal to 10: 8.
+    
+    4. Take the difference again: 10 - 8 = 2.
+    
+    5. Repeat again: the largest remaining power of 2 is 2 itself.
+    
+    6. Take the difference: 2 - 2 = 0
+    
+    7. Write down 74 as a sum of powers of 2: 74 = 64 + 8 + 2
+    
+    8. Convert the sum into a binary number with 1's at the places corresponding to the powers of 2 in the sum: 1001010
+    
+Here's another example: 41.
+
+    1. The largest power of 2 smaller than 41 is 32.
+    
+    2. 41 - 32 = 9
+    
+    3. The largest power of 2 smaller than 9 is 8.
+    
+    4. 9 - 8 = 1
+    
+    5. 1 is 2^0, so we're done.
+    
+    6. Write down the sum: 41 = 32 + 8 + 1.
+    
+    7. Convert to a binary number: 101001
+    
 ### Hex and Octal
