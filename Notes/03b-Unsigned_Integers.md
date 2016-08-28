@@ -104,36 +104,36 @@ Converting binary to decimal is easy: just add up the relevant powers of 2, as i
 
 Suppose you want to convert 74 into binary. 
 
-    1. Start by finding the largest power of 2 that is **less than or equal to** 74: 64.
+  1. Start by finding the largest power of 2 that is **less than or equal to** 74: 64.
     
-    2. Take the difference: 74 - 64 = 10.
+  2. Take the difference: 74 - 64 = 10.
     
-    3. Repeat, finding the largest power of 2 that's less than or equal to 10: 8.
+  3. Repeat, finding the largest power of 2 that's less than or equal to 10: 8.
     
-    4. Take the difference again: 10 - 8 = 2.
+  4. Take the difference again: 10 - 8 = 2.
     
-    5. Repeat again: the largest remaining power of 2 is 2 itself.
+  5. Repeat again: the largest remaining power of 2 is 2 itself.
     
-    6. Take the difference: 2 - 2 = 0
+  6. Take the difference: 2 - 2 = 0
     
-    7. Write down 74 as a sum of powers of 2: 74 = 64 + 8 + 2
+  7. Write down 74 as a sum of powers of 2: 74 = 64 + 8 + 2
     
-    8. Convert the sum into a binary number with 1's at the places corresponding to the powers of 2 in the sum: 1001010
+  8. Convert the sum into a binary number with 1's at the places corresponding to the powers of 2 in the sum: 1001010
     
 Here's another example: 41.
 
-    1. The largest power of 2 smaller than 41 is 32.
+  1. The largest power of 2 smaller than 41 is 32.
     
-    2. 41 - 32 = 9
+  2. 41 - 32 = 9
     
-    3. The largest power of 2 smaller than 9 is 8.
+  3. The largest power of 2 smaller than 9 is 8.
     
-    4. 9 - 8 = 1
+  4. 9 - 8 = 1
     
-    5. 1 is 2^0, so we're done.
+  5. 1 is 2^0 and we're done.
     
-    6. Write down the sum: 41 = 32 + 8 + 1.
+  6. Write down the sum: 41 = 32 + 8 + 1.
     
-    7. Convert to a binary number: 101001
+  7. Convert to a binary number: 101001
     
 ### Hex and Octal
