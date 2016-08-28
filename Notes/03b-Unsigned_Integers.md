@@ -102,7 +102,7 @@ Think about how to perform binary subtraction and division.
 
 Converting binary to decimal is easy: just add up the relevant powers of 2, as in the examples above. Converting a decimal number into binary is slightly trickier.
 
-Suppose you want to convert 74 into binary. 
+Suppose you want to convert 74 into binary.
   - Start by finding the largest power of 2 that is **less than or equal to** 74: 64.
   
   - Take the difference: 74 - 64 = 10.
@@ -113,11 +113,11 @@ Suppose you want to convert 74 into binary.
   
   - Repeat again: the largest remaining power of 2 is 2 itself.
   
-  - Take the difference: 2 - 2 = 0
+  - Take the difference: 2 - 2 = 0.
   
-  - Write down 74 as a sum of powers of 2: 74 = 64 + 8 + 2
+  - Write down 74 as a sum of powers of 2: 74 = 64 + 8 + 2.
   
-  - Convert the sum into a binary number with 1's at the places corresponding to the powers of 2 in the sum: 1001010
+  - Convert the sum into a binary number with 1's at the places corresponding to the powers of 2 in the sum: `1001010`.
     
 Here's another example: 41.
 
@@ -127,12 +127,12 @@ Here's another example: 41.
   
   - The largest power of 2 smaller than 9 is 8.
   
-  - 9 - 8 = 1
+  - 9 - 8 = 1.
   
   - 1 is 2^0 and we're done.
   
   - Write down the sum: 41 = 32 + 8 + 1.
   
-  - Convert to a binary number: 101001
+  - Convert to a binary number: `101001`.
     
 ### Hex and Octal
