@@ -95,7 +95,7 @@ For one thing, it amounted to a public disclosure (in the legal sense) of the ED
 plans to patent its design. For another, many of the concepts in the report were developed by the entire EDVAC team and, depending on
 who you ask, predated von Neumann's involvement in the project. However, because he was the sole author of the report (and a famous
 mathematician), von Neumann got all of the public credit for the ideas it contained. There's a lesson here for would-be graduate
-students&mdash;get your name on the paper!
+students: get your name on the paper!
 
 Today, almost all computers are based on the designs described in the *First Draft*. With apologies to Mauchley, Eckhert, and the
 rest of their team, any computer that uses a single memory to store both program instructions and data is said to have a 
