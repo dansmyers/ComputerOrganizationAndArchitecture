@@ -145,9 +145,9 @@ An important parameter of a bus is its **width**, the number of bits it can move
 
 DRAM is volatile: it only stores information as long as the computer is powered. Computers also need non-volatile storage to persist information between power cycles. The most important persistant storage device is the **rotating magnetic hard disk**, followed by **solid-state drives (SSDs)**.
 
-A hard disk drive consists of one or more *platters*, each with two surfaces. Like a CD or an old-school vinyl record, each surface is divided into a large number of concentric *tracks*, each each track is divided into thousands of 512-byte *sectors*. Sectors are the basic unit of data storage on a hard disk.
+A hard disk drive consists of one or more *platters*, each with two surfaces. Like a CD, each surface is divided into a large number of concentric *tracks*, each each track is divided into thousands of 512-byte *sectors*. Sectors are the basic unit of data storage on a hard disk.
 
-The platters are mounted to a central spindle that continuously spins at speeds of up to 15000 RPM while the drive is powered on.
+The platters are mounted to a central spindle that continuously spins at up to 15000 RPM while the drive is powered on.
 
 The surface of each platter is coated with a magnetically active material. Each platter surface has a *read/write head* that can rad the data in a sector by sensing its magnetic properties or write to a sector by changing its magnetic characteristics. Each head is attached to a motorized arm that can seek across the surface of the platter to reach different tracks. The combination of seeking and rotation allows the head to read and write any sector on the surface.
 
