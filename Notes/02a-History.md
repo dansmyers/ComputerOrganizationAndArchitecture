@@ -60,7 +60,7 @@ pushed her daughter to study science and mathematics instead.
 
 The German enginer Konrad Zuse invented a series of calculating machines using electromechnical relays&mdash;switches that are activated by
 electrical signals. Zuse began building his first machine, the Z1, in his parents' living room. His last War-era machine, the Z3, was 
-the first binary and programmable computer. It lacked conditional branching, however, so it was not practially capable of true 
+the first binary and programmable computer. It lacked conditional branching, however, so it was not practically capable of true 
 general-purpose computation. 
 
 The German government did not grasp the potential of the computer and gave Zuse only limited support, denying him funds to build a 
