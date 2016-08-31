@@ -49,7 +49,7 @@ When we speak of "computer architecture," we're usually referring to the design 
   - How are those instructions implemented as physical hardware?
   - What performance-enhancing features does it support?
 
-Modern CPUs are among the most complex system ever devised by humans. From a programmer's perspective, however, the CPU can be thought of as a collection of a few key elements:
+Modern CPUs are among the most complex systems ever devised by humans. From a programmer's perspective, however, the CPU can be thought of as a collection of a few key elements:
 
   - An **arithmetic-logic unit (ALU)** that performs calculations and comparisons. This is the modern version of von Neumann's central arithmetical organ.
   
