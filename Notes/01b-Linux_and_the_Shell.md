@@ -1,6 +1,6 @@
 # Linux and the Terminal Environment
 
-### The Terminal and the Shell
+## The Terminal and the Shell
 
 If all of your previous experience has been on Windows or Mac OS, a Linux system may feel odd at first.
 
@@ -30,7 +30,7 @@ prompt$
 
 when I need to indicate a command prompt. The commands you type will appear to the right of the `$`.
 
-### Paths and Directories
+## Paths and Directories
 
 The Linux file system is organized as a tree. The top level directory is called the *root directory* and is denoted by `/`.
 
@@ -77,7 +77,7 @@ common executable programs.
 If you're using Cloud9, your username will always be `ubuntu` and the default location for your files will be 
 `/home/ubuntu/workspace`.
 
-### Moving Around and Creating Directories
+## Moving Around and Creating Directories
 
 The shell program recognizes one *working directory* at any given time. This is the directory that you are currently "in" and all of 
 your commands will be executed with respect to it.
@@ -130,7 +130,7 @@ hw1.c
 prompt$
 ```
 
-### Command-Line Arguments
+## Command-Line Arguments
 
 Most commands can take arguments that control their behavior.
 
@@ -175,7 +175,7 @@ prompt$ pwd
 prompt$
 ```
 
-### Removing Files
+## Removing Files
 
 Use the `rm` command to remove files.
 
@@ -200,7 +200,7 @@ prompt$ rmdir Example1
 prompt$ rm -f Example2
 ```
 
-### In the Future
+## In the Future
 
 You will get plenty of practice working with the shell throughout this course. Refer back to this note for a refresher while 
 you're working on the first assignment.
