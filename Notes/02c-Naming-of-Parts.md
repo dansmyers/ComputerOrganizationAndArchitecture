@@ -39,7 +39,7 @@
 ------------------------- 
 ```
 
-### The Central Processing Unit (CPU)
+## The Central Processing Unit (CPU)
 
 The CPU is the driver of all the activity in a computer system. It interprets instructions, performs calculations, and supervises 
 interaction with memory and I/O devices.
@@ -69,7 +69,7 @@ Each **core** of the CPU is an independent computational unit, having its own AL
 
 A multi-core system can execute multiple tasks in parallel, and share data across its cores through main memory. It's challenging, however, to keep multiple threads of a program synchronized across multiple cores. The Raspberry Pi 3's CPU has four cores.
 
-### Main Memory
+## Main Memory
 
 **Dynamic Random-Access Memory (DRAM)**
 
@@ -133,7 +133,7 @@ Virtual memory is complex, but it allows every program to execute without worryi
 
 We'll study VM in detail in CMS 330 when we discuss operating systems. For now, you may assume that every program runs with a private address space like the one in the diagram.
 
-### Buses and I/O Devices
+## Buses and I/O Devices
 
 **Another One Rides the Bus**
 
@@ -183,7 +183,7 @@ A solid-state drive is based on **flash memory**, a nonvolatile storage technolo
   3. Writing to a flash cell actually degrades the cell and, after a certain point, renders it unusable. All SSDs implement "wear-leveling" protocols to spread the effect of writes across the entire drive and keep any one block from decying too quickly. This is usually not an issue for home users, but it has implications for companies like Facebook that use SSDs in the their datacenters.
 
 
-### Coming Attractions
+## Coming Attractions
 
 This note has been a high-level overview of several key concepts in computer architecture. We'll revisit many of these ideas throughout the course, so you'll get to see them again from different angles.
 
