@@ -1,6 +1,6 @@
 # History
 
-### Pre-20th Century
+## Pre-20th Century
 
 **Early Calculating Machines**
 
@@ -54,7 +54,7 @@ Byron fathered multiple illegitimate children during his life and carried on num
 allegedly, one with his half-sister (tempestuous!). Her experience with Byron soured Lady Ada's mother on literary pursuits, and she
 pushed her daughter to study science and mathematics instead.
 
-### Early Electronic Computers
+## Early Electronic Computers
 
 **World War II**
 
@@ -101,7 +101,7 @@ Today, almost all computers are based on the designs described in the *First Dra
 rest of their team, any computer that uses a single memory to store both program instructions and data is said to have a 
 **von Neumann architecture**.
 
-### Next Time
+## Next Time
 
 In the next note, we'll take a closer look at the "von Neumann" architecture and talk about the key hardware components of every
 computer.
