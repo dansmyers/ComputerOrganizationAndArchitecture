@@ -1,6 +1,6 @@
 # Unsigned Integers
 
-### Binary Numbers
+## Binary Numbers
 
 Think about a number, any number. I like 4326. You can represent this number as a sum:
 
@@ -61,7 +61,7 @@ The rest of the table is left as an exercise...
 ```
 
 
-### Binary Arithmetic
+## Binary Arithmetic
 
 Add binary numbers the same way you add decimal numbers, with the slight complication that sums bigger than 1 require the carry of a 1 to the next column:
 
@@ -98,7 +98,7 @@ The binary multiplication algorithm is the same as the one for decimal multiplic
 
 Think about how to perform binary subtraction and division.
 
-### Converting Decimal to Binary
+## Converting Decimal to Binary
 
 Converting binary to decimal is easy: just add up the relevant powers of 2, as in the examples above. Converting a decimal number into binary is slightly trickier.
 
@@ -135,7 +135,7 @@ Here's another example: 41.
   
   - Convert to a binary number: `101001`.
     
-### Hex
+## Hex
 
 It's possible to use bases other than 10 and 2. In particular, the base-16, or **hexadecimal** number system is frequently used to represent longer bit strings.
 
