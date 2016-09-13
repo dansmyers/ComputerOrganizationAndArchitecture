@@ -1,6 +1,6 @@
 # Bits and Bytes
 
-### Transistors
+## Transistors
 
 A computer is an *electronic programmable calculating machine*. At a base level, any operation a computer can perform is executed by
 electrical signals passing through circuits that implement logical operations. These circuits are built from *transistors*.
@@ -35,7 +35,7 @@ We won't actually study the design of digital logic circuits in the course &mdas
 Applied Discrete Mathematics. For now, we'll just accept (using our powers of abstraction) that we have the capability to create the 
 basic physical hardware of a computer.
 
-### Bits
+## Bits
 
 We can recognize two basic states in any digital logic circuit:
   
@@ -108,7 +108,7 @@ For back-of-the-envelope calculations, it's helpful to remember that 2^10 is a l
 larger than 1 million (slightly less than 5% larger, in fact). This pattern holds at higher values, although it becomes less accurate:
 2^30 is about 7.5% larger than 1 billion and 2^40 is about 10% larger than 1 trillion.
 
-### Bytes and Larger Units
+## Bytes and Larger Units
 
 Everything may be bits, but it's inconvenient to work with individual 0/1 values. Therefore, CPUs always access and manipulate larger 
 groups of bits.
@@ -174,7 +174,7 @@ complications in working with bits and bytes that you need to be aware of.
   held neither 1.44 * 2^20 bytes nor 1.44 million bytes. Their actual storage capacity was 1.44 thousand KB, that is, 1440 * 2^10
   bytes. You could also call it 1.44 kilokibibytes if you prefer that, you rascal.
   
-### May I Have a Word?
+## May I Have a Word?
 
 If you've played old videogames, you've probably come across references to the "8-bit era" or "16-bit era" of gaming. When
 downloading programs for your computer, you may sometimes have a choice of "32-bit" or "64-bit" versions.
@@ -189,7 +189,7 @@ These "bits" refer to the systems's **word size**: its basic unit of access. Wor
 The "8-bit" videogame consoles, like the original Nintendo Entertainment System, used a processor designed to store and manipulate
 data in 8-bit units. Most modern PC systems are 64-bit.
 
-### Next
+## Next
 
 Now that we've discussed the basics of data sizing, we'll start looking at how different data types are encoded as sequences of bits.
 Up first: unsigned integers.
