@@ -1,6 +1,6 @@
 # Compiling and Running Programs
 
-### An Example Program
+## An Example Program
 
 Here's an example program that calculates the area of a circle. Let's suppose you've written this program in a text
 editor and saved it as `area.c`.
@@ -23,7 +23,7 @@ int main() {
 }
 ```
 
-### Compiling with GCC
+## Compiling with GCC
 
 `area.c` is a source code file, but C source code means nothing to the CPU: it's just text. In order to run the program, we need to 
 *compile* `area.c` into a low-level machine language program.
@@ -75,7 +75,7 @@ area(5.000000) = 78.539750
 
 Make sure to put the executable name right after the `-o` flag. Running `gcc -o area.c area` gives an error.
 
-### Errors and Warnings
+## Errors and Warnings
 
 I recommend compiling your programs with the `-Wall` flag, which gives more useful warnings about potential problems in your code.
 
@@ -116,7 +116,7 @@ depends on what standard your compiler has been set to follow. GCC has loads of 
 portability.
 
 
-### Makefiles
+## Makefiles
 
 Serious programmers (of which you are one) don't build projects manually. A large application, after all, might be built from hundreds
 of source files, each with its own set of headers, libraries, and dependencies.
@@ -164,7 +164,7 @@ Please include a `clean` target in any Makefile you create.
 
 `make` is fairly intelligent and only compiles source files that have changed since the last time you built the project.
 
-### Fancier Makefiles
+## Fancier Makefiles
 
 A Makefile rule may have *dependencies* on other rules. `make` resolves the dependencies before running the rule. The general format lists dependencies on the same line as the rule name, after the colon.
 
@@ -230,7 +230,7 @@ and a `.c` extension.
 `$@` and `$<` are a bit of Makefile magic: `$@` specifies the string to the left of the colon and `$<` is the first name to the right 
 of the colon. Therefore, `$@` specifies the name of the executable and `$<` is the source file.
 
-### Not Appearing in This Note
+## Not Appearing in This Note
 
 There are a couple of important topics we haven't discussed:
 
