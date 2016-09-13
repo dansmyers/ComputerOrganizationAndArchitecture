@@ -204,7 +204,3 @@ Decimal    Binary    Oct
 6          110       6
 7          111       7
 ```
-
-### Coming Next
-
-*Signed* integers and two's-complement representation.
