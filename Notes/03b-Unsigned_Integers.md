@@ -135,5 +135,76 @@ Here's another example: 41.
   
   - Convert to a binary number: `101001`.
     
-### Hex and Octal
+### Hex
 
+It's possible to use bases other than 10 and 2. In particular, the base-16, or **hexadecimal** number system is frequently used to represent longer bit strings.
+
+Hex numbers use 16 digits, 0-9 and A-F to represent values from 0 to 15. **Each hex digit is equivalent to a four-bit unsigned binary number**.
+
+```
+Decimal    Binary    Hex
+-------    ------    ---
+0          0000      0
+1          0001      1
+2          0010      2
+3          0011      3
+4          0100      4
+5          0101      5
+6          0110      6
+7          0111      7
+8          1000      8
+9          1001      9
+10         1010      A
+11         1011      B
+12         1100      C
+13         1101      D
+14         1110      E
+15         1111      F
+```
+
+A common use of hex is to encode bit strings in a more readable format. For example,
+
+```
+0110 1010 = 6A
+1100 1011 0111 = CB7
+```
+
+In C, hex values are prefixed by `0x`. Thus, you might see a declaration like
+
+```
+char c = 0xFF;  // Declare a byte of all ones
+char d = 0x80;  // Only leftmost bit is set
+char e = 0x01;  // Only rightmost bit is set
+```
+
+Hex notation makes it easy to declare a specific sequence of bits to use as a mask in bitwise operations:
+
+```
+char c = 65;
+char mask = 0x80;
+
+if (c & mask) {
+  printf("First bit set.");
+}
+```
+
+**Octal**
+
+The base-8 number system, also called the **octal** system, is used less frequently than hexadecimal, but it does show up in a few contexts.  Each octal value corresponds to a three-bit binary number.
+
+```
+Decimal    Binary    Oct
+-------    ------    ---
+0          000       0
+1          001       1
+2          010       2
+3          011       3
+4          100       4
+5          101       5
+6          110       6
+7          111       7
+```
+
+### Coming Next
+
+*Signed* integers and two's-complement representation.
