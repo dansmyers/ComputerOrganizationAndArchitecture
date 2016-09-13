@@ -1,6 +1,6 @@
 # Introducing C
 
-### Why C?
+## Why C?
   
 C is the default language of systems programming. It's been around since the early 1970's and is intimately connected to the UNIX
 operating system and, by extension, modern Linux and Mac systems.
@@ -13,7 +13,7 @@ Many popular and critical projects are written primarily in C, including:
   - The Redis and memcached distributed caching systems
   - Doom
   
-### C vs. Java
+## C vs. Java
 
 Here's what one of my teachers told me when I was learning C:
 
@@ -37,7 +37,7 @@ running in virtual machine like the JVM), so well-tuned C programs can be quite 
 On the negative side, C's "do what thou wilt" approach allows you to do all kinds of things that are unwise and, in the worst
 cases, catastrophically insecure and unsafe. C programming favors the paranoid.
 
-### Hello, World!
+## Hello, World!
 
 The noble and most ancient example program.
 
@@ -116,7 +116,7 @@ Another useful preprocessor directive is `#define`, which declares a constant.
 This instructs the preprocessor to replace every occurence of `RADIUS` in the source code with `111.11`. C constants are capitalized, 
 as in Java.
 
-### Variables, Functions, and Conditionals
+## Variables, Functions, and Conditionals
 
 Here's another simple program that uses a function to test if a number is even.
 
@@ -248,7 +248,7 @@ If you accidentally type `=` you'll have an invalid assignment with `0` on the l
 0 = x % 2  // Syntax error
 ```
 
-### Arrays
+## Arrays
 
 **C vs. Java Arrays**
 
@@ -344,7 +344,7 @@ In certain circumstances, this behavior can be exploited by malicious hackers to
 an attacker to gain control of your system and execute arbitrary code. Buffer overflows have led to hundreds of serious security
 problems on high profile systems.
 
-### What's Next
+## What's Next
 
 This note has explained some of the key concepts of C programming, with an emphasis on the features of C that are different from Java.
 The next notes introduce Linux and then cover compiling and running C programs in the terminal environment.
