@@ -50,7 +50,7 @@ absence) and 1 (representing truth or presence).
 The meaning of "significant electrical voltage" depends on the technology used to implement the system's logic gates. It's common for 
 a logical level of 0 to be represented by a voltage close to 0 and for a logical level of 1 to be represented by a voltage of +3.5 V.
 
-### Everything is Bits
+## Everything is Bits
 
 **Any information in a computer system, regardless of its source, type, or use is represented as a sequence of bits**.
 
@@ -67,7 +67,7 @@ example, the 32-bit sequence
 could represent a single signed `int`, or an unsigned `int`, or four `char` values, or two `short` values, or a machine language
 instruction, or a `float`. The interpretation of the bit string depends upon the context in which it's used.
 
-### Bits and Powers of 2
+## Bits and Powers of 2
 
 Suppose that you have a grouping of *N* bits. How many distinct combinations can that grouping represent? Each bit may take one of two
 values, 0 or 1, so there are two choices for each of the *N* positions.
