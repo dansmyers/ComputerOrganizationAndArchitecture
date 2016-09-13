@@ -1,6 +1,6 @@
 # GitHub and Assignments
 
-### Version Control
+## Version Control
 
 Git is a **version control system** designed to manage source code for large distributed projects. It was invented by Linus Torvalds, the creator of Linux, and inspired by the needs of that project. GitHub is a company providing cloud-based project hosting using Git.
 
@@ -12,7 +12,7 @@ Git uses a **distributed** approach to source control, where multiple peers may 
 
 Git is deep. The rest of this note will cover only the basics of Git and GitHub that you need to submit your projects.
 
-### Creating Repositories
+## Creating Repositories
 
 First, sign up for a GitHub account, if you haven't already done so. I'll wait right here.
 
@@ -30,7 +30,7 @@ Your repo will have your GitHub username in place of `dansmyers`.
 
 Your repo is private: only you and I can access it. It will be initialized with files that I specify, typically a file named `README.md` and a copy of the project description.
 
-### Cloning Your Repo to Cloud9
+## Cloning Your Repo to Cloud9
 
 Once you have created a project repo on GitHub, you'll want to **clone** it to Cloud9 so you can work on the project. The files you create and change on Cloud9 will be pushed back to the GitHub repo.
 
@@ -56,7 +56,7 @@ Checking connectivity... done.
 
 The result will be a new directory named `project1-dansmyers` that contains all of the files in the initial repo. `cd` into this directory and begin working on your project.
 
-### Pushing Changes
+## Pushing Changes
 
 Suppose that you've made a new file called `problem1.c` and you're ready to push it from the local Cloud9 repo to the GitHub repo.
 
@@ -122,7 +122,7 @@ Refreshing the GitHub repo at `http://github.com/rollinscms230/project1-dansmyer
 
 One technical point: the target of the push operation was automatically configured by the initial clone operation. Pushing to a different repo would require an additional command to change the target.
 
-### Git With It
+## Git With It
 
 This is the absolute bare minimum of Git knowledge you need to execute the projects. Git and GitHub have a huge number of features that we don't have the time to explore now. 
 
