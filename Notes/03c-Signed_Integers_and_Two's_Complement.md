@@ -168,43 +168,35 @@ We often don't think about overflow, but it's always a concern when adding large
 
 **Example: Binary Search**
 
-Recall the binary search algorithm. Here's a basic recursive implementation.
+Recall the binary search algorithm. Here's a basic implementation.
 
 ```
-// Recursively searches the sorted array a between indexes left and right, looking
-// for the target value.
+// Search a sorted int array for a target value
 //
 // Inputs:
 //   a: sorted int array
 //   target: the target value for the search
-//   left: starting left index of the search
-//   right: starting right index of the search
+//   n: number of elements in a
 //
 // Returns: the index where target occurs or -1 if the search fails
 
-int binarySearch(int[] a, int target, int left, int right) {
-
-  // Base case: did not locate target
-  if (right < left) {
-    return -1;
-  }
-
-  int middle = (left + right) / 2;  // <--- What about this line?
+int binarySearch(int[] a, int target, int n) {
+  int left = 0;
+  int right = n - 1;
   
-  // Target value located!
-  if (a[middle] == target) {
-    return middle;
-  } 
+  while (left < right) {
+    int middle = (left + right) / 2;
   
-  // Recursively search left half
-  if (a[middle] > target) {
-    return binarySearch(a, target, left, middle - 1);
+    if (a[middle] > target) {
+      right = middle - 1;  // Search left half
+    } else if (a[middle] < target) {
+      left = middle + 1;  // Search right half
+    } else {
+      return middle;  // Target found
+    }
   }
   
-  // Recursively search right half
-  if (a[middle] < target) {
-    return binarySearch(a, target, middle + 1, right);
-  }
+  return -1;  // Search has failed
 }
 ```
 
