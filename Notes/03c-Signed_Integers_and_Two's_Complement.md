@@ -83,11 +83,14 @@ Two's complement has the special property that unsigned and signed addition can 
 Ignore final carry-out
 ```
 
-**Remember: the NUmber of Bits Matters**
+**Make sure to use all of the available bits when encoding your answers!**
 
 The two's complement representation is always encoded with respect to a given number of bits. When I ask you to work with two's complement numbers, I will always give you the number of bits to use.
 
-**Make sure to use all of the available bits when encoding your answers!**
+**Negative Values Start with 1**
+
+Two's complement is different from sign-and-magnitude encoding, but the leading bit will always tell you the sign of the number. A leading 1 indicates a negative value and a leading 0 indicates a positive value.
+
 
 **Why Does Two's Complement Work?**
 
@@ -143,3 +146,83 @@ Add 1: 01001
 `01001` is 9! Therefore, the result is correct and -12 + 3 = -9, exactly as it should.
 
 ## Overflow
+
+Suppose you want to add 7 and 1 using 4-bit two's complement representation. What's the result?
+
+```
+  0111
++ 0001
+-------
+  1000  
+```
+
+The leading bit is now 1, which indicates a **negative** value! `1000` is actually the 4-bit two's complement encoding of -8.
+
+Consider what just happened. Adding two positive values **wrapped around** the entire number system to result in the maximum possible negative value.
+
+This is called **overflow**.
+
+An *N*-bit two's complement number can only represent positive values from 0 to 2 ^ *N* - 1. A sum that goes beyond this range will oveflow and give a negative result.
+
+We often don't think about overflow, but it's always a concern when adding large integers.
+
+**Example: Binary Search**
+
+Recall the binary search algorithm. Here's a basic recursive implementation.
+
+```
+// Recursively searches the sorted array a between indexes left and right, looking
+// for the target value.
+//
+// Inputs:
+//   a: sorted int array
+//   target: the target value for the search
+//   left: starting left index of the search
+//   right: starting right index of the search
+//
+// Returns: the index where target occurs or -1 if the search fails
+
+int binarySearch(int[] a, int target, int left, int right) {
+
+  // Base case: did not locate target
+  if (right < left) {
+    return -1;
+  }
+
+  int middle = (left + right) / 2;  // <--- What about this line?
+  
+  // Target value located!
+  if (a[middle] == target) {
+    return middle;
+  } 
+  
+  // Recursively search left half
+  if (a[middle] > target) {
+    return binarySearch(a, target, left, middle - 1);
+  }
+  
+  // Recursively search right half
+  if (a[middle] < target) {
+    return binarySearch(a, target, middle + 1, right);
+  }
+}
+```
+
+Consider the line
+
+```
+int middle = (left + right) / 2;
+```
+
+Suppose `left` and `right` are very large. **This sum could overflow**, resulting in a negative index and an out-of-bounds array access.
+
+In a system with 32-bit integers (like Java and most C implementations) this bug only occurs if the sum of the two values exceeds 2 ^ 31 - 1, which is more than 2 billion. Nonetheless, it **is** a bug.
+
+In fact, this bug was in the Java standard library for many years and is in the majority of published binary search implementations.
+
+How can you avoid overflow? Joshua Bloch, Google software engineer, [suggests](https://research.googleblog.com/2006/06/extra-extra-read-all-about-it-nearly.html)
+
+```
+int middle = left + ((right - left) / 2);
+```
+
