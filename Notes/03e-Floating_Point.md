@@ -78,8 +78,58 @@ There are a few other tricky things to be aware of when working with `float` and
 
 **Numerical Errors**
 
+Many values cannot be represented exactly in the floating point format. 
+
+This is not really surprising, since base-10 has the same property. Consider 1/3: it can only be written approximately using any finite number of digits:
+
+```
+1/3 ~ .3333333333
+```
+
+The following program illustrates that .2 can't be represented exactly by a float:
+
+```
+#include <stdio.h>
+
+int main() {
+    float f = .2;
+    printf("f = %.10f\n", f);
+    
+    return 0;
+}
+```
+
+The format specifier `%.10f` instructs `printf` to print 10 digits to the right of the decimal point. The output of the program is
+
+```
+f = 0.2000000030
+```
+
+This imprecision means that calculations involving floating point value can have accumulated error. Here is a somewhat extreme example:
+
+```
+float sum = 0.0;
+int i;
+
+for (i = 0; i < 1000000; i++) {
+  sum += .2;
+}
+
+// sum should be .2 * 1000000 = 200000
+
+printf("sum = %.10f\n", sum);
+```
+
+The output of the program is
+
+```
+sum = 201916.6875000000
+```
+
+Yikes!
 
 **Special Types**
+
 Consider the following expression:
 
 ```
