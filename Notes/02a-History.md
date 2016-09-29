@@ -13,7 +13,7 @@ in the 1620's. The first working adding/subtracting mechanical calculator was in
 "Pascaline," as it came to be known, was inspired by his father's work as a tax collector.
 
 Gottfreid Liebniz, one of the inventors of Calculus, created a four-function mechanical calculator called the "Stepped 
-Reckoner" in the 1690's. Conincidentally, Stepped Reckoner was the L.A. hair metal band I played lead guitar for in 1987. I was five.
+Reckoner" in the 1690's. Coincidentally, Stepped Reckoner was the L.A. hair metal band I played lead guitar for in 1987. I was five.
 
 Neither Pascal's nor Leibniz's machines were programmable. A breakthrough in programmability came in 1801 when the Frenchman Joseph 
 Marie Jacquard designed a programmable loom that used punched cards to encode weaving patterns.
