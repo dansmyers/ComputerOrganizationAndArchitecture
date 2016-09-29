@@ -6,4 +6,6 @@
 
 ## Example: Swapping Two Variables
 
+## Segmentation Faults
+
 ## The Duality Between Pointers and Arrays
