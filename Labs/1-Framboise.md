@@ -11,7 +11,6 @@ This lab will let you practice logging into and working with the Raspberry Pi. A
   - installing packages with `apt-get`
   - the `man` command
   - connecting programs with pipes
-  - X and forwarding
   - talking cows
 
 ### Start the Terminal
@@ -20,6 +19,8 @@ Log in to the desktop Mac
 
 Open the terminal application
     - Go to Finder --> Applications --> Utilities --> Terminal
+    
+**Don't close the terminal window**. In just a moment, you'll disconnect the desktop Mac's network cable, which will interfere with the terminal's ability to access your network profile, which makes it impossible to login and start the shell. If you close the terminal and need to open it again, you'll have to reattach the network cable to its jack, then reopen the terminal.
     
 ### Connect the Desktop Mac to FoxNet
 
@@ -31,7 +32,7 @@ You may be prompted to update your credential settings. Accept this and enter yo
 
 ### Start-up the Raspberry Pi        
 
-**Gently** unplug the network cable from the wall and connect it to .the Raspberry Pi's ethernet port
+**Gently** unplug the network cable from the wall and connect it to the Raspberry Pi's ethernet port
 
 Plug in your power supply. You should see a solid red light and a blinking green light. Wait about a minute until the green light stops blinking.
   
@@ -65,7 +66,7 @@ Linux systems have the notion of privilege levels and access control. The top le
 `sudo` is `substitute user do`&mdash;it's a way to run individual commands with superuser-level privileges without actually logging in as the root account. The `wpa_supplicant.conf` file can only be edited by root, so you need to use `sudo` when you open it.
 
 Edit the file so that it looks like the following. There may be an additional country line in the header: that's okay. Put your own
-Rollins username and password in the `identity` and `password` fields.
+Rollins username and password in the `identity` and `password` fields. **THE FILE ACTUALLY HAS TO LOOK LIKE THE ONE SHOWN BELOW. CHECK THE SPACING AND SPELLING OF EVERY ITEM.**
 ```
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
@@ -87,10 +88,9 @@ Press CTRL + o to save ("write out") the file.
 
 Press CTRL + x to exit the nano editor.
 
-Cycle the wi-fi to connect to the network.
+Reboot your Pi and log back in to connect to the network.
 ```
-prompt$ sudo ifdown wlan0
-prompt$ sudo ifup wlan0
+prompt$ sudo reboot
 ```
 
 Test by pinging a remote server. `ping` is a command that sends small message packets to a server and measures the response times.
@@ -214,30 +214,6 @@ prompt$ fortune | cowsay
 A **pipe** is a connection between two processes. The output of one end of the pipe becomes the input to the other end. In this example, the output of `fortune`, which would ordinarily go to the console, is redirected to the `cowsay` program instead, which then uses it as input and prints an oracular cow.
 
 Pipes are a common tool in the Unix world: they allow you to chain small, simple programs together to accomplish complex feats of text processing.
-
-### Graphics
-
-Logout from your Raspberry Pi.
-```
-prompt$ exit
-```
-Now log back in, but with a slightly different command:
-```
-prompt$ ssh -X pi@raspberrypi.local
-```
-The `-X` flag to `ssh` enables **X11 forwarding**. X is the default windowing system on Linux. "Forwarding" X allows graphical windows that you open on the Raspberry Pi to appear on your local Mac desktop.
-
-Navigate to the `~/python_games` directory (hint: use `pwd`, `ls`, and `cd` to check where you are in the hierarchy and move around; you can use `cd ..` to move up to a parent directory).
-
-All of the games are Python files with a `.py` extension. To list all files ending in `.py`:
-```
-prompt$ ls *.py
-```
-Run a game:
-```
-prompt$ python squirrel.py
-```
-I like Squirrel Eat Squirrel and Inkspill. Starpusher is pretty hard.
 
 ### Get Back to Work
 
