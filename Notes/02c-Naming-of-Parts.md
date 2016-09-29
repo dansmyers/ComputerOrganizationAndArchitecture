@@ -1,7 +1,7 @@
 # Naming of Parts
 
 
-### An Example System Architecture
+## An Example System Architecture
 
 ```
 -----------
@@ -135,13 +135,13 @@ We'll study VM in detail in CMS 330 when we discuss operating systems. For now, 
 
 ## Buses and I/O Devices
 
-**Another One Rides the Bus**
+### Another One Rides the Bus
 
 A bus is, physically, just a group of wires that connect components on the computer. Rather than a single bus, like in von Neumann's design, modern computers typically have a hierarchy of buses, with faster, shorter buses at higher levels and slower, larger buses at lower levels. The fastest connection is reserved for main memory, which helps keep the CPU supplied with data and instructions.
 
 An important parameter of a bus is its **width**, the number of bits it can move in a single transfer. A bus with a width of one is called a **serial bus**: it transfers only one bit at at time. Older buses, like PCI, had widths of 32 or 64 bits. It turns out, however, that designing large parallel buses is hard, because synchronizing transfers on 32 or 64 different wires is difficult and electrical "crosstalk" between wires leads to errors. The trend, therefore, has been towards highly optimizied serial buses, like USB ("Universal Serial Bus") and PCI Express, that drive bits through a system at very high clock speeds with low error rates.
 
-**Persistant Storage Devices**
+### Persistant Storage Devices
 
 DRAM is volatile: it only stores information as long as the computer is powered. Computers also need non-volatile storage to persist information between power cycles. The most important persistant storage device is the **rotating magnetic hard disk**, followed by **solid-state drives (SSDs)**.
 
