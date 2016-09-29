@@ -162,6 +162,19 @@ Consider what just happened. Adding two positive values **wrapped around** the e
 
 This is called **overflow**.
 
+```
+   --------
+  |       |
+  |       |
+0111      |
+          | Overflow "wraps around" the
+          | two's complement space
+1000      |
+  ^       |
+  |       |
+  --------        
+```
+
 An *N*-bit two's complement number can only represent positive values from 0 to 2 ^ *N* - 1. A sum that goes beyond this range will oveflow and give a negative result.
 
 We often don't think about overflow, but it's always a concern when adding large integers.
