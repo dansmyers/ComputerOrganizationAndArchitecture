@@ -174,3 +174,4 @@ Check the Handouts for examples of how to use `sizeof` with arrays.
 
 ## Next
 
+We'll look at dynamic memory allocation using `malloc`. 
