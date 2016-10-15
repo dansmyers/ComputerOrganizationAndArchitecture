@@ -104,3 +104,34 @@ Address of global variable g = 0x601044
 How to explain the difference in the two addresses? If `x` is a local variable, allocated inside `main`, it should reside in the stack portion of the AS, at a high-valued memory address. `g`, as a global variable, is actually placed in the heap region, closer to the beginning of the address space.
 
 ## Using Memory Addresses with `scanf`
+
+Here's another example of using memory addresses. `scanf` is a formatted input function. It's like the input analogue of printf, in that it reads input from the console according to a specified format string.
+
+```
+#include <stdio.h>
+
+int main() {
+    int value;
+
+    // Basic example: read a single integer
+    printf("Enter an integer: ");
+    scanf("%d", &value);  // &value is the memory location of the variable value
+    printf("You entered %d.\n", value);
+    
+    return 0;
+}
+```
+
+The call to `scanf` takes two arguments.
+  
+  - A format string specifying the type of data to read. In this case, `"%d"` indicates reading a single integer.
+  - A *memory location* where the value should be stored. In this case, this is the address associated with the variable `value`.
+  
+You can think of `scanf`'s second argument as specifying the *target or destination* for the read operation.
+
+Take a look at the `scanf` handout for more examples.
+
+## Next
+
+Now that we've established that variables have addresses in memory, we'll introduce the concept of a *pointer*: a variable that stores the memory address of a variable.
+ 
