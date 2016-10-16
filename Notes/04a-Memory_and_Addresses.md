@@ -27,14 +27,14 @@ x:  |  value of x  |  <--| enough space for
 
 Therefore, there are two ways to refer to the value of variable `x`.
 
-  - by *name*, using `x`
-  - by *address*, by specifying the location in memory where `x`'s value is stored
+  - by **name**, using `x`
+  - by **address**, by specifying the location in memory where `x`'s value is stored
   
 This is kind of like junk mail that comes to your house. You sometimes get mail addressed to you specifically, by name. Other times, you get mail addressed to "The Current Occupant" (or some similar phrase) living at your street address.
 
 ## The Canonical Address Space
 
-Recall that a C program's view of memory is, conceptually, a *big array of bytes*. This address space (AS) is divided into three logical regions, each used for storing different types of data. The number of bytes in the AS depends on the number of bits the system uses for a memory address, and hence many memory bytes are addressable.
+Recall that a C program's view of memory is, conceptually, a **big array of bytes**. This address space (AS) is divided into three logical regions, each used for storing different types of data. The number of bytes in the AS depends on the number of bits the system uses for a memory address, and hence many memory bytes are addressable.
 
 ```
 A canonical 32-bit address space
@@ -65,7 +65,7 @@ A canonical 32-bit address space
 -----------------------------  Byte index 2^32 - 1
 ```
 
-¥ou may recall that this nice big array of bytes abstraction is really an illusion maintained by the OS and the hardware through the magic of *virutal memory*. In reality, all programs running on your computer at any moment are sharing a limited amount of real physical RAM. The VM system makes it possible for each program to have the *illusion* of its own large private address space.
+¥ou may recall that this nice big array of bytes abstraction is really an illusion maintained by the OS and the hardware through the magic of **virtual memory**. In reality, all programs running on your computer at any moment are sharing a limited amount of real physical RAM. The VM system makes it possible for each program to have the *illusion* of its own large private address space.
 
 ## Variable Addresses
 
@@ -82,7 +82,7 @@ Running this program will print something similar to
 Address of x = 0x7ffea4d876a4
 ```
 
-The long hex string represents the *memory location* where `x`'s value is stored.
+The long hex string represents the **memory location** where `x`'s value is stored.
 
 Suppose we have a global variable in a C program. Global variables are those declared outside of any function, and are accessible to all functions defined in the same source file.
 
