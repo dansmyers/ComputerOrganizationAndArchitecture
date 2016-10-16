@@ -114,4 +114,41 @@ Notice that this example only uses a single index to select the string. Using a 
 
 ## Command Line Arguments
 
+Many programs in the UNIX/Linux world take arguments from the command line. For example, every time we run `gcc` we're supplying a series of arguments to specify the input source file, the output executable, and flags related to warnings.
 
+`main` can take two optional arguments:
+
+  - `int argc`, which reports the number of arguments typed at the command line
+  - `char *argv[]`, which contains the string representation of each argument
+
+```
+int main (int argc, char *argv[]) {
+    printf("Number of command line arguments = %d\n", argc);
+    
+    int i;
+    for (i = 0; i < argc; i++) {
+        printf("argv[%d] = %s\n", i, argv[i]);
+    }
+    
+    return 0;
+}
+```
+
+Here's an example of running the program:
+
+```
+prompt$ ./command_line_input foo bar baz
+Number of command line arguments = 4
+argv[0] = ./command_line_input
+argv[1] = foo
+argv[2] = bar
+argv[3] = baz
+```
+
+It's clear from the output that the name of the program itself counts as the first argument.
+
+Most functions that take command line arguments have the ability to take their input in any order and still make sense of it. A useful function for processing command line arguments in arbitrary order is `getopt`. Take a look at the example in the Handouts directory.
+
+## Next
+
+At this point, we're ready to take a little break from C. Our next topic will push us even closer to the machine level, to a lower level of abstraction that anything we've previously considered. Up next: **writing programs in assembly language**.
