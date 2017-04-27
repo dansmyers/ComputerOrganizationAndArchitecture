@@ -96,7 +96,7 @@ char *months[] = {"January", "February", "March", "April", "May", "June",
 
 `months` is an array where element has type `char *`. In other words, it is an **array of strings**.
 
-In this case, the ability to create multidimensional arrays with different row lenghths is useful, because it allows each month name to be stored in its own array. There's no need to pad short names like `"May"` to match the length of longer names like `September`.
+In this case, the ability to create multidimensional arrays with different row lengths is useful, because it allows each month name to be stored in its own array. There's no need to pad short names like `"May"` to match the length of longer names like `September`.
 
 Because of the symmetry between arrays and pointers, it's also possible to use a double pointer type to refer to a string array.
 
