@@ -9,7 +9,7 @@
 // Three parts:
 //   1. typedef keyword
 //   2. a type declaration: in this case, "struct point_t {...}""
-//   3. the alias name, "point" in this case
+//   3. the alias name, "Point" in this case
 //
 // It is not required, but some sources like an uppercase letter for the
 // alias name, to emphasize that it's not a basic type
