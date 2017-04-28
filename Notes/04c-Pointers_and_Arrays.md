@@ -80,7 +80,7 @@ a[i] is equivalent to *(a + i)
 
 There is one key difference between pointers and arrays.
 
-A array's name is **bound** to the location in memory where its data begins, and cannot be changed. Therefore, it isn't possible to do things like assign to an array.
+A array's name is **bound** to the location in memory where its data begins, and cannot be changed. Therefore, it isn't possible to make an assignment that would make an array's name refer to a different memory location.
 
 A pointer is simply a variable, however, so it can be reassigned freely.
 
