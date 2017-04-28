@@ -45,7 +45,7 @@ This "+ 1" relationship holds regardless of the type of the array.
 ```
 double dArray[3] = {1.11, 2.22, 3.33};
 printf("%f\n", *dArray);  // prints 1.11
-printf("%f\n", *(dArray + 1));  // prints 1.11
+printf("%f\n", *(dArray + 1));  // prints 2.22
 ```
 
 Performing calculations that change the value of a pointer is called **pointer arithmetic**. The fundamental rule of pointer arithmetic is that `a + i` always points to the `i`th element beyond the beginning of array `a`, regardless of its type.
