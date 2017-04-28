@@ -52,7 +52,7 @@ Performing calculations that change the value of a pointer is called **pointer a
 
 ## Pointers to Arrays 
 
-Because the name of an array fucntions like a pointer, a pointer can be assigned to an array.
+Because the name of an array functions like a pointer, a pointer can be assigned to an array.
 
 ```
 int *p = a; // Make p point to the beginning of a
