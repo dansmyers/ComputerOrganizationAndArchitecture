@@ -32,7 +32,7 @@ Because of the symmetry between pointers and arrays, it's common to use a `char 
 
 ```
 char *s = tokyo;
-printf("%s", *s);  // prints 'T'
+printf("%c", *s);  // prints 'T'
 ```
 
 It's possible to declare a pointer to a static (unmodifiable) string using
