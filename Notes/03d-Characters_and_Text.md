@@ -17,7 +17,7 @@ char hexA = 0x41;
 printf("%c    %c    %c\n", charA, intA, hexA);
 ```
 
-In some cases, you need an awareness of a character's underlying numeric code. For example, character comparisons are based on the underlying ASCII codes. Therefore, `'Z'` (0x5A) comes before `'a'` (0x61) and `'['` (0x5B) comes after `'{'` (0x7D). This has implications when sorting strings: all capital letters come before all lowercase letters.
+In some cases, you need an awareness of a character's underlying numeric code. For example, character comparisons are based on the underlying ASCII codes. Therefore, `'Z'` (0x5A) comes before `'a'` (0x61) and `'['` (0x5B) comes before `'{'` (0x7D). This has implications when sorting strings: all capital letters come before all lowercase letters.
 
 The code for `'A'` is decimal 65 (0x41) and `'a'` is 97 (0x61). Adding 32 converts an uppercase letter to its lowercase counterpart:
 
