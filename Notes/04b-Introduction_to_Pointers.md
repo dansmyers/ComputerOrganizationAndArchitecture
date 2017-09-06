@@ -8,7 +8,7 @@ A pointer is a variable that stores the memory address of a variable.
 
 **A pointer is a variable that stores the memory address of a variable**.
 
-Pointers are a powerful and, in some cases, dangerous, feature of C that does not exist in Java. There are many operations in C programs that can only be carried out using pointers.
+Pointers are a powerful and, in some cases, dangerous, feature of C. Many operations in C programs can only be carried out using pointers.
 
 ## Declaring and Assignint to Pointers
 
