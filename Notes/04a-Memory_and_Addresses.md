@@ -34,7 +34,7 @@ This is kind of like junk mail that comes to your house. You sometimes get mail 
 
 ## The Canonical Address Space
 
-Recall that a C program's view of memory is, conceptually, a **big array of bytes**. This address space (AS) is divided into three logical regions, each used for storing different types of data. The number of bytes in the AS depends on the number of bits the system uses for a memory address, and hence many memory bytes are addressable.
+Recall that a C program's view of memory is, conceptually, a **big array of bytes**. This address space (AS) is divided into three logical regions, each used for storing different types of data. The number of bytes in the AS depends on the number of bits the system uses for a memory address, which determines how memory bytes are addressable.
 
 ```
 A canonical 32-bit address space
