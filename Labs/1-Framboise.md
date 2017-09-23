@@ -122,20 +122,21 @@ network={
 	phase2="MSCHAPV2"
 }
 ```
-Press CTRL + o to save ("write out") the file.
+Press `CTRL + o` to save ("write out") the file.
 
-Press CTRL + x to exit the nano editor.
+Press `CTRL + x` to exit the nano editor.
 
-Reboot your Pi and log back in to connect to the network.
+After you have saved the file, reboot your Pi to make the changes take effect.
 ```
 prompt$ sudo reboot
 ```
+It will take about a minute for your Pi to reboot. After that, repeat the log-in process. The target server is `pi@raspberrypi.local` and the password is `raspberry`.
 
 Test by pinging a remote server. `ping` is a command that sends small message packets to a server and measures the response times.
 ```
 prompt$ ping 8.8.8.8
 ```    
-8.8.8.8 is the IP address of the public Google DNS server. If your Pi is connected to FoxNet, you should see lines reporting the results of each `ping` packet.
+8.8.8.8 is the IP address of the public Google DNS server. If your Pi is connected to FoxNet, you should see lines reporting the response times of each `ping` packet. If you get a message saying that the network is unreachable, or another error, double-check the contents of the `wpa_supplicant.conf` file.
 
 ### Cowsay?
 
@@ -162,7 +163,7 @@ Make the cow say a few different things.
 
 ### The Man Pages (Not a Dating Site)
 
-To get more information on a system command, consult its manual page using the `man` command. For example,
+To get more information on a system command, consult its manual page using the `man` command.
 ```
 prompt$ man cowsay
 ```    
@@ -195,22 +196,6 @@ prompt$ fortune | cowsay
 A **pipe** is a connection between two processes. The output of one end of the pipe becomes the input to the other end. In this example, the output of `fortune`, which would ordinarily go to the console, is redirected to the `cowsay` program instead, which then uses it as input and prints an oracular cow.
 
 Pipes are a common tool in the Unix world: they allow you to chain small, simple programs together to accomplish complex feats of text processing.
-
-### Get Back to Work
-
-Write a simple C program that adds two integers and prints their sum.
-
-Use the `nano` editor and compile your program with `gcc`:
-```
-prompt$ cd ~
-prompt$ mkdir labs
-prompt$ cd labs
-prompt$ nano add.c
-prompt$ gcc -o add add.c
-prompt$ ./add
-prompt$ cd ..
-```
-Remember to use `CTRL + o` to save your file in the `nano` editor and `CTRL + x` to exit.
 
 ### One More Thing...
 Telnet is a program for establishing a remote connection to another server.
