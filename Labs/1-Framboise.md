@@ -63,8 +63,7 @@ The default password is `raspberry`. Remember that the system does not display t
 
 ### Logging in for Mac Users
 
-Open the terminal application
-    - Go to Finder --> Applications --> Utilities --> Terminal
+Open the terminal application by going to Finder --> Applications --> Utilities --> Terminal
     
 In the terminal window, type
 ```
