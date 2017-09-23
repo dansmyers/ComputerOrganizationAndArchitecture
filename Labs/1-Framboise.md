@@ -1,50 +1,80 @@
-# Lab 1: Introduction à la Framboise Pi
+# Lab 1: Framboise
 
 ### Goals
 
 This lab will let you practice logging into and working with the Raspberry Pi. Along the way, you'll get some practice with several important Linux sysadmin concepts, including
 
+  - copying the operating system onto an SD card
   - logging in to a remote computer using SSH
   - editing files in the terminal
   - superuser acccounts and `sudo`
-  - password hashing and authentication
   - installing packages with `apt-get`
   - the `man` command
   - connecting programs with pipes
   - talking cows
+  
+### Getting an OS onto the SD Card
 
-### Start the Terminal
+The Raspberry Pi uses its micro-SD card to provide all permanent storage, including the operating system files. Therefore, our first
+step is to burn a copy of the OS onto your SD card.
 
-Log in to the desktop Mac
+**Perform these steps on a Windows computer**. Team up with someone who has a Windows laptop if you're a Mac user.
+
+**Read these warnings before continuing.**
+  - You are going to overwrite a destination drive with a new OS. **Make sure you overwrite the SD card and not your computer's regular hard drive**.
+  - Windows may pop up messages about "reformatting" a drive. **Do not reformat any drives***. Click cancel on any messages about reformatting that you see.
+
+If you have not done so already, download the [Etcher image burning software](https://etcher.io/). Windows users should have already downloaded the Raspbian OS image as a ZIP file from the Raspberry Pi Foundation's website.
+
+Open Etcher and insert your SD card into the laptop. The Etcher software should automatically recognize that you have inserted a removable storage device and automatically select it as the destination drive for the burn. Select your Raspbian ZIP file as the image, then click "Flash" to perform the burn.
+
+The burn process taks 2-3 minutes, followed by another 2-3 minutes for validation. Don't do anything to disrupt the process until the entire operation is complete.
+
+Once your burn is completely finished, remove your SD card from the laptop, then reinsert it. Look in Windows Explorer and you should see a removable drived named `boot`.
+
+To log in to the Raspberry Pi, you need to enable the SSH ("Secure Shell") encrypted log-in protocol. This is disabled by default on current versions of the Raspbian OS.
+  - Open Notepad
+  - Go to File --> Save As...
+  - Save a blank file with the name `ssh` (just `ssh` with no extension, **not** `ssh.txt`) to the main directory on the `boot` drive. When I have done this before, I selected "Save as type: All files" rather than "Text file" on the Save As... dialog box; I'm not sure if this matters or not.
+  - When the Raspbian OS boots, it uses the presence of the `ssh` file as a signal to enable the SSH protocol.
+  - Right click on the `boot` drive and choose "Eject" from the menu before you remove it from the laptop.
+
+### Start Up the Raspberry Pi
+
+Insert the micro-SD card into the slot on the bottom of the Pi. Connect the ethernet cable between the Pi and your laptop, then attach the power supply to its connector on the Pi.
+
+You should see a solid red light and a blinking green light. Wait about a minute until the green light stops blinking.
+
+### Logging in for Windows Users
+
+Windows users need to download two additional programs.
+
+First, download PuTTY, a program for making remote connections with a terminal interface on Windows computers. Go to [the PuTTY download page](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html), scroll down to the "Alternative Binary Files" section, and download the 64-bit Windows version of `putty.exe`. Save it in a location that's easy to access, like your Desktop.
+
+Note that `putty.exe` is simply an exectuable file, not an installer.
+
+Next, download and install [Bonjour Print Services](https://support.apple.com/kb/dl999?locale=en_US) from Apple. This program will allow your computer to recognize the Raspberry Pi's name over your direct ethernet connection. If you have iTunes installed you may already have the necessary protocol.
+
+Run PuTTY. In the "Host name" field, enter `pi@raspberrypi.local`, then press the "Open" button. You should see a terminal window pop up.
+
+You will see message saying "the authenticity of host 'raspberrypi.local' can't be established". This is because it's your first time establishing an encrypted connection to that host. You're not being hacked right now, so select "yes" to continue connecting.
+
+The default password is `raspberry`. Remember that the system does not display the password as you type it.
+
+### Logging in for Mac Users
 
 Open the terminal application
     - Go to Finder --> Applications --> Utilities --> Terminal
     
-**Don't close the terminal window**. In just a moment, you'll disconnect the desktop Mac's network cable, which will interfere with the terminal's ability to access your network profile, which makes it impossible to login and start the shell. If you close the terminal and need to open it again, you'll have to reattach the network cable to its jack, then reopen the terminal.
-    
-### Connect the Desktop Mac to FoxNet
-
-Click on Apple logo in the upper-left corner. Go to System Preferences --> Networks and click on "Wi-fi".
-
-Choose "FoxNet" in the "Network Name" dropdown menu and enter your credentials to connect to the network.
-    
-You may be prompted to update your credential settings. Accept this and enter your password to confirm.
-
-### Start-up the Raspberry Pi        
-
-**Gently** unplug the network cable from the wall and connect it to the Raspberry Pi's ethernet port
-
-Plug in your power supply. You should see a solid red light and a blinking green light. Wait about a minute until the green light stops blinking.
-  
 In the terminal window, type
 ```
 prompt$ ssh pi@raspberrypi.local
 ```
-SSH (secure shell) is a program that establishes an encrypted, authenticated connection to a remote computer. `pi` is the default user account and `raspberrypi.local` is the hostname, which is automatically established when you connect the Pi to a Mac via ethernet.
+`ssh` is a program that establishes an encrypted, authenticated connection to a remote computer using the SSH protocol. `pi` is the default user account and `raspberrypi.local` is the hostname, which is automatically established when you connect the Pi to a Mac via ethernet.
 
-You will see message saying "the authenticity of host 'raspberrypi.local' can't be established". This is because it's your first time establishing an encrypted connection to that host. You're probably not being hacked right now, so enter "yes" to continue connecting.
+You will see message saying "the authenticity of host 'raspberrypi.local' can't be established". This is because it's your first time establishing an encrypted connection to that host. You're not being hacked right now, so enter "yes" to continue connecting.
 
-The default password is `raspberry`.
+The default password is `raspberry`. Remember that the system does not display the password as you type it.
 
 ### Connect the Raspberry Pi to FoxNet
 
@@ -66,7 +96,9 @@ Linux systems have the notion of privilege levels and access control. The top le
 `sudo` is `substitute user do`&mdash;it's a way to run individual commands with superuser-level privileges without actually logging in as the root account. The `wpa_supplicant.conf` file can only be edited by root, so you need to use `sudo` when you open it.
 
 Edit the file so that it looks like the following. There may be an additional country line in the header: that's okay. Put your own
-Rollins username and password in the `identity` and `password` fields. **THE FILE ACTUALLY HAS TO LOOK LIKE THE ONE SHOWN BELOW. CHECK THE SPACING AND SPELLING OF EVERY ITEM.**
+Rollins username and password in the `identity` and `password` fields.
+
+**THE FILE ACTUALLY HAS TO LOOK LIKE THE ONE SHOWN BELOW. CHECK THE SPACING AND SPELLING OF EVERY ITEM.**
 ```
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
@@ -99,72 +131,15 @@ prompt$ ping 8.8.8.8
 ```    
 8.8.8.8 is the IP address of the public Google DNS server. If your Pi is connected to FoxNet, you should see lines reporting the results of each `ping` packet.
 
-### Let's At Least Pretend to Care About Security
-
-On second thought, storing your real password in plain text is not really a smart thing to do.
-
-The server doesn't actually store your plain text password; instead, it stores a **hash** of your password. When you log in, the server calculates the hash of the password you provide, then checks it against the stored hash. If there's a match, it accepts the supplied password and allows you to authenticate to the network.
-
-Therefore, you can get around the problem of storing a password in plain text by storing the **hash** of your password. Assuming that you're using a strong cryptographic hash function, recovering your real password from the hash is prohibitively difficult.
-
-First, generate the hash:
-```
-prompt$ echo -n YourRealPasswordGoesHere | iconv -t utf16le | openssl md4
-```
-This will print something like
-```
-(stdin)= e1daee0c568764db0123456789abcdef
-```
-The hex string to the right of `=` is the hash of your password. Highlight it and press COMMAND + c to copy.
-
-Now reopen `wpa_supplicant.conf` using `sudo nano`. Edit the `password` line:
-```
-password=hash:e1daee0c568764db0123456789abcdef
-```
-The hex string will be the string that you generated in the previous step. Paste it using COMMAND + v.
-
-Save the file using CTRL + o and exit using CTRL + x.
-
-To reauthenticate to the network, you must reboot:
-```
-prompt$ sudo reboot
-```
-`reboot` will log you out of the terminal connection as it reboots your Pi. Wait about a minute, then log back in using SSH. Pro tip: you can press the up arrow in the terminal to cycle through your previous commands.
-
-Once you're back in, try
-```
-prompt$ ping 8.8.8.8
-```
-If it works, you've authenticated to the wireless network without using your plain text password.
-
-The final step is to clear your Pi's command history so no nefarious person can recover your password by looking back to the hash generation command.
-```
-prompt$ history -c
-prompt$ history -n
-```
-
-### Update and Upgrade
-
-Run four commands:
-
-    prompt$ sudo apt-get update
-    prompt$ sudo apt-get upgrade
-    prompt$ sudo rpi-update
-    prompt$ sudo reboot
-    
-`apt-get` is a standard command for managing packages and installing programs on many Linux distros. It has to be run as root to make
-system changes, so it's prefixed by `sudo`.
-
-These will bring your Pi's OS and utilities up to the latest versions. The upgrade will take several minutes, but you only have to do it once.
-
-
-
 ### Cowsay?
 
 Let's install a new program.
 ```
 prompt$ sudo apt-get install cowsay
 ```
+`apt-get` is a standard command for managing packages and installing programs on many Linux distros. It has to be run as root to make
+system changes, so it's prefixed by `sudo`.
+
 Run the program:
 ```
 prompt$ cowsay "Hello, Raspberry Pi!"
