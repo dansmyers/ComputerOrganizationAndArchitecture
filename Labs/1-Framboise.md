@@ -92,7 +92,11 @@ prompt$ sudo nano wpa_supplicant.conf
 
 Linux systems have the notion of privilege levels and access control. The top level account on any system is the **superuser** or **root** account, which has the ability to make any change to anything. Regular users always run with privileges below that of root.
 
-`sudo` is `substitute user do`&mdash;it's a way to run individual commands with superuser-level privileges without actually logging in as the root account. The `wpa_supplicant.conf` file can only be edited by root, so you need to use `sudo` when you open it.
+`sudo` is `substitute user do`&mdash;it's a way to run individual commands with superuser-level privileges without actually logging in as the root account.
+
+![xkcd #149](https://imgs.xkcd.com/comics/sandwich.png)
+
+The `wpa_supplicant.conf` file can only be edited by root, so you need to use `sudo` when you open it.
 
 Edit the file so that it looks like the following. There may be an additional country line in the header: that's okay. Put your own
 Rollins username and password in the `identity` and `password` fields.
