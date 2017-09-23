@@ -101,7 +101,10 @@ The `wpa_supplicant.conf` file can only be edited by root, so you need to use `s
 Edit the file so that it looks like the following. There may be an additional country line in the header: that's okay. Put your own
 Rollins username and password in the `identity` and `password` fields.
 
-**THE FILE ACTUALLY HAS TO LOOK LIKE THE ONE SHOWN BELOW. CHECK THE SPACING AND SPELLING OF EVERY ITEM.**
+**THE FILE HAS TO LOOK LIKE THE ONE SHOWN BELOW. CHECK THE SPACING AND SPELLING OF EVERY ITEM.**
+
+You can copy the `network` block and paste it into the terminal window. Mac users can probably use the regular `COMMAND + v` paste command; Windows users can paste by right-clicking in the PuTTY window.
+
 ```
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
