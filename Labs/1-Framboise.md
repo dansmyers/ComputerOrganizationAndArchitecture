@@ -192,26 +192,19 @@ Pipes are a common tool in the Unix world: they allow you to chain small, simple
 
 ### Get Back to Work
 
-Write a simple C program that declares three integers, assigns them values, adds them into a fourth integer, then prints their sum.
+Write a simple C program that adds two integers and prints their sum.
 
 Use the `nano` editor and compile your program with `gcc`:
 ```
 prompt$ cd ~
 prompt$ mkdir labs
+prompt$ cd labs
 prompt$ nano add.c
 prompt$ gcc -o add add.c
 prompt$ ./add
+prompt$ cd ..
 ```
-
-You can modify the output of `gcc` using different flags. The `-S` flag instructs `gcc` to stop the compilation process after producing an assembly language file.
-```
-prompt$ gcc -S add.c
-```
-Take a look at the assembly file:
-```
-prompt$ nano add.s
-```
-There will be several things that are unclear at this point, but take a close look at the sequence of basic language instructions in the file. Can you decipher the basic steps in the program's execution?
+Remember to use `CTRL + o` to save your file in the `nano` editor and `CTRL + x` to exit.
 
 ### One More Thing...
 Telnet is a program for establishing a remote connection to another server.
