@@ -53,7 +53,7 @@ First, download PuTTY, a program for making remote connections with a terminal i
 
 Note that `putty.exe` is simply an exectuable file, not an installer.
 
-Next, download and install [Bonjour Print Services](https://support.apple.com/kb/dl999?locale=en_US) from Apple. This program will allow your computer to recognize the Raspberry Pi's name over your direct ethernet connection. If you have iTunes installed you may already have the necessary protocol.
+Next, download and install [Bonjour Print Services](https://support.apple.com/kb/dl999?locale=en_US) from Apple. This program will allow your computer to recognize the Raspberry Pi's name over your direct ethernet connection. If you have iTunes installed you may already have the necessary protocol. **Make sure to run the installer**.
 
 Run PuTTY. In the "Host name" field, enter `pi@raspberrypi.local`, then press the "Open" button. You should see a terminal window pop up.
 
@@ -110,7 +110,7 @@ ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
 
 network={
-	ssid="FoxNet"
+	ssid="FoxNet-v2"
 	proto=RSN
 	key_mgmt=WPA-EAP
 	pairwise=CCMP
@@ -137,6 +137,8 @@ Test by pinging a remote server. `ping` is a command that sends small message pa
 prompt$ ping 8.8.8.8
 ```    
 8.8.8.8 is the IP address of the public Google DNS server. If your Pi is connected to FoxNet, you should see lines reporting the response times of each `ping` packet. If you get a message saying that the network is unreachable, or another error, double-check the contents of the `wpa_supplicant.conf` file.
+
+Press `CTRL + c` to terminate the `ping` program.
 
 ### Cowsay?
 
