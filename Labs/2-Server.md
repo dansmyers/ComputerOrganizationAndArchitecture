@@ -2,7 +2,7 @@
 
 A web server is a program that receives and processes HTTP requests. HTTP (the "Hypertext Transfer Protocol") is the main protocol used to request and transmit web pages over the global Internet.
 
-In this lab, you'll turn your Raspberry Pi into a web server, create a basic web page, and experiment with a few of Linux's basic security features. This will give you practice:
+In this lab, you'll turn your Raspberry Pi into a web server, create a basic web page, and experiment with a few of Linux's security features. This will give you practice:
   
   - Installing and configuring the nginx web server
   - Connecting to the server using its IP address and HTTP
@@ -14,35 +14,27 @@ In this lab, you'll turn your Raspberry Pi into a web server, create a basic web
 
 Repeat the basic setup process from the last lab:
 
-  1. Log in to the dekstop Mac.
+  1. Connect your Pi to your laptop using an ethernet cable.
   
-  2. Open the terminal application.
+  2. Open the terminal application (for Mac users) or PuTTY (for Windows users).
   
-  3. Once the terminal is open, **gently** disconnect the network cable from the wall and connect it to the ethernet port of your Raspberry Pi.
+  3. Connect the power supply to the Pi and wait about a minute
   
-  4. Connect the power supply to the Pi and wait about a minute
-  
-  5. Log in to the pi using ssh:
+  4. Log in to `pi@raspberrypi.local`. For Mac users, the terminal command is
   
   ```
   prompt$ ssh pi@raspberrypi.local
   ```
   
   The default password is `raspberry`.
-  
-  You may get a fearsome error saying `REMOTE HOST IDENTIFICATION HAS CHANGED!`. This can be caused by logging into a desktop computer that previously hosted a different Pi under the name `raspberrypi.local`. You can make the desktop forget the old Pi using
-  
-  ```
-  prompt$ ssh-keygen -R raspberrypi.local
-  ```
-  
-  6. Connect the desktop computer to FoxNet and verify that you're connected by opening a browser.
-  
+   
 Once you're logged in to the Pi, verify that your wi-if is working:
 
 ```
 prompt$ ping 8.8.8.8
 ```
+
+Remember that you can use `CTRL + c` to terminate the `ping` program.
 
 ## Install nginx
 
@@ -73,8 +65,6 @@ Your server is now up and sending a default page in response to HTTP requests. L
 ```
 prompt$ sudo nginx -s quit
 ```
-
-A web server needs access to the system's low-level network resources, so interacting with nginx requires the `sudo` command.
 
 ## Test
 
