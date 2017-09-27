@@ -303,9 +303,9 @@ Here's one last style block that makes things a little more readable by bringing
 
 The background and text are softened a little away from strict white and black.
 
-## Authentication
+## Password Cracking
 
-Let's modify our site so that it restricts access using basic HTTP authentication. This is not the most sophisticated setup possible. In particular, it doesn't protect user passwords from anyone that might be sniffing traffic on the wi-fi network. Nonetheless, it helps illustrate some important Linux password-management concepts.
+For the second part of the lab, we'll work on cracking some passwords using *John the Ripper*, an open source cracking program.
 
 ### How does a Linux system store your password?
 
@@ -341,57 +341,84 @@ The huge string specifies the hash of Pi's password. In this case, we know the p
 
 The leading `$6$` at the beginning of the hash string is called the **salt**. The number in the salt identifies the function used to generate the hashed password entry. The value 6 indicates the SHA-512 hash function.
 
-### Adding Authentication to the Web Site
 
-Open up the configuration file.
+### Get Ripped
 
-```
-prompt$ sudo nano /etc/nginx/sites-available/default
-```
+A password cracker takes a shadow password file as input and reverse-engineers the real passwords that correspond to the hashes it contains.
 
-Scroll down and look for a block labeled `location / {`. Add two lines to the `location` block.
+Install John the Ripper:
 
 ```
-        auth_basic "Restricted";
-        auth_basic_user_file /home/pi/web/.htaccess;
+prompt$ sudo apt-get install john
 ```
 
-The first line is just a message indicating that the site is "Restricted." The second specifies the location of a shadow password file to use for authentication to the site. The shadow file will be called `.htaccess` and live in the same directory as the rest of the site.
-
-The `.` indicates that `.htaccess` is a hidden file and won't show up in normal listings. Use `ls -a` to show hidden files.
-
-The `.htaccess` file will contain a list of user names and their associated password hashes.
-
-To create a hash of a password, use
+Now make an example shadow password file:
 
 ```
-prompt$ openssl passwd -1 "password"
+prompt$ cd ~
+prompt$ openssl passwd -1 "password" > shadow_test
 ```
 
-This will print a string beginning with `$1$`, which is the MD5 hash of the string `password`.
+`openssl` is a program for performing, among other things, crypto-related operations. The `-1` flag indicates the MD5 hash function. `password` is the real password that is being hashed.
 
-**Don't use an important password for this activity**. The basic authentication protocol sends your password over the network in cleartext. It's unlikely, but anyone logging traffic on the campus wi-fi system could grab a copy of the password as it's in transmission.
-
-Now, open the `.htaccess` file and enter a username and the password hash you just generated.
+The operation `> shadow_test` redirects the output of `openssl`, which would normally be printed to the terminal, to a file named `shadow_test`. You can check the contents of the file:
 
 ```
-prompt$ sudo nano .htaccess
+prompt$ cat shadow_test
 ```
 
-Copy and paste the password hash string to create a line like
+Now get cracking:
 
 ```
-pi:$1$JyPDrvsl$cvM7ZKzCiIZmaJqV5nCLY.
+prompt$ john shadow_test
 ```
 
-You must reload nginx to make the changes to the config file take effect:
+John quickly tries a few basic cracking rules, one of which is blasting through a list of common passwords. Since `password` is on that list, it quickly identifies that the string `password` matches up with the data in the `shadow_test` file.
+
+Let's try something a littler harder:
 
 ```
-prompt$ sudo nginx -s reload
+prompt$ openssl passwd -1 "raspberry" > shadow_test
 ```
 
-Now reload your page. You should be prompted to enter a name a password. Enter the ones you specified in the `.htaccess` file and watch the page load.
+You can run `john shadow_test` again and let it run for a minute or so, but it won't crack the password. `raspberry` is too unusual for the default cracking approach. Try pressing the spacebar as `john` runs to get a status update on what it's currently trying.
 
+Can we do better? Yes, we can, with a **dictionary** attack. Download a large list of words:
+
+```
+prompt$ sudo apt-get install wamerican-large
+```
+
+Now run the program again, using the large wordlist as a list of candidate passwords.
+
+```
+prompt$ john --wordlist=/usr/share/dict/american-english-large shadow_test
+```
+
+It will take a minute, but `john` will eventually work its way through the list to find `raspberry` and crack the password. Press the spacebar for updates as it cracks.
+
+How about one more?
+
+```
+prompt$ openssl passwd -1 "raspberry1" > shadow_test
+```
+
+John is still one step ahead of you, because it can apply **mangling rules** to the candidate wordlist to generate new passwords that match common patterns.
+
+```
+prompt$ john --wordlist=/usr/share/dict/american-english-large --rules shadow_test
+```
+
+This approach is extremely effective. People are not very creative, on average, so a good list of words and a set of common mangling patterns is enough to crack a large fraction of the hashes in a typical password database.
+
+How to create good passwords? Basically, a combination of length and unusualness.
+
+    - Truly random passwords are always strong, because they can only be cracked by brute force. On the other hand, they're almost impossible to remember without a password manager
+    - Failing that, a combination of length, a large character set with capitals and special characters, and a generation process that avoids common mangling rules.
+
+One popular approach is to randomly string together words from a list. A password generation tool named DiceWare does essentially this.
+
+![xkcd 936](https://imgs.xkcd.com/comics/password_strength.png)
 
 ## Last Step
 
