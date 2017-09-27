@@ -328,37 +328,7 @@ prompt$ cat /etc/shadow
 
 You'll get `Permission denied` as a result.
 
-Every Linux file has a set of **permissions**, describing which users are allowed to read, write, and execute the file. You can view the permissions with `ls -l`:
-
-```
-prompt$ ls -l /etc/shadow
-```
-
-Every file has an owner and an associated group. The owner of the `shadow` file is root and its group is `shadow`. The permissions are a string of the form
-
-```
-rwxrwxrwx
-```
-
-For `shadow`, the permission string is `rw-r------`.
-
-The first `rwx` group indicates the permissions assigned to the owner of the file: `root` can read and write the shadow file, which makes sense.
-
-The second `rwx` group indicates permissions for the file's associated group. The `shadow` group can read, but not write, the file.
-
-The third `rwx` group indicates permissions for any other system user. Other users have no permissions for the `shadow` file. This makes sense: `shadow` contains sensitive information about user passwords, so only sysadmins with root access should be able to interact with it. Regular users should not be able to read or write the `shadow` file.
-
-You can check the permissions for some other files:
-
-```
-prompt$ ls -l /home/pi/web/index.html
-```
-
-What do the results show?
-
-### Move in the Shadows
-
-You can view the contents of `shadow` with `sudo`.
+As you might expect, the `shadow` file contains sensitive information, so it's not accessible to regular users. You have to use root-level priviliges to interact with it.
 
 ```
 prompt$ sudo cat /etc/shadow
@@ -366,7 +336,9 @@ prompt$ sudo cat /etc/shadow
 
 Look for a line that begins with `pi:$6$X8NL...`. This is shadow password file entry for user `pi`, the default user that we've used to log in to the Raspberry Pi.
 
-The huge string specifies the hash of Pi's password. In this case, we know the password is `raspberry`, but it would be hard to determine that if all we had was the `shadow` file. The `$6$` at the beginning of the line indicates that the hash was produced by the SHA-512 hash function.
+The huge string specifies the hash of Pi's password. In this case, we know the password is `raspberry`, but it would be hard to determine that if all we had was the `shadow` file.
+
+The leading `$6$` at the beginning of the hash string is called the **salt**. The number in the salt identifies the function used to generate the hashed password entry. The value 6 indicates the SHA-512 hash function.
 
 ### Adding Authentication to the Web Site
 
