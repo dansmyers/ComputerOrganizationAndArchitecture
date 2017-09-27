@@ -59,6 +59,7 @@ Start nginx:
 ```
 prompt$ sudo nginx
 ```
+If this command givs you a "could not bind" error, that's okay. It just means that nginx started running when you installed it.
 
 Your server is now up and sending a default page in response to HTTP requests. Later, when you're ready to stop it, use
 
