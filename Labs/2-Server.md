@@ -7,8 +7,8 @@ In this lab, you'll turn your Raspberry Pi into a web server, create a basic web
   - Installing and configuring the nginx web server
   - Connecting to the server using its IP address and HTTP
   - Creating and styling a basic HTML web page
-  - Working with file permissions using the `chmod` command
-  - Setting up a shadow password file and basic HTTP authentication
+  - Shadow password files
+  - Password cracking with John the Ripper
 
 ## Initial Setup
 
