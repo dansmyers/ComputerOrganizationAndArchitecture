@@ -413,14 +413,15 @@ This approach is extremely effective. People are not very creative, on average, 
 
 How to create good passwords? Basically, a combination of length and unusualness.
 
-    - Truly random passwords are always strong, because they can only be cracked by brute force. On the other hand, they're almost impossible to remember without a password manager
-    - Failing that, a combination of length, a large character set with capitals and special characters, and a generation process that avoids common mangling rules.
+- Long, truly random passwords are always strong, because they can only be cracked by brute force. On the other hand, they're almost impossible to remember without a password manager
+    
+- Failing that, a combination of length, a large character set with capitals and special characters, and a generation process that avoids common mangling rules.
 
-One popular approach is to randomly string together words from a list. A password generation tool named DiceWare does essentially this.
+One popular approach is to randomly string together words from a list.
 
 ![xkcd 936](https://imgs.xkcd.com/comics/password_strength.png)
 
 ## Last Step
 
-Log out of your Pi by typing `exit` at the prompt. Disconnect it from the ethernet cable and power, and then **plug the network cable back into the wall**.
+Log out of your Pi by typing `exit` at the prompt.
 
