@@ -194,6 +194,11 @@ loaded into the reserved memory.
 
 ARM is a **load-store architecture**. This means that there is **no way** to directly interact with variables in memory. Rather, you must explicitly **load** data from memory into a register, operate on it, then explicitly **store** the data back to memory.
 
+Loading and storing data directly from or to a memory location is called **direct addressing**. You now know two addressing modes:
+
+  - immediate addression, for loading hard-coded values
+  - direct addressing, for load and store operations on memory locations associated with variables
+
 Loading and storing is a two-step process:
 
   1. Load the memory address associated with the variable.
@@ -206,17 +211,15 @@ The first key command is
 ldr r1, =x
 ```
 
-The `=x` statement gets the memory address associated with a label. Note that `r1` is just an example register; you can load the
-address into any general purpose register, r0 to r12.
+The `=x` statement gets the memory address associated with a label. The command loads this address into `r1`. Note that `r1` is just an example register; you could use any of the general purpose registers, r0 to r12.
 
-The second command is
+The second command completes the operation by loading the data from memory into a register:
 
 ```
 ldr r0, [r1]
 ```
 
-This command would load the value at the memory address in `r1` (loaded by the previous instruction) into `r0`. Again, you can use
-any registers for this operation, not just `r0` and `r1`.
+This instruction fetches the data at the memory address in `r1` (loaded by the previous instruction) into `r0`. Again, `r0` and `r1` are not special: any of the general purpose registers could have been used.
 
 The store operation is similar:
 
