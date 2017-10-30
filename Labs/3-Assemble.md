@@ -97,10 +97,10 @@ value (probably 0).
 ### Addressing Modes
 Here is the first key to ARM programming: everything happens with registers.
 
-  - Data is loaded into registers
-  - Arithmetic and logical operations always take their arguments from registers and put their results back into a register
+  - Values are loaded into registers.
+  - Arithmetic and logical operations always take their arguments from registers and put their results back into a register.
   
-In ARM, there is no way to perform a calculation **without first** loading the data into registers.
+In ARM, there is no way to perform a calculation **without first loading the data into registers**.
 
 A way of loading data is called an **addressing mode**. So far, we've seen one mode, **immediate addressing**, where the data is specified as part of the command.
 
@@ -153,5 +153,170 @@ A few points to make about this program:
     ```
     command  destination, source1, source2
     ```
+    
+### Practice
+
+1. Write a program that loads 1 into `r0` and 100 into `r1`, then uses `r2` to swap their values. Use 
+
+```
+mov rX, rY
+```
+to copy the value of register `rY` into `rX`, where `Y` and `X` are then numbers of general-purpose registers.
+
+2. Write a program that calculates `50 - 5` and returns the result. Use 
+
+```
+sub rX, rY, rZ
+```
+
+to perform the operation `rX <- rY - rZ`.
 
 ## Variables
+
+Recall that variables are stored in **main memory** while the program executes. In ARM, a global variable is a label associated with some reserved space. To create a global variable, you need two things:
+
+First, the keyword `.data`, which specifies the "data" section of the program. We'll also add a `.text` section to identify the code.
+
+Second, a label name and the `.word` assembler directive, which reserves the required space.
+
+Here is the complete example:
+
+```
+.data
+
+x: .word 10
+```
+
+`.word` reserves 4 bytes of space, which is now associated with the label `x`. The number, if it's present, specifies the initial value
+loaded into the reserved memory.
+
+### Loading and Storing
+
+ARM is a **load-store architecture**. This means that there is **no way** to directly interact with variables in memory. Rather, you must explicitly **load** data from memory into a register, operate on it, then explicitly **store** the data back to memory.
+
+Loading and storing is a two-step process:
+
+  1. Load the memory address associated with the variable.
+  
+  2. Load data from that address or store data to that address.
+  
+The first key command is
+
+```
+ldr r1, =x
+```
+
+The `=x` statement gets the memory address associated with a label. Note that `r1` is just an example register; you can load the
+address into any general purpose register, r0 to r12.
+
+The second command is
+
+```
+ldr r0, [r1]
+```
+
+This command would load the value at the memory address in `r1` (loaded by the previous instruction) into `r0`. Again, you can use
+any registers for this operation, not just `r0` and `r1`.
+
+The store operation is similar:
+
+```
+str r2, [r1]  // Store value in r2 into the memory location held in r1
+```
+  
+Here is a complete example. The program allocates a variable named `x`, stores a value into `x`, then loads the value of `x` back into `r0` as the return code. In C, this program would be
+
+```
+int x;  // Global variable
+
+int main() {
+    x = 21;
+    return x;
+}
+```
+
+Create a new file and **type** this program into it so you can study every detail. **Don't copy and paste it**.
+
+```
+// Using a variable
+
+.global main
+
+.data  // All variable declarations go after .data
+x: .word 0
+
+.text  // All code goes after .text
+
+main:
+    push {ip, lr}
+    
+    // r0 <- 21
+    mov r0, #21
+    
+    // Load the address of x into r1
+    // ldr is the load instruction
+    // Use = to get the address of a label
+    // Like &x in C
+    ldr r1, =x
+    
+    // Address of x is now in r1
+    // Use [r1] to store to this location
+    str r0, [r1]  // x <- r0
+    
+    // Reload the updated value of x into r0
+    // The address of x is still in r1
+    ldr r0, [r1]
+    
+    // Program returns 21
+    pop {ip, pc}
+```
+    
+### Incrementing a Variable
+Create a new file named `variables.s` and fill it with the following code. **Type the program**, so you can inspect every element of it. Don't copy and paste it. This program is equivalent to:
+
+```
+int x = 10;
+
+int main() {
+    x = x + 1;
+    return x;
+}
+```
+
+```
+// Incrementing a variable in ARM
+
+.global main
+
+//*** Global vars and static data ***//
+.data
+x: .word 10  // x is initially 10
+
+//*** Code ***//
+.text
+
+main:
+    push {ip, lr}
+
+    // r0 <- 1
+    mov r0, #1
+
+    // Use =x to get the address of x
+    ldr r2, =x
+
+    // Use [r2] to load x's value
+    ldr r1, [r2]  // r1 <- x
+    
+    // Increment
+    add r1, r0, r1 // r1 <- r0 + r1
+
+    // Store the incremented value
+    str r1, [r2]  // memory location stored in r2 <- value in r1
+
+    // Reload x as the return value in r0
+    // Address is still in r2
+    ldr r0, [r2]
+    
+    // Return
+    pop {ip, pc}
+```
