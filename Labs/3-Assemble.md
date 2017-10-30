@@ -323,3 +323,18 @@ main:
     // Return
     pop {ip, pc}
 ```
+
+### Practice
+
+Translate the following program into ARM:
+
+```
+int x = 10;
+int y = 15;
+int z;
+
+int main() {
+  z = x + y;
+  return z;
+}
+```
