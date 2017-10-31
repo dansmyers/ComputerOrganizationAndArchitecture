@@ -161,7 +161,7 @@ A few points to make about this program:
 ```
 mov rX, rY
 ```
-to copy the value of register `rY` into `rX`, where `Y` and `X` are then numbers of general-purpose registers.
+to copy the value of register `rY` into `rX`, where `Y` and `X` are the numbers of general-purpose registers.
 
 2. Write a program that calculates `50 - 5` and returns the result. Use 
 
