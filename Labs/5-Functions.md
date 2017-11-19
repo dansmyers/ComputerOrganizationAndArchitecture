@@ -110,7 +110,7 @@ main:
 
 Here's a program that performs multiplication in a loop. The two factors are passed in `r0` and `r1` and the product is returned in `r0.
 
-Write a main function that sets up two arguments, calls `multiply`, and prints the result using `printf`.
+Implement the program and add a main function that sets up two arguments, calls `multiply`, and prints the result using `printf`.
 
 ```
 .global main
