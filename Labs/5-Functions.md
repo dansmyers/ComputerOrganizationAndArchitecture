@@ -25,6 +25,8 @@ Here's an example of a recursive ARM program. The program counts down from 5, th
 Blastoff!
 ```
 
+**Type** the program, run it, and verify that it works as expected. Then change the program so that it starts at 10 and stops at 5.
+
 ```
 // A recursive program
 .global main
@@ -108,7 +110,7 @@ main:
 
 Here's a program that performs multiplication in a loop. The two factors are passed in `r0` and `r1` and the product is returned in `r0.
 
-Write a main function that calls `multiply` with two arguments and prints the result using `printf`.
+Write a main function that sets up two arguments, calls `multiply`, and prints the result using `printf`.
 
 ```
 .global main
@@ -151,4 +153,10 @@ multiply:
     // Return -- product is in r0
     pop {ip, pc}
 ```
+
+## Real Ultimate Power
+
+Modify your multiplication program by adding a `power` function. The function should take two arguments, `p` in `r0` and `q` in `r1`, and return `p` raised to the power `q` in `r0`. Use a loop that calls `multiply` to calculate the answer.
+
+
 
