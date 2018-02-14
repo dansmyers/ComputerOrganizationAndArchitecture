@@ -30,7 +30,7 @@ Open Etcher and insert your SD card into the laptop. The Etcher software should 
 
 The burn process taks 2-3 minutes, followed by another 2-3 minutes for validation. Don't do anything to disrupt the process until the entire operation is complete.
 
-Once your burn is completely finished, remove your SD card from the laptop, then reinsert it. Look in Windows Explorer and you should see a removable drived named `boot`.
+Once your burn is completely finished, remove your SD card from the laptop, then reinsert it. Look in Windows Explorer and you should see a removable drive named `boot`.
 
 To log in to the Raspberry Pi, you need to enable the SSH ("Secure Shell") encrypted log-in protocol. This is disabled by default on current versions of the Raspbian OS.
   - Open Notepad
