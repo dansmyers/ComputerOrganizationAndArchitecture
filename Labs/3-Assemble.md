@@ -105,7 +105,7 @@ In ARM, there is no way to perform a calculation **without first loading the dat
 A way of loading data is called an **addressing mode**. So far, we've seen one mode, **immediate addressing**, where the data is specified as part of the command.
 
 ```
-mov r0, 100  // Load the value 100 into r0
+mov r0, #100  // Load the value 100 into r0
 ```
 
 There are other addressing modes that correspond to different ways of loading data, each of which is useful in a different context. We'll see another one at the end of this lab when we introduce variables.
