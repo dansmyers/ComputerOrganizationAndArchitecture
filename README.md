@@ -19,13 +19,23 @@ rollins.webex.com/meet/dmyers
 
 ## Official Course Description
 
-**CMS 230 Computer Systems and Architecture
+**CMS 230 Computer Systems and Architecture**: Introduction to the study of how software controls the critical hardware
+components of a computer’s architecture, the CPU and RAM. Topics include development of C language
+programs, comparison of high-order procedural languages to machine language programs, CPU
+organization and functionality at the register/bus level, instruction formats, and development of machine
+language and assembly level programs using multiple addressing modes, flow-of-control branching and
+subroutine calls. Prereq: CMS 170 or CMS121.
 
 ## Learning Outcomes
 
-At the end of this course, you will
+At the end of this course, you will be able to
 
-1. 
+1. Write moderately complex programs in the C language using the standard tools for C programming in a Linux environment.
+2. Convert major procedural language code structures---arithmetic, conditional statements, loops, subroutines---into their assembly langauge equivalents.
+3. Write small ARM assembly language programs. Read and understand ARM assembly code.
+4. Describe how integers, characters and floating point numbers are implemented on real computers.
+5. Describe important elements of computer architecture. Understand the memory hierarchy, caching, and their impact on program execution.
+6. Understand how system-level issues can cause security problems. Describe the mechanics of the buffer overflow attack and how to defend against it.
 
 ## Textbook
 
