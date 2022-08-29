@@ -94,7 +94,21 @@ The number `(1 + sqrt(5)) / 2` is the famous golden ratio, the most aestheticall
 
 Implement a function called `binet` that takes an `int n` as input and returns the corresponding term in the Fibonacci sequence. Test your program by writing a `main` with a `for` loop that calculates and prints the first 20 numbers of the sequence.
 
-But wait!
+Put your solution in a file named `binet.c`.
+
+But wait! You need the ability to calculate `sqrt` and `pow` functions. Both are defined in `math.h` and you can search the Internet to see how they're used.
+
+To use the math functions, you'll need to `#include <math.h>` at the top of your program and also **link your code** with the math library. Libraries are pre-compiled collections of useful routines. The linking process merges this pre-compiled code into your executable.
+
+By convention, all libraries start with the prefix `lib-`, followed by the name of
+the library. The math library is called `libm.a` and lives in a subdirectory of
+`/usr/lib`. Use the `-l`  flag to link a library, like so:
+```
+gcc -Wall -Werror -o binet binet.c -lm
+```
+`gcc` processes the `-l` flag by interpreting the rest of the flag (the letter `m` in this case)
+as  the name of a library. It then uses that name to generate a library name in the
+standard form (`libm.a`), looks up the library, and adds it to your program.
 
 
 
