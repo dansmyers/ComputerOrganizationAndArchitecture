@@ -1,6 +1,6 @@
 # Assignment 1: Enter the C
 
-<img src="https://imgs.xkcd.com/comics/compiling.png" width="40%" \>
+<img src="https://imgs.xkcd.com/comics/compiling.png" width="40%" />
 
 ## Due Wednesday, September 7
 
