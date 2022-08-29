@@ -131,7 +131,7 @@ The number `(1 + sqrt(5)) / 2` is the famous golden ratio, the most aestheticall
 
 <img src="https://lp-cms-production.imgix.net/2019-09/ab57ac3775d90a72da514d158401bd47-parthenon.jpg" width="35%" />
 
-(much columns  such proportions)
+*much columns  such proportions*
 
 Implement a function called `binet` that takes an `int n` as input and returns the corresponding term in the Fibonacci sequence. Test your program by writing a `main` with a `for` loop that calculates and prints the first 20 numbers of the sequence.
 
