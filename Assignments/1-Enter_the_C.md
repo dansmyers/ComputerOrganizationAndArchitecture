@@ -1,5 +1,7 @@
 # Assignment 1: Enter the C
 
+<img src="https://imgs.xkcd.com/comics/compiling.png" width="40%" \>
+
 ## Due Wednesday, September 7
 
 ## What is the Pirate's Favorite Programming Language?
