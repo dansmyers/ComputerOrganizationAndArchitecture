@@ -82,7 +82,7 @@ It turns out there is a single formula that will calculate the terms of the Fibo
 
 The result is know as Binet's formula and it says that the Nth Fibonacci number `F_n` is
 
-<img src="https://latex.artofproblemsolving.com/8/6/d/86d486c560727727342090b432e23ba85ac098b1.png" width="10%"/>
+<img src="https://latex.artofproblemsolving.com/8/6/d/86d486c560727727342090b432e23ba85ac098b1.png" width="20%"/>
 
 Gnarly.
 
