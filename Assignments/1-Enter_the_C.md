@@ -30,10 +30,49 @@ Put each one of your programs in a separate file (not all in the same file) and 
 
 ### Problems
 
+### 
+
+### Triple min
+
+Write a function named `tripleMin` that takes three `double` inputs and returns the minimum of the three. Don't use any built-in functions. Write an appropriate `main` to test your function and print results for the following cases:
+
+```
+double m = tripleMin(1, 2, 3);
+printf("%d\n", m);
+
+m = tripleMin(2, -1, 3);
+printf("%d\n", m);
+
+m = tripleMin(3, 3, 3);
+printf("%d\n", m);
+```
+
+Put your solution in a file named `min.c`.
+
 
 ### Look on my works, ye mighty, and despair!
 
+Write a function called `pyramid` that takes an `int n` as input and prints a pyramid of `n` levels. For example, if `n` is five, your program should print
 
+```
+    *
+   ***
+  *****
+ *******
+*********
+```
+
+Tip: the top level has `n - 1` spaces and one star. The next level has `n - 2` spaces and two stars. You can use two variables `numSpaces` and `numStars` to keep track of the number of spaces and stars to print on the current line, then adjust them in a loop.
+
+Remember that `printf` doesn't automatically move to the next line, so you can print multiple characters on one line in a loop:
+```
+for (int s = 0; s < numStars; s++) {
+  printf("*");
+}
+printf("\n");  // Move to the next line
+```
+
+Write a `main` that uses your function to print a pyramid of 10 levels.
 
 
 ### McCarthy's 91 function
