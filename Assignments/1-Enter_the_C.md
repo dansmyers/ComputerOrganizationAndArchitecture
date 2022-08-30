@@ -32,7 +32,18 @@ Put each one of your programs in a separate file (not all in the same file) and 
 
 ### Problems
 
-### 
+### Descending a staircase
+
+Write a function called `stairs` that takes an `int n` as input and prints a staircase with `n` levels, like the following:
+```
+#
+##
+###
+####
+#####
+```
+Put your program in a file called `stairs.c` and write a `main` that prints a ten-level staircase.
+
 
 ### Triple min
 
@@ -54,6 +65,8 @@ Put your solution in a file named `min.c`.
 
 ### Look on my works, ye mighty, and despair!
 
+<img src="https://upload.wikimedia.org/wikipedia/en/1/1c/Iron_Maiden_-_Powerslave.jpg" width="25%" />
+
 Write a function called `pyramid` that takes an `int n` as input and prints a pyramid of `n` levels. For example, if `n` is five, your program should print
 
 ```
@@ -64,7 +77,21 @@ Write a function called `pyramid` that takes an `int n` as input and prints a py
 *********
 ```
 
-Tip: the top level has `n - 1` spaces and one star. The next level has `n - 2` spaces and two stars. You can use two variables `numSpaces` and `numStars` to keep track of the number of spaces and stars to print on the current line, then adjust them in a loop.
+Put your program in a file named `pyramid.c`. Write a `main` that uses your function to print a pyramid of 10 levels.
+
+Tip: the top level has `n - 1` spaces and one star. The next level has `n - 2` spaces and two stars. You can use two variables `numSpaces` and `numStars` to keep track of the number of spaces and stars to print on the current line, then adjust them in a loop that iterates over the levels of the pyramid.
+
+```
+// Loop over thd pyramid levels
+for (int level = 0; level < n; level++) {
+
+  // Use a loop to print the spaces for level n
+  
+  // Use a loop to print the stars for level n
+  
+  // Go to the next line
+}
+```
 
 Remember that `printf` doesn't automatically move to the next line, so you can print multiple characters on one line in a loop:
 ```
@@ -74,7 +101,20 @@ for (int s = 0; s < numStars; s++) {
 printf("\n");  // Move to the next line
 ```
 
-Write a `main` that uses your function to print a pyramid of 10 levels.
+
+### Hoard
+
+Of course, my pyramid must be hollow to hold the precious objects that will accompany me to the Afterlife. Write a function called `hollow` that prints hollow pyramids of `n` levels. For example,
+```
+    *
+   * *
+  *   *
+ *     *
+*********
+```
+Notice that the bottom level is still full of stars.
+
+Put your function in `pyramid.c` and add a line to the `main` to print a ten-level hollow pyramid after your print the ten-level solid pyramid. That is, `pyramid.c` should have two functions and print two different pyramids when it's run.
 
 
 ### McCarthy's 91 function
@@ -107,6 +147,47 @@ printf("%d\n", mccarthy(1));
 printf("%d\n", mccarthy(99));
 printf("%d\n", mccarthy(101));
 printf("%d\n", mccarthy(111));
+```
+
+### Ancient algorithms
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Complaint_tablet_to_Ea-Nasir_2020.jpg/1024px-Complaint_tablet_to_Ea-Nasir_2020.jpg" width="25%" />
+
+*The complaint tablet to Ea-Nasir from ca. 1750 BC. It was written by a merchant named Nanni, complaining that Ea-Nasir's copper was not of the "finest quality" and that he had treated Nanni's messangers with "contempt". When archaeologists excavated Ea-Nasir's house they discovered that one of his rooms was filled with tablets, many of which were complaints fronm other merchants that he had saved for posterity.*
+
+<img src="https://towardsthemoonblog.files.wordpress.com/2022/01/img_9026.jpg?w=768" width="25%" />
+
+How do you actually implement numerical algorithms for things like square roots or trig functions? Here's one famous example, an ancient method for approximating square roots. It's traditionally called the Babylonian method, though it's unclear if Babylonian mathematicians actually used it, although they did have methods for working with roots and quadratic equations.
+
+The method seeks to find the square root of a number `n` starting from an initial guess `x`. Intuitively, if `x` is smaller than the real root, then `n / x` will be *greater* than the real root. Likewise, if `x` is larger than the root, `n / x` will be smaller. The Babylonian method calculates a better approximation using the update rule
+```
+x = .5 * (x + n / x)
+```
+The initial value of `x` is a guess of the true root. For example, if we seek the root of `n = 144` starting from `x = 1`, the first update will be
+```
+x = .5 * (1 + 144 / 1) = 72.5
+```
+Subsequent iterations will yield roots of 37.243, 20.554, 13.780, 12.115, and 12.000. Despite a poor starting choice, the method converges quite quickly. (The Babylonian method is in fact a special case of Newton's method, which you may have seen in a Calculus class.)
+
+Write a function called `root` that takes `double n` and `double x` as inputs, then performs the Babylonian square root algorithm. Return the result as a `double`. Put you result in a file named `roots.c` and add a `main` that estimates the square root of 2 and prints the result to **four decimal places**.
+
+Tip: you need to determine when to step the root finding process. Define a tolerance value at the top of the program:
+```
+#define TOL .0001
+```
+Use a `while` loop that checks the difference between the old value of `x` and the next value in every iteration. Continue looping until the change in the estimate of the root becomes smaller than `TOL`.
+
+```
+// Start with a large diff for the first iteration
+double diff = 100.0;
+
+while (diff > TOL || diff < -TOL) {
+  // Save the current value of x
+  
+  // Calculate new value using the update rule
+  
+  // Update diff
+}
 ```
 
 ### Binet's formula and linking with libraries
