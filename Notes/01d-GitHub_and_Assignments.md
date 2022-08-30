@@ -1,5 +1,9 @@
 # GitHub and Assignments
 
+## This note is now DEPRECATED. We're not using GitHub for assignments this semester.
+
+It's here for reference in case we need to refer to it in the future.
+
 ## Version Control
 
 Git is a **version control system** designed to manage source code for large distributed projects. It was invented by Linus Torvalds, the creator of Linux, and inspired by the needs of that project. GitHub is a company providing cloud-based project hosting using Git.
