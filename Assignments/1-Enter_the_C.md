@@ -79,7 +79,7 @@ Write a function called `pyramid` that takes an `int n` as input and prints a py
 
 Put your program in a file named `pyramid.c`. Write a `main` that uses your function to print a pyramid of 10 levels.
 
-Tip: the top level has `n - 1` spaces and one star. The next level has `n - 2` spaces and two stars. You can use two variables `numSpaces` and `numStars` to keep track of the number of spaces and stars to print on the current line, then adjust them in a loop that iterates over the levels of the pyramid.
+Tip: the top level has `n - 1` spaces and one star. The next level has `n - 2` spaces and three stars. You can use two variables `numSpaces` and `numStars` to keep track of the number of spaces and stars to print on the current line, then adjust them in a loop that iterates over the levels of the pyramid.
 
 ```
 // Loop over thd pyramid levels
