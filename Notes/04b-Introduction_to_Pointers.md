@@ -10,7 +10,7 @@ A pointer is a variable that stores the memory address of a variable.
 
 Pointers are a powerful and, in some cases, dangerous, feature of C. Many operations in C programs can only be carried out using pointers.
 
-## Declaring and Assignint to Pointers
+## Declaring and Assigning to Pointers
 
 To create a pointer, use a `*` in the variable declaration, as follows:
 
