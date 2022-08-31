@@ -51,13 +51,13 @@ Write a function named `tripleMin` that takes three `double` inputs and returns 
 
 ```
 double m = tripleMin(1, 2, 3);
-printf("%d\n", m);
+printf("%f\n", m);
 
 m = tripleMin(2, -1, 3);
-printf("%d\n", m);
+printf("%f\n", m);
 
 m = tripleMin(3, 3, 3);
-printf("%d\n", m);
+printf("%f\n", m);
 ```
 
 Put your solution in a file named `min.c`.
