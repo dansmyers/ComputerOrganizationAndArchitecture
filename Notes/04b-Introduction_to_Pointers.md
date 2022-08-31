@@ -65,7 +65,7 @@ The basic operation on pointers is `*`, which retrieves **the value pointed to b
 
 This is also referred to as **dereferencing** the pointer.
 
-In the example above,`p` has been set to point to `x`, so `*p` would retrive the value of `x`. You can use `*p` anywhere you would use `x`, including in expressions.
+In the example above,`p` has been set to point to `x`, so `*p` would retrieve the value of `x`. You can use `*p` anywhere you would use `x`, including in expressions.
 
 ```
 printf("*p = %d\n", *p);  // prints 101
