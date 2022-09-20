@@ -1,8 +1,12 @@
 # Integers, Arrays, and Pointers
 
-## Due
+## Due Thursday, 9/29
 
 ## Overview
+
+The following questions will allow you to practice working with number formats, two's complement, and continuing to write C programs using arrays and pointers for user input.
+
+Put all of your work into the Assignment 2 workspace on repl.it. **Include a `Makefile` to automatically build your C programs**.
 
 ## Conversions
 
