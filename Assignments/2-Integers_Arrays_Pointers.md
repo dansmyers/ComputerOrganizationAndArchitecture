@@ -92,6 +92,8 @@ Write a program called `magic.c` that uses a 2-D array to implement the Siamese 
 
 - Loop through the values 1 to *n*<sup>2</sup>, placing each in the appropriate position according to the magic square rules. Always start in the center of the top row.
 
+- Print the complete square at the end.
+
 Wrapping around the square while moving up and right is relatively easy. The following pseudocode uses two variables, `row` and `col` to keep track of the next position to fill. The steps calculate the next position that would be obtained by moving up and right (wrapping around if necessary), then either place the next value there, or move down if the up-and-right position is occupied.
 
 ```
@@ -112,6 +114,8 @@ for (int i = 1; i <= n * n; i++) {
   // value of i there, and update row and col
   
 }
+
+// Print the complete square
 ```
 
 ### Treblecross
