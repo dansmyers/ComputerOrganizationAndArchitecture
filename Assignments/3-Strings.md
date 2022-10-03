@@ -14,6 +14,8 @@
 
 Benford's Law is one of the all-time great "I can't believe this is a thing" results. It states that, in many real-world quantitative data sets, **1 is by  far the most common leading digit**. Specifically, slightly more than 30% of the numbers in the data set should start with a leading 1.  About 17% of data values should start with 2, and about 13% start with 3. Leading 9's occur less than 5% of the time.
 
+A full description of the Law and the associated probabilities is given in the [Wikipedia article](https://en.wikipedia.org/wiki/Benford%27s_law).
+
 This is surprising, because you might expect the distribution of leading digits to be uniform; that is, about 11% of data values should start with a 1, another 11% with 2, and so forth, with 1's and 9's being equally common.
 
 The law is named after physicist Frank Benford, who called it *The Law of Anomalous Numbers* in a 1938 paper. Benford's Law has applications to fraud detection and accounting. Criminals faking financial data are unlikely to make their numbers correspond with the true probtabilities made by the law. *Facilitating white collar crime is not one of the learning outcomes of this course*.
@@ -295,5 +297,68 @@ Run the program like the following:
 
 You can verify (by adding a print statement) that the command above would set `numValues` to 10.
 
-### The Benford generator
+### Finish the generator
 
+Your goal is to write a program that takes two command line inputs:
+
+- `-n` specifiying the number of random values to output
+- `-d` specifying the number of digits in each value
+
+For each of random number, generate the first digit according to the distribution predicted by Benford's Law and the other digits uniformly at random. For example, if you run the program with the following inputs:
+
+```
+./benfordGenerator -n 100 -d 6
+```
+
+It should output 100 six-digit numbers. Here's a basic framework for doing so:
+
+```
+for (int n = 0; n < numValues; n++) {
+  int result = benfordDigit();
+  
+  for (int d = 0; d < numDigits - 1; d++) {
+    result = result * 10 + uniformDigit();
+  }
+  
+  printf("%d\n", result
+
+}
+```
+
+Here, `numValues` represents the parameter specified from the `-n` flag, `numDigits` is the parameter specified for the `-d` flag, and `benfordDigit()` and `uniformDigit()` are functions that return `int` values according to those distributions.
+
+### Plan
+
+- Start by implementing the program given above that reads the `-n` flag and sets `numValues`.
+- Modify that program to also read a `-d` flag and set `numDigits`. Tip: make the `getopt` string `"n:d:"`.
+- Verify that you can correctly get the parameters from the command line.
+- Implement the basic number generation loop. To start, make `benfordDigit` and `uniformDigit` return fixed values. Verify that you can generate the correct number of values with the correct number of digits.
+- Work on implementing the digit-generating functions.
+
+To generate random `int` values, you need to use the `rand` function, which returns a value between 0 and the built-in system `RAND_MAX`. You can generate a random `double` value between 0 and 1 using the following:
+
+```
+double r = ((double) rand()) / RAND_MAX;
+```
+
+You can combine this with a conditional statement to choose the correct digit according to the Benford distribution:
+
+```
+if (r < .3010) {  // A little bit more than 30% of values are 1's
+  return 1;
+} else if (r < .4770) { // An additional 17.6% are 2's
+  return 2;
+}
+
+// Add more cases for the other numbers
+```
+
+Review the Wikipedia article for the distribution values.
+
+## Overall Tips
+
+These problems are *that* hard, but they require you to integrate a lot of information. **Develop incrementally**! Make small changes, test each one, and then add the next feature. **Don't try to build the entire program and then test it**! There are too many things that can go wrong.
+
+When you get compiler errors, always start with the top-most one, fix it, and then recompile. Read the output messages carefully.
+
+As always: **Start early**! Don't wait until the last minute!
