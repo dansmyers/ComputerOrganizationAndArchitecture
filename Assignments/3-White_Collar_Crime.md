@@ -1,4 +1,4 @@
-# More Strings
+# How to Do Better White Collar Crimes
 
 ## Due Wednesday, 10/12
 
@@ -8,7 +8,7 @@
 
 ## Benford's Law
 
-### How to do better white collar crimes
+### Description
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Rozklad_benforda.svg/1920px-Rozklad_benforda.svg.png" width="40%" />
 
