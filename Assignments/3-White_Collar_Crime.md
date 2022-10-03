@@ -18,6 +18,10 @@ If you choose, you can work with a partner to complete this assignment.
 
 Submit your work using the Assignment 3 workspace on repl.it. As with the other projects, include a `Makefile` to build your code from source.
 
+## The Most Important Tip
+
+The key to this project is **develop incrementally**. These programs are not *that* hard or long, but there is a lot to understand and integrate. Focus on building up your solution one step at a time, testing as you go. You never want to move more than one step ahead without verifying that what you've written is working correctly. Don't be afraid to print values in order to see what your program is doing.
+
 ## Benford's Law
 
 ### Description
