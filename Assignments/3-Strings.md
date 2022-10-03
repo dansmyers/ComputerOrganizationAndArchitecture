@@ -169,8 +169,131 @@ Fraction of leading 8's = 0.0532
 Fraction of leading 9's = 0.0485
 ```
 
-## Bitwise operators
-
-
 ## Command line inputs
+
+Suppose (*just for the sake of argument*) that I've decided to, maybe, commit a few <sub>tiny</sub> white collar crimes. I need to generate some plausible data that appears to follow the distribution of Benford's Law to make my fraud look legitimate.
+
+Let's write a program that can geneate Benford-esque data values. This project will feature:
+
+- Command line inputs
+- Processing input arguments using `getopt`
+- Working with random values in C
+
+### Arguments
+
+Recall that the two input values to `main`, `argc` and `argv`, are used to process command line arguments.
+
+- `argc` records the **number** of arguments.
+- `argv` is an array of strings (type `char *[]`), each of which records one argument supplied on the command line.
+
+The simplest thing you can do with command line argument is print them out:
+
+```
+for (int i = 0; i < argc; i++) {
+  printf("%s\n", argv[i]);
+}
+```
+
+If you haven't done so yet, write a up a short program that uses that loop. If you run your program with several inputs, you should see the program echo them back out. For example, if your program is named `args`, you could generate the following output.
+
+```
+./args one two three four
+./args
+one
+two
+three
+four
+```
+
+By convention, `argv[0]` is always the name of the program.
+
+### Options
+
+What you ultimately care about, though, is using arguments to control the execution of the program. There is a built-in function called `getopt` that can be used to perform basic command line options processing. It is, however, a bit inscrutable. Here's a starting example:
+
+```
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+
+int main(int argc, char *argv[]) {
+
+  // Process arguments with getopt
+
+  int nSet = 0;
+  int dSet = 0;
+  int vSet = 0;
+
+  // Process arguments with getopt
+  int c;
+  while ((c = getopt(argc, argv, "ndv")) != -1) {
+    switch (c) {
+      case 'n':
+        nSet = 1;
+        break;
+      case 'd':
+        dSet = 1;
+        break;
+      case 'v':
+        vSet = 1;
+        break;
+    } 
+  }
+
+  printf("n = %d    d = %d    v = %d\n", nSet, dSet, vSet);
+}
+```
+
+`getopt` takes three arguments. The first two are `argc` and `argv`. The third is a string that specifies the command line flags that `getopt` should process. The basic `getopt` flag is a dash followed by a character. For example, the string "n" tells `getopt` to look for a command line flag `-n`.
+
+If a program takes multiple command line flags, they can all be combined into one string. In this case, the string "ndv" would tell `getopt` to look for flags `-n`, `-d`, and `-v`. The flags can be supplied in any order.
+
+The body of the loop uses a `switch` statement. Review how that works if you need to. Remember that each `case` statement needs to end with a `break` for the `switch` to execute correctly.
+
+Code up this program, then run it with different combinations of the `n`, `d`, and `v` flags at the command line:
+
+```
+./args -n
+
+./args -n -d -v
+
+./args -v -n
+
+./args -d -n
+
+./args
+```
+
+Verify that in each case, the values of `nSet`, `dSet`, and `vSet` match the flags that are supplied on the command line.
+
+Flags can also take optional parameters. In `getopt`, adding a `:` after a letter specifies that flag takes an additional parameter. For example,
+the string `n:` indicates a flag `-n` that takes a further parameter. Here's another program that takes one input with a parameter:
+
+```
+int main(int argc, char *argv[]) {
+
+  int numValues = 0;
+  int numDigits = 10;
+
+  // Process arguments with getopt
+  int c;
+  while ((c = getopt(argc, argv, "n:")) != -1) {
+    switch (c) {
+      case 'n':
+        numValues = atoi(optarg);
+        break;
+    } 
+  }
+}
+```
+
+Run the program like the following:
+
+```
+./args -n 10
+```
+
+You can verify (by adding a print statement) that the command above would set `numValues` to 10.
+
+### The Benford generator
 
