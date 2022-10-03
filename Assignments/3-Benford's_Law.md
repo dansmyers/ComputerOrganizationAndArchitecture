@@ -189,7 +189,7 @@ Fraction of leading 9's = 0.0485
 
 ## Command line inputs
 
-Suppose (*just for the sake of argument*) that I've decided to, maybe, commit a few <sub>tiny</sub> white collar crimes. I need to generate some plausible data that appears to follow the distribution of Benford's Law to make my fraud look legitimate.
+Suppose (*just for the sake of argument*) that I've decided to, maybe, commit a <sub>tiny</sub> amount of fraud. I need to generate some plausible data that appears to follow the distribution of Benford's Law to make my fraud look legitimate.
 
 Let's write a program that can geneate Benford-esque data values. This project will feature:
 
