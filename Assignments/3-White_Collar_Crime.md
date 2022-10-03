@@ -6,6 +6,18 @@
 
 ## Overview
 
+This project will give you a chance to continue working with strings, input, and built-in functions in C. We're going to complete two short projects based around **Benford's Law**, a nifty result that governs the distribution of digits in many quantitative data sets.
+
+- First, validating the Law against real-world Census data. This project will require reading values from a file.
+- Second, writing a program that can generate randomized integers that obey Benford's Law. This project will allow you to practice working with command line inputs and random numbers.
+
+If you choose, you can work with a partner to complete this assignment.
+
+- You should each make your own individual submissions on repl.it. That is, you can write your code together, but have each person enter it in their own workspace and submit, so I have a record of everyone completing the project.
+- Put your name and your partner's name in your files.
+
+Submit your work using the Assignment 3 workspace on repl.it. As with the other projects, include a `Makefile` to build your code from source.
+
 ## Benford's Law
 
 ### Description
