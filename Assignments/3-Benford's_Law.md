@@ -1,4 +1,4 @@
-# How to Do Better White Collar Crimes
+# How to Commit Better White Collar Crimes
 
 ## Due Wednesday, 10/12
 
