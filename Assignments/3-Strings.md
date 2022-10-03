@@ -45,6 +45,130 @@ SUMLEV,REGION,DIVISION,STATE,COUNTY,STNAME,CTYNAME,ESTIMATESBASE2020,POPESTIMATE
 
 The first line lists the names of each field. The data is organized alphabetically by state, then by county within each state. The first line of data is the population for the entire state of Alabama, followed by the estimate for Autauga county, and so forth. The first entries on each line include some numerical encodings used by the census bureau to identify each county (notice that the entire state has a `COUNTY` code of `000`). Individual fields are separated by commas with no spaces. If you've worked with Excel, you may have used CSV files to encode spreadsheet data in text format: each line corresponds to one row in the spreadsheet and each comma-separated value to a column within the row.
 
+### Reading the file
+
+The following program opens the file and prints its lines. Use it as your starting point for the rest of the project.
+
+```
+/**
+ * Validating Benford's Law for Census data
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char *argv[]) {
+
+  // Open the file
+  FILE *f = fopen("co-est2021-alldata.csv", "r");
+
+  // Check the return code
+  if (f == NULL) {
+    perror("fopen");
+    exit(1);
+  }
+
+  // Declare character buffer
+  char buf[1024];
+
+  int firstLine = 1;
+  
+  // Loop over the remaining lines that have data
+  while (fgets(buf, sizeof(buf), f) != NULL) {
+
+    // Skip the first line that contains the field names
+    if (firstLine) {
+      firstLine = 0;
+      continue;
+    }
+
+    // Print the line
+    printf("%s", buf);
+  }
+  
+}
+```
+
+The first line uses `fopen` to open the file in reading mode.
+
+```
+FILE *f = fopen("co-est2021-alldata.csv", "r");
+```
+
+`fopen` returns a pointer of type `FILE *` that serves as a reference to the open file. The next lines check the value of `f` to make sure the open succeeded and exit if it failed.
+
+The next lines use `fgets` to read from the file. The main loop repeatedly calls `fgets` to put the next line of text into the character buffer, `buf`.
+
+```
+while (fgets(buf, sizeof(buf), f) != NULL) {
+```
+
+`fgets` returns `NULL` when it reaches the end of the file or if an error occurs, so this loop runs until every line has been read. The first line contains the field names, which are not data, so the loop includes a small statement to skip processing the first line.
+
+
+### `strtok`
+
+`strtok` is the string tokenizing function. It's similar to Java's `Scanner`, in that it can separate a string into individual tokens based on a delimiting pattern. In this case, we want to use `strtok` to break each line of data (which contains information on one U.S. county) into its comma-separated parts, then extract the relevant population value.
+
+Here's the basic example. Put the following lines inside the `while` loop after the `printf` statement.
+
+```
+// Use strtok to get the first value
+char *token;
+token = strtok(buf, ",");
+printf("%s\n", token);
+```
+
+`strtok` takes the string buffer and the delimiter pattern as inputs and returns a pointer of type `char *` that represents the first token in the line. At this point, run the program and verify that you can extract and print the first value on each line.
+
+To continue retrieving more tokens from the same line, call `strtok` again with `NULL` as the first input:
+
+```
+// Get the second token -- strtok keep processing the same string if its 
+// first input is NULL
+token = strtok(NULL, ",");
+printf("%s\n", token);
+```
+
+Add these lines after the code that reads and prints the first token, then verify that you can run the program and extract and print the first two values on each line.
+
+### Data
+
+You need to read the **tenth value** on each line, which represents the 2021 population estimate. You could do this by calling `strtok` ten consecutive times, but that's bogus. A better approach, which you will do, is to call `strtok` one time to get the first token (with `buf` as its input), then write a loop that runs nine more times to get up to the tenth token.
+
+Start by extracting and printing the tenth value and make sure that you have the right number.
+
+Once you've verified that your token extraction is correct, you need to extract the first digit. This is easy:
+
+```
+// Get the first digit
+char firstDigit = *token;
+```
+
+You need to keep track of two things:
+
+- The total number of lines that you process.
+- The number of occurrences of each leading digit. Use an array called `int counts[10]` to record how many times each digit appears.
+
+Tip: remember that the `firstDigit` value given above is a `char`. You'll need to map it to an `int` if you want to use it as an array index. Look at the `atoi` function.
+
+### Output
+
+After you process the entire file, print out the fraction of occurrences for each leading digit. You should see that the estimates your program produces are very close to the values that would be predicted by Benford's Law. Your results should be close to the following:
+
+```
+Fraction of leading 0's = 0.0000
+Fraction of leading 1's = 0.3037
+Fraction of leading 2's = 0.1825
+Fraction of leading 3's = 0.1227
+Fraction of leading 4's = 0.0914
+Fraction of leading 5's = 0.0786
+Fraction of leading 6's = 0.0639
+Fraction of leading 7's = 0.0554
+Fraction of leading 8's = 0.0532
+Fraction of leading 9's = 0.0485
+```
+
 ## Bitwise operators
 
 
