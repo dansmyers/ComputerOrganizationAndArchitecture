@@ -1,6 +1,6 @@
 # How to Commit Better White Collar Crimes
 
-<img src="https://imgs.xkcd.com/comics/insurance_2x.png" width="40%" />
+<img src="https://imgs.xkcd.com/comics/insurance_2x.png" width="60%" />
 
 ## Due Wednesday, 10/12
 
