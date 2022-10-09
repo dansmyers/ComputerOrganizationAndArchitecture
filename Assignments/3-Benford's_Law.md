@@ -76,6 +76,7 @@ The following program opens the file and prints its lines. Use it as your starti
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 int main(int argc, char *argv[]) {
 
