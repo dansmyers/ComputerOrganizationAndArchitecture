@@ -171,7 +171,11 @@ You need to keep track of two things:
 - The total number of lines that you process.
 - The number of occurrences of each leading digit. Use an array called `int counts[10]` to record how many times each digit appears.
 
-Tip: remember that the `firstDigit` value given above is a `char`. You'll need to map it to an `int` if you want to use it as an array index. Look at the `atoi` function.
+Tip: remember that the `firstDigit` value given above is a `char`. You'll need to map it to an `int` if you want to use it as an array index. The easiest way to do this is with character arithmetic:
+
+```
+int value = firstDigit - '0';
+```
 
 ### Output
 
