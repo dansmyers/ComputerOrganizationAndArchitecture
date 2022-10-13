@@ -63,7 +63,7 @@ A `float` type offers about 7 digits of precision. A `double` type offers about 
 The precise bit-level representation is slightly more complicated than described above. The complete formula for a `float` is
 
 ```
-(-1) ^ sign * 1.f_22 f_21 f_ 20 ... f_0 * 2 ^ (127 - exponent)
+(-1) ^ sign * 1.f_22 f_21 f_ 20 ... f_0 * 2 ^ (exponent - 127)
 ```
 
 Here, `f_22 f_21 f_20 ... f_0` represents the 23 bits of the significand encoded in the `float` value. The implicit leading 1 increases the number's precision.
