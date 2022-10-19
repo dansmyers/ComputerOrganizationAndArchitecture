@@ -44,7 +44,7 @@ As before, remember to have the final result of the program in `r0` when the fin
 
 ## Translate
 
-We've talked about registers being the storage locations that the CPU uses for data that it's actively operating on. Frequently, the compiler will also use registers to store the values of local variables in a program. If the CPU has enough registers, it may be possible to simply keep most of the program's data stored in registers and avoid the need to read and write values between the CPU and memory. It turns out that there is a bit of art to determining the most efficient mappings between variables and registers, and compiler researchers have developed several algorithms for that purpose.
+We've talked about registers being the storage locations that the CPU uses for data that it's actively operating on. Frequently, the compiler will also use registers to store the values of local variables in a program. If the CPU has enough registers, it may be possible to simply keep most of the program's data stored in registers and avoid the need to read and write values between the CPU and memory. It turns out that there is a bit of art to determining the most efficient mappings between variables and registers, and compiler researchers have developed several algorithms for that purpose (graph coloring!).
 
 https://en.wikipedia.org/wiki/Register_allocation
 
