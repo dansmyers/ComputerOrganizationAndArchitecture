@@ -1,6 +1,6 @@
 // Using variables in ARM
 
-.global main
+.global _start
 
 /*** Global vars and static data ***/
 .data
@@ -15,7 +15,7 @@ x: .word 0  // x is initially 0
 /*** Code goes in the text section ***/
 .text
 
-main:
+_start:
     push {ip, lr}
 
     // r0 <- 5
