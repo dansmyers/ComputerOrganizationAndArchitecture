@@ -40,3 +40,27 @@ MUL rA, rB, rC
 ```
 
 As before, remember to have the final result of the program in `r0` when the final `pop` instruction executes.
+
+
+## Translate
+
+We've talked about registers being the storage locations that the CPU uses for data that it's actively operating on. Frequently, the compiler will also use registers to store the values of local variables in a program. If the CPU has enough registers, it may be possible to simply keep most of the program's data stored in registers and avoid the need to read and write values between the CPU and memory. It turns out that there is a bit of art to determining the most efficient mappings between variables and registers, and compiler researchers have developed several algorithms for that purpose.
+
+https://en.wikipedia.org/wiki/Register_allocation
+
+Translate the following C program to assembly, using registers to keep track of the values of the variables and the intermediate calculation results.
+
+```
+int main(int argc, char *argv[]) {
+
+  int a = 10;
+  int b = 20;
+  int c = 30;
+  int d = 40;
+  
+  return (a * b) + (c * d);
+}
+```
+
+Tip: you may want to start out by storing the value of `a` into `r0`, but remember that you'll need that location for the final result. Write your program so that the values of `a`, `b`, `c`, and `d` are preserved; don't overwrite a variable with a temporary expression result.
+
