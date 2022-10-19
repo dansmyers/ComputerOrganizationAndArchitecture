@@ -38,3 +38,5 @@ You can use the `MUL` instruction to perform 32-bit integer multiplication:
 // rA <-- rB * rC
 MUL rA, rB, rC
 ```
+
+As before, remember to have the final result of the program in `r0` when the final `pop` instruction executes.
