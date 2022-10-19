@@ -29,7 +29,7 @@ Write a program that calculates the sum `1 + 2 + 3 + 4 + 5` and places the final
 
 ## Scottometers
 
-My son Scott created his own unit of measurement, the Scottometer, to "measure the size of the solar system". One Scottometer is defined to be 999,999 miles. Write a program to calculate the number of miles in
+My son Scott created his own unit of measurement, the Scottometer, to "measure the size of the solar system". One Scottometer is defined to be 99 miles. Write a program to calculate the number of miles in
 99 Scottometers.
 
 You can use the `MUL` instruction to perform 32-bit integer multiplication:
