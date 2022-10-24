@@ -12,7 +12,7 @@
 //         return x;
 //     }
 
-.global main
+.global _start
 
 
 /*** Data section ***/
@@ -24,7 +24,7 @@ x: .word 2
 /*** Text section ***/
 .text
 
-main:
+_start:
     push {ip, lr}
 
     ldr r0, =x
