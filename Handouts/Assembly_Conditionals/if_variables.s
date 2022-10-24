@@ -1,6 +1,6 @@
 // Comparing two variables
 
-.global main
+.global _start
 
 // if (a > b) {
 //     a = b;
@@ -16,7 +16,7 @@ b: .word 4
 /*** Text section ***/
 .text
 
-main:
+_start:
     push {ip, lr}
 
     // r0 <- a
