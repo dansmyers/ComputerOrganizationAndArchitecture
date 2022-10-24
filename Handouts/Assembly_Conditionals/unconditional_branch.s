@@ -4,12 +4,12 @@
 // Influenced by thinkingeek's ARM assembler in
 // Raspberry pi tutorial
 
-.global main
+.global _start
 
 /*** Text section ***/
 .text
 
-main:
+_start:
     push {ip, lr}
 
     mov r0, #10
