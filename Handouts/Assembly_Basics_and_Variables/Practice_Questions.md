@@ -64,3 +64,28 @@ int main(int argc, char *argv[]) {
 
 Tip: you may want to start out by storing the value of `a` into `r0`, but remember that you'll need that location for the final result. Write your program so that the values of `a`, `b`, `c`, and `d` are preserved; don't overwrite a variable with a temporary expression result.
 
+
+## Var Swap
+
+Write a program that declares two variables:
+
+```
+int x = 101;
+int y = 11;
+```
+
+Write assembly instructions to load, swap, and then store the values of `x` and `y`.
+
+## Translate II
+
+Translate the following code fragment into ARM:
+
+```
+int x = 5;
+int y = 10;
+int z = 15;
+
+int d = x + y + z;
+
+return d;
+```
