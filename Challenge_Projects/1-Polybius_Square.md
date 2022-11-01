@@ -2,6 +2,8 @@
 
 ## Due Monday, November 14
 
+## You can work with a partner to complete this project
+
 ### Description
 You'll implement the Polybius square, a classical substitution cipher. The cipher takes a message (the "plaintext") and converts it to an encoded output (the "ciphertext").
 
