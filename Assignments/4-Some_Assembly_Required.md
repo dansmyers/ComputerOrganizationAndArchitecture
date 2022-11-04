@@ -20,6 +20,12 @@ Note that you can complete every question using only one main method. Don't writ
 
 ## Problems
 
+The programs below use a mix of global and local variables.
+
+- Global variables are declared outside of `main` in the C program and are created in the `.data` section of the ARM program. All assignemnts to and from global variables should use the appropriate `ldr` and `str` instructions in the ARM program.
+
+- Local variables are declared inside `main` and are mapped to registers. You can decide how to allocate registers for the different global variables.
+
 ### The Basics
 
 ```
@@ -61,6 +67,12 @@ int main() {
   return max;
 }
 ```
+
+### Pythagorean Theorem
+
+Write an ARM program that declares two global variables *a* and *b*, then return the value
+*c*<sup>2</sup> = *a*<sup>2</sup> + *b*<sup>2</sup>
+
 
 ### Mod in a loop
 
