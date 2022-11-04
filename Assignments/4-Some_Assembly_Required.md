@@ -1,5 +1,7 @@
 # Assignment 4: Some Assembly Required
 
+<img src="https://imgs.xkcd.com/comics/old_days_2.png" width="40%" />
+
 ## Due Wednesday, 11/16
 
 ## You may work with a partner to complete this project
