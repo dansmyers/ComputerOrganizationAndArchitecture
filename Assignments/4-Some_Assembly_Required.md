@@ -1,6 +1,6 @@
 # Assignment 4: Some Assembly Required
 
-<img src="https://imgs.xkcd.com/comics/old_days_2.png" width="40%" />
+<img src="https://imgs.xkcd.com/comics/old_days_2.png" width="50%" />
 
 ## Due Wednesday, 11/16
 
