@@ -1,10 +1,12 @@
 # Assignment 4: Some Assembly Required
 
-## Due
+## Due Wednesday, 11/16
 
 ## You may work with a partner to complete this project
 
 ## Overview
+
+It's time to practice converting C programs into assembly language. The problems below show you short C programs that use a combination of variables, arithmetic, conditional statements, and loops. Translate each program from C to its ARM assembly counterpart, using the instructions and techniques we discussed in class.
 
 ## Submission Instructions
 
@@ -71,7 +73,9 @@ int main() {
 ### Pythagorean Theorem
 
 Write an ARM program that declares two global variables *a* and *b*, then return the value
-*c*<sup>2</sup> = *a*<sup>2</sup> + *b*<sup>2</sup>
+*c*<sup>2</sup> = *a*<sup>2</sup> + *b*<sup>2</sup>.
+
+Tip: Think about how to multiply a number with itself. Some of our in-class example code might be useful.
 
 
 ### Mod in a loop
