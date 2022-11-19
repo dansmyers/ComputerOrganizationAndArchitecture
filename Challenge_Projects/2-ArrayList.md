@@ -28,7 +28,7 @@ Start by reading Dr. Summet's notes on
 Make sure you can answer the following questions before proceeding:
 
 - What is a `typedef`?
-- What is the meaning of the `->` operator when applied to a pointer to a `struct`. For example, `book->author`?
+- What is the meaning of the `->` operator when applied to a pointer to a `struct`? For example, `book->author`?
 - What do `malloc` and `free` do?
 - What does the Java garbage collector do for you?
 
