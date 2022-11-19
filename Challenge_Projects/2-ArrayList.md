@@ -23,7 +23,7 @@ under one name, but C structs can't contain methods and they don't have any abil
 Start by reading Dr. Summet's notes on 
 
 - [Basic `struct`s in C](https://github.com/dansmyers/ComputerOrganizationAndArchitecture/blob/master/Notes/08a-C_structs.md)
-- [Using pointers to `struct`s and `malloc`](https://github.com/dansmyers/ComputerOrganizationAndArchitecture/blob/master/Notes/08a-C_structs.md)
+- [Using pointers to `struct`s and `malloc`](https://github.com/dansmyers/ComputerOrganizationAndArchitecture/blob/master/Notes/08b-Pointers_and_Structs.md)
 
 Make sure you can answer the following questions before proceeding:
 
