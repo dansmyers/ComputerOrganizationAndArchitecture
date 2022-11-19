@@ -45,8 +45,7 @@ void modify_gpa(student* s) {
 Notice how our right arrow has taken the place of two operators.  Right arrow notation can only be used on pointers to `structs`.
 
 ## Memory Management
-But how do we get a pointer to a struct?  First, we need to take a slight digression into memory management.  First, review the diagram of the *Canonical Address Space* located in our (https://github.com/vsummet/cms230notes/blob/master/c-programming/c-chap04-memory.md)[Memory Structure] note.  Go ahead, I'll wait.  Keep that diagram in your mind.
-
+But how do we get a pointer to a struct?  We need to take a slight digression into memory management.  First, recall the **Canonical Address Space**.
 Next, we need to observe another crucial difference between Java and C: Java manages memory for you.  When you use the `new` operator in Java, several things happen:
 
 1. Java allocates space in the heap (remember the diagram!) for the data you need.
