@@ -40,14 +40,31 @@ With a shadow file containing password hashes, the basic authentication flow wor
 
 ### Password cracking
 
+<img src="https://imgs.xkcd.com/comics/how_hacking_works_2x.png" width="35%" />
+
 What if the `shadow` file is compromised? This is not great, but it isn't as bad as leaking users' real passwords. An attacker who manages to obtain the `shadow` file would know the **hash** of each user's password, but not the real passwords themselves.
 
-Therefore, the attacker faces a reverse-engineering problem: given the hash of a user's password, find a real input string that can be used to generate that hash. For simple hash functions, this might be easy, but real password systems use strong **cryptographic hash functions** that are **one-way**.  That is, there's no way to invert a strong hash function to recover the input for a given hash, so the attacker's only choice is to try many different inputs until finding one that produces the desired output.
+Therefore, the attacker faces a reverse-engineering problem: given the hash of a user's password, find a **real input password** that can be used to generate that hash. This might be easy for simple hash functions, but real password systems use strong **cryptographic hash functions** that are **one-way**.  That is, there's no way to invert a strong hash function to recover the input for a given hash, so the attacker's only choice is to **try many different inputs** until finding one that produces the desired output.
 
 The simplest approach is to launch a **brute-force** attack by generating all possible candidate passwords and testing each one. This is guaranteed to eventually succeed, but is usually impractical. For example, if we consider a 10 character password that may contain uppercase and lowercase letters and the ten digits 0-9, there are
 
 62<sup>10</sup> = 839299365868340224
 
-possible combinations.
+possible combinations. However, attackers don't need to crack every password in the shadow file, only the weakest ones, and weak passwords are significantly easier to crack. For example, if we consider only the eight character passwords using lowercase letters, there are only
 
-Attackers can do better, though, by **trading space for time**. 
+26<sup>8</sup> = 208827064576
+
+That's a lot, but it's possible to **precompute** every hash for those passwords and store them on a disk. The [rainbow table](https://en.wikipedia.org/wiki/Rainbow_table) is a special data structure used to efficiently store pre-computed password hashes.
+
+### Dictionary attacks
+
+For the most part, though, attackers don't even need to resort to brute force attacks. Normal users rarely pick complex passwords and the same general passwords tend to show up repeatedly on different systems. The classic, of course, is simply setting your password to `password`, but smarter users still tend to choose passwords that are based on common words, short phrases, or cultural tropes.
+
+For example, you might think that a password like `2Timothy3:16` is strong, because its relatively long with a mixture of characters, digits, and symbols, but it's actually incredibly weak. Passwords based on Bible verses, popular band names, characters, or movie quotes are easy to crack because users tend to pick from a relatively small number of choices in category. Common short phrases like `bluesky` or `cherrybomb` are also likely to be chosen by many users, so they also make weak passwords.
+
+A **dictionary attack** starts with a list of candidate passwords, which might be based on real passwords leaked from other systems, and then tests each one. In a large `shadow` file, it's likely that many users will have picked passwords that are already in the dictionary.
+
+An attacker can get more passwords for low cost by applying **mangling rules** to the passwords in the dictionary. For example, taking a short phrase and appending a number (`bluesky1`) is a common heuristic, but it's easy to take each password in the dictionary and generate ten variations with a digit appended. Capitalizing the first letter of a password is an easy mangle (only one character needs to change), as are common substitutions, as shown in this famous xkcd:
+
+<img src="https://imgs.xkcd.com/comics/password_strength.png" width="40%" />
+
