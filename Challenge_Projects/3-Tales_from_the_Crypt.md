@@ -50,17 +50,19 @@ The simplest approach is to launch a **brute-force** attack by generating all po
 
 62<sup>10</sup> = 839299365868340224
 
-possible combinations. However, attackers don't need to crack every password in the shadow file, only the weakest ones, and weak passwords are significantly easier to crack. For example, if we consider only the eight character passwords using lowercase letters, there are only
+possible combinations. Therefore, long, truly random passwords are always strong.
+
+However, weak passwords are significantly easier to crack. For example, if we consider eight character passwords using lowercase letters, there are only
 
 26<sup>8</sup> = 208827064576
 
-That's a lot, but it's possible to **precompute** every hash for those passwords and store them on a disk. The [rainbow table](https://en.wikipedia.org/wiki/Rainbow_table) is a special data structure used to efficiently store pre-computed password hashes.
+That's still a lot, but it's possible to **precompute** every hash for those passwords and store them on a disk using a [rainbow table](https://en.wikipedia.org/wiki/Rainbow_table), a special data structure used to efficiently store pre-computed password hashes.
 
 ### Dictionary attacks
 
 For the most part, though, attackers don't even need to resort to brute force attacks. Normal users rarely pick complex passwords and the same general passwords tend to show up repeatedly on different systems. The classic, of course, is simply setting your password to `password`, but smarter users still tend to choose passwords that are based on common words, short phrases, or cultural tropes.
 
-For example, you might think that a password like `2Timothy3:16` is strong, because its relatively long with a mixture of characters, digits, and symbols, but it's actually incredibly weak. Passwords based on Bible verses, popular band names, characters, or movie quotes are easy to crack because users tend to pick from a relatively small number of choices in category. Common short phrases like `bluesky` or `cherrybomb` are also likely to be chosen by many users, so they also make weak passwords.
+For example, you might think that a password like `2Timothy3:16` is strong, because it's relatively long with a mixture of characters, digits, and symbols, but it's actually incredibly weak. Passwords based on Bible verses, popular band names, characters, or movie quotes are easy to crack because users tend to pick from a relatively small number of choices in each category. Common short phrases like `bluesky` or `pumpkinspice` are also likely to be chosen by many users, so they also make weak passwords.
 
 A **dictionary attack** starts with a list of candidate passwords, which might be based on real passwords leaked from other systems, and then tests each one. In a large `shadow` file, it's likely that many users will have picked passwords that are already in the dictionary.
 
