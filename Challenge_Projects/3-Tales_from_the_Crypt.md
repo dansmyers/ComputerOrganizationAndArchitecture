@@ -38,4 +38,16 @@ With a shadow file containing password hashes, the basic authentication flow wor
 - Compare to the stored hash in the `shadow` file
 - If the two hashes match, the user has entered the correct password with high probability, so allow the action
 
-What if the shadow file is compromised? This is not great, but 
+### Password cracking
+
+What if the `shadow` file is compromised? This is not great, but it isn't as bad as leaking users' real passwords. An attacker who manages to obtain the `shadow` file would know the **hash** of each user's password, but not the real passwords themselves.
+
+Therefore, the attacker faces a reverse-engineering problem: given the hash of a user's password, find a real input string that can be used to generate that hash. For simple hash functions, this might be easy, but real password systems use strong **cryptographic hash functions** that are **one-way**.  That is, there's no way to invert a strong hash function to recover the input for a given hash, so the attacker's only choice is to try many different inputs until finding one that produces the desired output.
+
+The simplest approach is to launch a **brute-force** attack by generating all possible candidate passwords and testing each one. This is guaranteed to eventually succeed, but is usually impractical. For example, if we consider a 10 character password that may contain uppercase and lowercase letters and the ten digits 0-9, there are
+
+62<sup>10</sup> = 839299365868340224
+
+possible combinations.
+
+Attackers can do better, though, by **trading space for time**. 
