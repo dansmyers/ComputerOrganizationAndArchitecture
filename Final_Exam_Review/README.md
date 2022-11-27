@@ -105,6 +105,7 @@ Describe at least two approaches to defending against stack smashing.
 - 8 ms average seek time
 - 15000 RPM rotational speed
 - 100 MB/s data transfer rate
+
 Estimate the time required to perform a 1 MB read on this disk.
 
 3. REAL GOOGLE INTERVIEW QUESTION: estimate the time to read 1 GB
