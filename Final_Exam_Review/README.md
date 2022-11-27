@@ -9,6 +9,12 @@ The exam is **closed book, notes, and internet resources**.
 
 ## Questions
 
+### Words for things
+
+1. Define the term *Instruction Set Architecture*.
+
+2. Write down the steps of the fetch-decode-execute cycle.
+
 ### Assembly Language Translation
 
 Translate the following code fragments or programs into ARM assembly language. If a fragment is given, only convert the fragment; you don't need to write a complete program.
@@ -94,6 +100,53 @@ Draw and summarize a diagram showing how an attacker can exploit a buffer declar
 Describe at least two approaches to defending against stack smashing.
 
 
+### Performance and Amdahl's Law
+----------------------------
+1. What is Moore's Law? How is the real Moore's Law different from
+   the "Popular Moore's Law" stating that computers double in speed
+   every two years?
+   
+2. Write down the Master CPU Performance Equation that relates instruction, cycles per instruction, and clock speed to execution time.
+
+3. Estimate the execution time for a program that contains
+   25000 instructions and the following mix of instructions
+   and CPI measurements. The program is executing on a system with a 2 GHz clock.
+
+
+```
+instruction    fraction of workload    CPI
+-----------    --------------------    ---
+arithmetic     40%                     3
+branch         25%                     4
+load/store     35%                     8            
+```
+   
+   
+4. Derive Amdahl's Law.
+
+5. Easy Amdahl's Law problem: branch instructions account for 25% 
+of the instruction mix in a particular program' sworkload.  Estimate
+the performance impact of speeding up branch instructions by a 
+factor of 1.5.
+
+6. Consider a parallel program with a fraction f that must be
+executed serially on a single processor.  Use Amdahl's Law to
+argue that the speedup to this program from parallelizing the 
+remaining fraction 1 - f of the program can never exceed 1 / f.
+
+7. What is the total speedup obtained by the following
+   collection of improvements? Use the table in problem 3 for
+   instruction frequencies.
+
+```
+arithmetic    3 times faster
+branch        50% slower
+load/store    10% faster
+```
+
+6. Suppose we're designing the new version of processor that currently has no cache. From simulation experiments, we have determined that a
+representative workload has an overall L1 cache hit rate of 40% and that 50% of L1 cache misses would hit in the L2 cache. On this system, an L1 cache hit takes 1 ns to service, an L2 cache hit takes 10 ns to service, and a main memory access requires 100 ns. Use Amdahl's Law to calculate the expected overall speedup gained by adding the L1 and L2 caches to the system.
+
 ### Memory and disk
 
 1. Draw a diagram of the memory hierarchy, starting with registers at
@@ -101,15 +154,15 @@ Describe at least two approaches to defending against stack smashing.
    Include three levels of cache, main memory, and disk storage.
    Label each level with its approximate size and access time.
    
-2. Consider a disk with the following characteristics:
+2. Consider a disk with the following characteristics. Estimate the time required to perform a 1 MB read on this disk.
 - 8 ms average seek time
 - 15000 RPM rotational speed
 - 100 MB/s data transfer rate
 
-Estimate the time required to perform a 1 MB read on this disk.
 
 3. REAL GOOGLE INTERVIEW QUESTION: estimate the time to read 1 GB
-   from a disk. Hint: the key word is *estimate*.  
+   from a disk. Hint: the key word is *estimate*.
+   
 
 ### Cache calculations
 Consider a system with three levels of cache and main memory. By analyzing representative workloads, we have quantified that
