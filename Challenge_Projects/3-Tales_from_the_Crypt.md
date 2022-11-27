@@ -175,12 +175,3 @@ This is a complex project. Think about how to build incrementally and test your 
 - Finally, add support for the `-d` option. This one is more complex because it needs to append each digit 0-9 to each candidate word and calculate the hash for each combination.
 
 Happy cracking!
-
-
-### One more thing
-
-<img src="https://static.tvtropes.org/pmwiki/pub/images/paw1.gif" width="40%" />
-
-Student: "I wish I could get an A in this class!"
-
-The Monkey's Paw: *curls*
