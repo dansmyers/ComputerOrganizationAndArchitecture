@@ -2,9 +2,7 @@
 
 <img src="https://www.budsartbooks.com/wp-content/uploads/2021/05/ectfc01-tales-from-the-crypt-book_2.jpg" width="35%" />
 
-## STILL UNDER DEVELOPMENT -- DON'T WORK ON THIS YET
-
-## Due
+## Due 12/10
 
 ## You can work with a partner to complete this project
 
