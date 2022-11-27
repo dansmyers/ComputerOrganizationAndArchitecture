@@ -31,11 +31,11 @@ Recall that a hash function is any operation that takes an input bit sequence (w
 
 There are many different hash functions that operate in different ways. Every Java class has a method called `hashCode` which can be used to compute a hash code from an object's data. The default `hashCode` is based on the object's memory address, but a class can also define its own `hashCode` that's appropriate for its own data ([see here](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html#hashCode()) for the `String` class documentation).
 
-Therefore, the basic flow looks like this:
+With a shadow file containing password hashes, the basic authentication flow works like this:
 
 - Prompt the user to enter a password
 - Compute the hash of the entered password
 - Compare to the stored hash in the `shadow` file
 - If the two hashes match, the user has entered the correct password with high probability, so allow the action
 
-In the security world, we're interested in a special class of **cryptographic hash functions**. 
+What if the shadow file is compromised? This is not great, but 
