@@ -103,7 +103,7 @@ Describe at least two approaches to defending against stack smashing.
 
 
 ### Performance and Amdahl's Law
-----------------------------
+
 1. What is Moore's Law? How is the real Moore's Law different from
    the "Popular Moore's Law" stating that computers double in speed
    every two years?
