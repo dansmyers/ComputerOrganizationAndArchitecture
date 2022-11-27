@@ -62,11 +62,14 @@ That's still a lot, but it's possible to **precompute** every hash for those pas
 
 For the most part, though, attackers don't even need to resort to brute force attacks. Normal users rarely pick complex passwords and the same general passwords tend to show up repeatedly on different systems. The classic, of course, is simply setting your password to `password`, but smarter users still tend to choose passwords that are based on common words, short phrases, or cultural tropes.
 
-For example, you might think that a password like `2Timothy3:16` is strong, because it's relatively long with a mixture of characters, digits, and symbols, but it's actually incredibly weak. Passwords based on Bible verses, popular band names, characters, or movie quotes are easy to crack because users tend to pick from a relatively small number of choices in each category. Common short phrases like `bluesky` or `pumpkinspice` are also likely to be chosen by many users, so they also make weak passwords.
+For example, you might think that a password like `2Timothy3:16` is strong, because it's relatively long with a mixture of characters, digits, and symbols, but it's actually incredibly weak. Passwords based on Bible verses, popular band names, characters, or movie quotes are easy to crack because users tend to pick from a relatively small number of choices in each category. Popular word combinations like `bluesky` or `pumpkinspice` are also likely to be chosen by many users, so they also make weak passwords.
 
 A **dictionary attack** starts with a list of candidate passwords, which might be based on real passwords leaked from other systems, and then tests each one. In a large `shadow` file, it's likely that many users will have picked passwords that are already in the dictionary.
 
-An attacker can get more passwords for low cost by applying **mangling rules** to the passwords in the dictionary. For example, taking a short phrase and appending a number (`bluesky1`) is a common heuristic, but it's easy to take each password in the dictionary and generate ten variations with a digit appended. Capitalizing the first letter of a password is an easy mangle (only one character needs to change), as are common substitutions, as shown in this famous xkcd:
+An attacker can get more passwords for low cost by applying **mangling rules** to the passwords in the dictionary. For example, taking a short phrase and appending a number (e.g., `pumpkinspice1`) is a common heuristic, but it's easy to take each password in the dictionary and generate ten variations with a digit appended. Capitalizing the first letter of a password is an easy mangle (only one character needs to change), as are common substitutions, as shown in this famous xkcd:
 
 <img src="https://imgs.xkcd.com/comics/password_strength.png" width="40%" />
+
+
+## The Actual Project
 
