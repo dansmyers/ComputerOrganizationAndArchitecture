@@ -179,56 +179,8 @@ Happy cracking!
 
 ### One more thing
 
+<img src="https://static.tvtropes.org/pmwiki/pub/images/paw1.gif" width="40%" />
 
+Student: "I wish I could get an A in this class!"
 
-<br/>
-<br/>
-<br/>
-<br/>
-
-<br/>
-<br/>
-<br/>
-<br/>
-Wait for it...
-
-<br/>
-<br/>
-<br/>
-<br/>
-
-
-<br/>
-<br/>
-<br/>
-<br/>
-Wait for it...
-
-
-
-<br/>
-<br/>
-<br/>
-<br/>
-
-
-<br/>
-<br/>
-<br/>
-<br/>
-Wait for it...
-
-
-<br/>
-<br/>
-<br/>
-<br/>
-
-<br/>
-<br/>
-<br/>
-<br/>
-
-
-
-***FINAL ENDING JUMP SCARE!***
+The Monkey's Paw: *curls*
