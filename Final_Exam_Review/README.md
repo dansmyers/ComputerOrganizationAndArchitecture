@@ -112,9 +112,7 @@ Estimate the time required to perform a 1 MB read on this disk.
    from a disk. Hint: the key word is *estimate*.  
 
 ### Cache calculations
-
-1. Consider a system with three levels of cache and main memory. By
-   analyzing representative workloads, we have quantified that
+Consider a system with three levels of cache and main memory. By analyzing representative workloads, we have quantified that
   
 - 30% of memory accesses hit in the L1 cache
 - 50% of L1 misses will hit in the L2 cache
@@ -125,21 +123,20 @@ Estimate the time required to perform a 1 MB read on this disk.
 - An average L2 access takes 10 ns
 - An average L1 access takes 2 ns
   
-What speedup factor is attained by including all three cache
-levels in the system, relative to a system with only main memory
-and no caching?
+1. What speedup factor is attained by including only the L1 cache, relative to a system with only main memory and no caching? Tip: 30% of accesses will hit in L1, which means that 70% will go to main memory. What is the average memory access time in this case?
 
-What if we removed the L3 cache?  What would be the effect on 
-the system's performance?
+2. What if we include L1 and L2 caches? Tip: calculate the total fraction of accesses that hit in L2. Anything that misses in L2 must go to main memory.
+
+3. What is the average memory access time if we include all three levels?
    
-2. Suppose we used the system of problem 4, but installed a larger L1
+3. Suppose we used the system of the previous problem, but installed a larger L1
    cache. The larger cache achieves a hit rate of 40%, but takes
    longer to process each hit. What is the maximum increase in L1
    access time we can tolerate and still achieve superior performance
-   to the system in problem 4?
+   to the original system?
    
-3. A more challenging variation: suppose the larger cache has a fixed
+4. A more challenging variation: suppose the larger cache has a fixed
    hit time of 2 ns. What L1 hit rate must be achieved to yield a
    faster access time than the system of problem 4?
 
-4. Suppose we're designing the new version of processor that currently has no cache. From simulation experiments, we have determined that a representative workload has an overall L1 cache hit rate of x% and that75% of L1 cache misses would hit in the L2 cache. On this system, an L1 cache hit takes 1 ns to service, an L2 cache hit takes 10 ns to service, and a main memory access requires 100 ns. Find the minimum L1 cache hit rate x such that the expected time for a load is less than 30 ns.
+5. Suppose we're designing the new version of processor that currently has no cache. From simulation experiments, we have determined that a representative workload has an overall L1 cache hit rate of *x*% and that 75% of L1 cache misses would hit in the L2 cache. On this system, an L1 cache hit takes 1 ns to service, an L2 cache hit takes 10 ns to service, and a main memory access requires 100 ns. Find the minimum L1 cache hit rate *x* such that the expected time for a load is less than 30 ns. Tip: express fraction of accesses that go to L2 and main memory in terms of *x*.
