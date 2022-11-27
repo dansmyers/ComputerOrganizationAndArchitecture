@@ -184,14 +184,48 @@ Consider a system with three levels of cache and main memory. By analyzing repre
 
 3. What is the average memory access time if we include all three levels?
    
-3. Suppose we used the system of the previous problem, but installed a larger L1
+4. Suppose we used the system of the previous problem, but installed a larger L1
    cache. The larger cache achieves a hit rate of 40%, but takes
    longer to process each hit. What is the maximum increase in L1
    access time we can tolerate and still achieve superior performance
    to the original system?
    
-4. A more challenging variation: suppose the larger cache has a fixed
+5. A more challenging variation: suppose the larger cache has a fixed
    hit time of 2 ns. What L1 hit rate must be achieved to yield a
    faster access time than the system of problem 4?
 
-5. Suppose we're designing the new version of processor that currently has no cache. From simulation experiments, we have determined that a representative workload has an overall L1 cache hit rate of *x*% and that 75% of L1 cache misses would hit in the L2 cache. On this system, an L1 cache hit takes 1 ns to service, an L2 cache hit takes 10 ns to service, and a main memory access requires 100 ns. Find the minimum L1 cache hit rate *x* such that the expected time for a load is less than 30 ns. Tip: express fraction of accesses that go to L2 and main memory in terms of *x*.
+6. Suppose we're designing the new version of processor that currently has no cache. From simulation experiments, we have determined that a representative workload has an overall L1 cache hit rate of *x*% and that 75% of L1 cache misses would hit in the L2 cache. On this system, an L1 cache hit takes 1 ns to service, an L2 cache hit takes 10 ns to service, and a main memory access requires 100 ns. Find the minimum L1 cache hit rate *x* such that the expected time for a load is less than 30 ns. Tip: express fraction of accesses that go to L2 and main memory in terms of *x*.
+
+
+### C `struct`s and memory management
+
+1. What does it mean to say that Java has a garbage collector? Explain, in general terms, how the garbage collector works.
+
+2. Define the terms *double free* and *memory leak*.
+
+3. Write a `typdef` statement to define a `struct` named `Point3D` that represents a point in 3-D space with `x`, `y`, and `z` fields.
+
+4. I wrote the following code fragment that seems okay, but my system refused to execute it and just curled up under a blanket and cried from half an hour. What did I do wrong? Assume that the correct defintion exists for `Point3D`.
+
+```
+Point3D *p;
+
+p->x = 1.0;
+p->y = 2.0;
+p->z = 3.0;
+```
+
+5. Complete the following function to take two `Point3D` structs as input and return a new `Point3D` that contains the sum of the two points. That is, the returned point should contain the sum of the `x` values of the two input points, the sum of the `y` values, and so forth.
+
+```
+Point3D * point3DSum(Point3D *p1, Point3D *p2) {
+
+  // Create a new point to return
+  
+  // Calculate and return sum of the two points
+  
+}
+```
+
+6. Explain how a C `struct` is and is not like a Java object. Your answer must include the term *encapsulation*.
+
