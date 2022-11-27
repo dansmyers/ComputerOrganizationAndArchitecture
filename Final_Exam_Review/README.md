@@ -15,6 +15,8 @@ The exam is **closed book, notes, and internet resources**.
 
 2. Write down the steps of the fetch-decode-execute cycle.
 
+3. List the motivation and design principles associated with a *Reduced Instruction Set Computer*.
+
 ### Assembly Language Translation
 
 Translate the following code fragments or programs into ARM assembly language. If a fragment is given, only convert the fragment; you don't need to write a complete program.
