@@ -127,7 +127,7 @@ load/store     35%                     8
 4. Derive Amdahl's Law.
 
 5. Easy Amdahl's Law problem: branch instructions account for 25% 
-of the instruction mix in a particular program' sworkload.  Estimate
+of the instruction mix in a particular program's workload.  Estimate
 the performance impact of speeding up branch instructions by a 
 factor of 1.5.
 
