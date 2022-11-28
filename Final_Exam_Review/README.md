@@ -4,7 +4,7 @@
 
 This document contains questions for the final exam. I will pick ten to fifteen questions **exactly as they appear here** for the exam. Therefore, if you study these questions and know their answers, you'll be completely prepared for the exam.
 
-The exam is **closed book, notes, and internet resources**.
+The exam is **closed book, notes, and internet resources**. You may use a calculator for problems that have math.
 
 
 ## Questions
