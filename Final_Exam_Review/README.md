@@ -15,7 +15,7 @@ The exam is **closed book, notes, and internet resources**. You may use a calcul
 
 2. Write down the steps of the fetch-decode-execute cycle.
 
-3. List the motivation and design principles associated with a *Reduced Instruction Set Computer*.
+3. Summarize the motivation and design principles associated with a *Reduced Instruction Set Computer*.
 
 ### Assembly Language Translation
 
