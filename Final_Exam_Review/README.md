@@ -192,7 +192,7 @@ Consider a system with three levels of cache and main memory. By analyzing repre
    
 5. A more challenging variation: suppose the larger cache has a fixed
    hit time of 2 ns. What L1 hit rate must be achieved to yield a
-   faster access time than the system of problem 4?
+   faster access time than the system of problem 3?
 
 6. Suppose we're designing the new version of processor that currently has no cache. From simulation experiments, we have determined that a representative workload has an overall L1 cache hit rate of *x*% and that 75% of L1 cache misses would hit in the L2 cache. On this system, an L1 cache hit takes 1 ns to service, an L2 cache hit takes 10 ns to service, and a main memory access requires 100 ns. Find the minimum L1 cache hit rate *x* such that the expected time for a load is less than 30 ns. Tip: express fraction of accesses that go to L2 and main memory in terms of *x*.
 
