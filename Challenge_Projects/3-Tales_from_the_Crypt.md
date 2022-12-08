@@ -129,8 +129,8 @@ Your program must support the following options:
 The basic dictionary attack simply calculates the hashes of every word in the
 dictionary, checking for matches with the entries in the shadow  file. You should also support two mangling options:
 
--  `-n`: append each of the single digits, 0-9, to the end of the candidate.
--  `-c`: toggle the case of the  first letter of the candidate.
+- `-n`: append each of the single digits, 0-9, to the end of the candidate. 
+- `-c`: toggle the case of the  first letter of the candidate.
 
 These options can be invoked in any combination. It's acceptable to use zero, only one, or both mangling options, but you can only invoke one combination of options each time the program runs. **You must use `getopt` to process the command-line options**.
 
@@ -150,6 +150,7 @@ You will use the C crypt function to calculate password hashes. Take a look at
 
 `crypt` takes two arguments: the string to hash and a "salt" string. **Your salt string will
 always be `$1$`**. The salt string serves two purposes:
+
 - It begins with a number that identifies the hash function, as discussed above.
 
 - It can contain additional characters that are added to the input string before the hash operation. Doing this increases the effective length of the password, which defeats attacks based on precomputing hashes for short passwords (read the part about the rainbow table attack above). You do not need to add any additional salt characters to your implementation.
@@ -172,6 +173,6 @@ This is a complex project. Think about how to build incrementally and test your 
 
 - Next, add support for the `-c` option to toggle the first letter of each input word. Note that this doesn't require rewriting the entire flow, just add a flag that checks if case toggling is set, and if it is, flip the first letter. You might want to check for any easy way to do that, or review the midterm.
 
-- Finally, add support for the `-d` option. This one is more complex because it needs to append each digit 0-9 to each candidate word and calculate the hash for each combination.
+- Finally, add support for the `-n` option. This one is more complex because it needs to append each digit 0-9 to each candidate word and calculate the hash for each combination.
 
 Happy cracking!
