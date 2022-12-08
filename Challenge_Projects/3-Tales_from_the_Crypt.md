@@ -120,7 +120,7 @@ Each line corresponds to one password entry with the following format:
 
 Your program must support the following options:
 
-- `-i`: specifies the input shadow password  file.
+- `-i`: specifies the input shadow password  file.
 
 - `-o`: specifies the output file that will store the cracked passwords
 
@@ -129,7 +129,7 @@ Your program must support the following options:
 The basic dictionary attack simply calculates the hashes of every word in the
 dictionary, checking for matches with the entries in the shadow  file. You should also support two mangling options:
 
-- `-n`: append each of the single digits, 0-9, to the end of the candidate. 
+- `-n`: append each of the single digits, 0-9, to the end of the candidate. 
 - `-c`: toggle the case of the  first letter of the candidate.
 
 These options can be invoked in any combination. It's acceptable to use zero, only one, or both mangling options, but you can only invoke one combination of options each time the program runs. **You must use `getopt` to process the command-line options**.
