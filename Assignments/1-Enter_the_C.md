@@ -40,7 +40,7 @@ Put each one of your programs in a separate file (not all in the same file) and 
 
 ### Descending a staircase
 
-<img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c0/Duchamp_-_Nude_Descending_a_Staircase.jpg/800px-Duchamp_-_Nude_Descending_a_Staircase.jpg" width="50%" />
+<img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c0/Duchamp_-_Nude_Descending_a_Staircase.jpg/800px-Duchamp_-_Nude_Descending_a_Staircase.jpg" width="30%" />
 
 Write a function called `stairs` that takes an `int n` as input and prints a staircase with `n` levels, like the following:
 ```
