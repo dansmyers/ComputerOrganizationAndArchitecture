@@ -169,6 +169,8 @@ Keep the following facts in mind when you’re using AI tools.
 
 - AI models can hallucinate facts, including citations, quotes, and dates. Don’t trust the output of a model unless you know that it’s true or can check it against an independent source. AI works best on subjects you know well.
 
+- Remember that AI has limitations and biases. Do not assume AI output is neutral. Validate against credible sources.
+
 - Critically evaluate all results produced by an AI tool—for correctness, of course, but also for quality. Ask yourself: Is this good? Is it doing what I want? How can it be improved? You’re responsible for the quality and correctness of the finished product. AI-supported writing requires taste and judgment—practice thinking like an editor.
 
 - Don’t simply accept the first response. You may need to ask a question multiple times, in different ways, to get a useful result. Generic prompts yield generic output. As you practice interacting with AI, you’ll learn how to use it as a collaborator.
