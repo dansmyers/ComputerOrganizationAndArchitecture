@@ -36,7 +36,7 @@ I will load your workspace and run your programs. If you produce correct output 
 Put each one of your programs in a separate file (not all in the same file) and follow the naming instructions given for each problem.
 
 
-### Problems
+## Problems
 
 ### Descending a staircase
 
