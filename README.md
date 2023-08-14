@@ -1,6 +1,6 @@
 # CMS 230 Computer Systems and Architecture
 
-## Fall 2022 Syllabus
+## Fall 2023 Syllabus
 
 ## Who? Where?
 
@@ -10,8 +10,8 @@ dmyers@rollins.edu
 407-646-2151
 
 ## Office Hours
-- Mondays and Wednesdays from 10:00 to 11:00
-- Tuesdays from 2:00 to 2:30
+- Mondays and Wednesdays 9:00 to 10:00
+- Tuesday 2:00 to 3:30
 
 ## WebEx Room
 
@@ -57,12 +57,12 @@ There is no assigned textbook. We will work through a set of notes and examples 
 
 ### Other Important Dates
 
-- First day of class: August 22
-- Last day of class: December 2
-- Labor Day: September 5
-- Fall break: October 8 to October 11
-- Last day to drop the class: September 2
-- Last day to withdraw without penalty: November 4
+- First day of class: August 21
+- Last day of class: December 1
+- Labor Day: September 4
+- Fall break: October 7 to October 10
+- Last day to drop the class: September 1
+- Last day to withdraw without penalty: November 3
 
 ## The All-Important Grading Section
 
@@ -78,7 +78,7 @@ We'll have three kinds of assignments in this class:
 
 1. A set of about **six homework assignments** containing a mixture of written and programming problems.
 
-2. **Challenge problems**, three or four during the semester, which are somewhat more complex than the regular homework questions and require you to stretch a little bit.
+2. **Challenge problems**, three during the semester, which are somewhat more complex than the regular homework questions and require you to stretch a little bit.
 
 3. **Midterm and final exams**. These will test your basic knowledge of the core course content. The midterm will be given **in class** during the week before Fall Break. The final will be given at our assigned final exam time. The final exam will cover the second half of the course; it is not cumulative.
 
@@ -90,7 +90,7 @@ I will grade most of the items you turn in on a two-level scale: your work will 
 2. Shows real understanding and application of the course material.
 3. Completed on time in the required format.
 
-For programming assignments, you must make a fair attempt on every problem. For the exams, you must **pass the exam** by earning at least 60% to receive credit.
+For programming assignments, you must make a fair attempt on every problem.
 
 ### Letter Grades
 
@@ -103,15 +103,14 @@ For programming assignments, you must make a fair attempt on every problem. For 
 
 | Performance             | Your grade will be adjusted downwards by |
 |------------------------------------------------|------------------------------------------|
-| Unsatisfactory or missing assignment | Fraction of a letter grade (e.g. B to B-)       |
+| First unsatisfactory or missing assignment | Fraction of a letter grade (e.g. B to B-)       |
 | Additional unsatisfactory or missed assignments  | One full letter grade (e.g., B to C) for each one |
-| Unsatisfactory performance on an exam | One full letter grade |
+| Exam score below 80% | Fraction of a letter grade |
+| Exam score below 60% | One full letter grade |
 
-**To earn a higher grade**, you can complete additional work that shows deeper engagement with the course goals. Each challenge project
-that you complete will **boost your grade by one part of a letter** (e.g., B to B+). To earn an A, complete all the requirements for a B plus three additional challenge projects.
+**To earn a higher grade**, you can complete additional work that shows deeper engagement with the course goals. Each challenge project that you complete will **boost your grade by one part of a letter** (e.g., B to B+). To earn an A, complete all the requirements for a B plus three additional challenge projects.
          
-If your grade drops, you can still complete extra work to boost it up. For example, you could struggle with one project, but
-complete a challenge project. The two would cancel each other out and your grade would remain a B.
+If your grade drops, you can still complete extra work to boost it up. For example, you could struggle with one project, but complete a challenge project. The two would cancel each other out and your grade would remain a B.
 
 ### Why Are You Doing This To Us?
 
@@ -158,6 +157,25 @@ Here are a few things to keep in mind:
 
 As your course facilitator, I will make every effort to adhere to the topics and schedule described in this syllabus. However, I reserve the right to make changes for the good of the course.
 
+## AI Policy Statement
+
+I will allow you to use AI tools on most assignments in this class. I encourage you to use AI tools to engage with class material. For example, using AI for interactive tutoring can be an effective way to learn.
+
+Some assignments, however, are only useful if they’re done by you, yourself, without AI assistance. I will provide you with instructions on how you are and are not allowed to use AI on each assignment. Using an AI tool on an assignment that prohibits it is academic misconduct and a violation of the Honor Code.
+
+Keep the following facts in mind when you’re using AI tools.
+
+- AI isn’t a shortcut. You should plan to spend about the same amount of time on an assignment with AI that you would have spent pre-AI, but produce better quality results. Mediocre AI-generated content is easy to create, but worthless. Raise your standards!
+
+- AI models can hallucinate facts, including citations, quotes, and dates. Don’t trust the output of a model unless you know that it’s true or can check it against an independent source. AI works best on subjects you know well.
+
+- Critically evaluate all results produced by an AI tool—for correctness, of course, but also for quality. Ask yourself: Is this good? Is it doing what I want? How can it be improved? You’re responsible for the quality and correctness of the finished product. AI-supported writing requires taste and judgment—practice thinking like an editor.
+
+- Don’t simply accept the first response. You may need to ask a question multiple times, in different ways, to get a useful result. Generic prompts yield generic output. As you practice interacting with AI, you’ll learn how to use it as a collaborator.
+
+- Learn the strengths and weaknesses of your tools and choose the right tool for the task. We’ll talk about this in class.
+
+- AI models are software tools, not magic. Remember that you are always in control, and you’re free to accept, reject, or change AI-generated content.
 
 ## Honor Code
 Membership in the student body of Rollins College carries with it an obligation, and requires a commitment, to act with honor in all things. The student commitment to uphold the values of honor--honesty, trust, respect, fairness, and responsibility--particularly manifests itself in two public aspects of student life. First, as part of the admission process to the College, students agree to commit themselves to the Honor Code. Then, as part of the matriculation process during Orientation, students sign a more detailed pledge to uphold the Honor Code and to conduct themselves honorably in all their activities, both academic and social, as a Rollins student. A student signature on the following pledge is a binding commitment by the student that lasts for his or her entire tenure at Rollins College:
