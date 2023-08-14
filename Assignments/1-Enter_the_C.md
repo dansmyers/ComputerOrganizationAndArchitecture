@@ -2,7 +2,7 @@
 
 <img src="https://imgs.xkcd.com/comics/compiling.png" width="40%" />
 
-## Due Wednesday, September 7
+## Due Wednesday, September 6
 
 ## What is the Pirate's Favorite Programming Language?
 
@@ -20,6 +20,12 @@ This assignment is all about getting comfortable writing basic C programs in the
 
 - When you are done, use the Submit button in the upper-right of the workspace to hand in your project.
 
+## AI Guidelines
+
+This assignment is about practicing core C programming concepts and develops skills that we'll use in future assignments. You must do all of these problems **by yourself**, without using any AI tools.
+
+Remember that you **can** still use AI to engage with the course material and help you learn things, but don't use it to generate code for these questions.
+
 
 ## Submission and Grading
 
@@ -33,6 +39,8 @@ Put each one of your programs in a separate file (not all in the same file) and 
 ### Problems
 
 ### Descending a staircase
+
+<img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c0/Duchamp_-_Nude_Descending_a_Staircase.jpg/800px-Duchamp_-_Nude_Descending_a_Staircase.jpg" width="50%" />
 
 Write a function called `stairs` that takes an `int n` as input and prints a staircase with `n` levels, like the following:
 ```
