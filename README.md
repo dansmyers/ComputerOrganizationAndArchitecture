@@ -97,7 +97,7 @@ For programming assignments, you must make a fair attempt on every problem.
 **To earn a B**, you must meet the following criteria:
 
 1. Earn satisfactory credit on all of homework assignments during the entire semester.
-2. Pass the midterm and final exams with a grade of at least 60% on each.
+2. Pass the midterm and final exams with a grade of at least 80% on each.
 
 **If you fail to complete the requirements for a B**, your grade will be adjusted downwards according to the following table:
 
@@ -280,3 +280,10 @@ Everyone	is	protected	under	the	following	protected	statuses:	sex	(including
 pregnancy),	gender,	gender	identity	(including	transgender	status),	gender	
 expression,	and	sexual	orientation.	For	information,	
 visit https://www.rollins.edu/sexual-misconduct/
+
+
+
+## Official Syllabus Statements
+
+Links to the full list of syllabus policy statements are [available here](https://rpublic.rollins.edu/sites/ASCPS/SitePages/Syllabi%20Statements.aspx).
+
