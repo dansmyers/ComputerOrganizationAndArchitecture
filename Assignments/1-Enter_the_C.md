@@ -161,7 +161,7 @@ printf("%d\n", mccarthy(111));
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Complaint_tablet_to_Ea-Nasir_2020.jpg/1024px-Complaint_tablet_to_Ea-Nasir_2020.jpg" width="25%" />
 
-*The complaint tablet to Ea-Nasir from ca. 1750 BC. It was written by a merchant named Nanni, complaining that Ea-Nasir's copper was not of the "finest quality" and that he had treated Nanni's messengers with "contempt". When archaeologists excavated Ea-Nasir's house they discovered that one of his rooms was filled with tablets, many of which were complaints fronm other merchants that he had saved for posterity.*
+*The complaint tablet to Ea-Nasir from ca. 1750 BC. It was written by a merchant named Nanni, complaining that Ea-Nasir's copper was not of the "finest quality" and that he had treated Nanni's messengers with "contempt". When archaeologists excavated Ea-Nasir's house they discovered that one of his rooms was filled with tablets, many of which were complaints from other merchants that he had saved for posterity.*
 
 <img src="https://towardsthemoonblog.files.wordpress.com/2022/01/img_9026.jpg?w=768" width="25%" />
 
