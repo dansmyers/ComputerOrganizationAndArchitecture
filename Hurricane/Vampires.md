@@ -37,7 +37,7 @@ For example, if I asked a Ruritanian, "Is the sky blue?", there are four possibi
 
 ## Questions
 
-1. I asked a Ruritanian, "Are you a sane human?" and he answered, "Yes". Is he?  Tip: make a truth table for each of the four types and figure out whether that type *believes* he is a sane human and then how he would answer the questions based on the belief.
+1. I asked a Ruritanian, "Are you a sane human?" and he answered, "No". What is he?  Tip: make a truth table for each of the four types and figure out whether that type *believes* he is a sane human and then how he would answer the questions based on the belief.
 
 2. A Ruritanian says, "I'm an insane vampire." Is she?
 
