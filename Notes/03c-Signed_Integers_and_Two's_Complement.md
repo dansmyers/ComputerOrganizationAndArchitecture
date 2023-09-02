@@ -14,8 +14,6 @@ In conventional written notation, a negative value is indicated by placing a neg
 -5
 ```
 
-Boom! It can't get much easier than that.
-
 Sign-and-magnitude notation converts the concept of a negative sign into a bit-based integer encoding.
 
 Suppose we have *N* bits available to encode a number. Choose one bit, typically the leftmost, to represent the sign.
