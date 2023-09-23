@@ -108,91 +108,75 @@ c ^ ' '  // bitwise XOR with space
 
 You're now ready to read about the greatest function ever written: the [Fast Inverse Square Root method](https://en.wikipedia.org/wiki/Fast_inverse_square_root) used in *Quake III Arena*.
 
-## Magic squares
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/D%C3%BCrer_Melancholia_I.jpg/1280px-D%C3%BCrer_Melancholia_I.jpg" width="50%" />
+## Caesar cipher
 
-Albrecht Dürer, *Melancholia I*, 1514
-
-### Method
-
-A **magic square** is a square matrix where all rows, columns, and diagonals sum to the same value. For example, the Dürer etching shown above includes the following 4 x 4 magic square with sum 34.
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Albrecht_D%C3%BCrer_-_Melencolia_I_%28detail%29.jpg" width="33%" />
-
-There are a number of methods, some of ancient origin, for generating magic squares. [The Wikipedia article has extensive information](https://en.wikipedia.org/wiki/Magic_square). The most well-known is called the **Siamese method**. It was brought to Europe by the French diplomat
-Simon de la Loubère in 1688 who learned of it during his trip as an ambassador to the Kingdom of Siam. The method probably originated in India; 
-De la Loubère returned from Siam with documents describing other aspects of Indian science, including some of the first information on Indian
-astronomy ever brought to Europe. Again, [Wikipedia has you
-covered](https://en.wikipedia.org/wiki/Siamese_method) if you want more details.
-
-The Siamese method generates an *n* x *n* magic square where *n* is odd. By default, the square is filled with the numbers from 1 to *n*<sup>2</sup>.
-
-The method proceeds as follows:
-
-1. Initialize the empty *n* x *n* square.
-
-2. Start in the center of the top row and place a 1 there.
-
-3. Move **up and to the right** to find the next square to fill. If moving up and to the right moves you off of the grid, wrap around to the other side.
-
-4. If moving up and to the right would cause you to land on a square that is already occupied, move down by one square instead of moving up and right.
-
-5. Continue this process, placing the numbers in sequential order until the entire square is filled.
-
-Here is the illustration of the 3 x 3 square:
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/7/77/SiameseMethod.gif" width="33%" />
-
-Here is an explanation of the first five steps:
-
-1. Place a 1 in the center of the top row.
-
-2. Move up and to the right, wrapping around to the bottom to place 2 in the lower-right square.
-
-3. Move up and to the right, wrapping around to the left side to place 3 in the middle-left position.
-
-4. Moving up and to the right from the 3 square would land on the 1 square, so move down one square instead and place 4 in the bottom left square.
-
-5. Move up and right from the 4 square to place 5 in the center position.
-
-And so forth.
-
-### Code
-
-Write a program called `magic.c` that uses a 2-D array to implement the Siamese method for constructing magic squares.
-
-- Use `scanf` to read the value of *n* from the terminal. If *n* is not odd, exit the program immediately.
-
-- Initialize an *n* by *n* 2-D array of `int` values.
-
-- Loop through the values 1 to *n*<sup>2</sup>, placing each in the appropriate position according to the magic square rules. Always start in the center of the top row.
-
-- Print the complete square at the end.
-
-Wrapping around the square while moving up and right is relatively easy. The following pseudocode uses two variables, `row` and `col` to keep track of the next position to fill. The steps calculate the next position that would be obtained by moving up and right (wrapping around if necessary), then either place the next value there, or move down if the up-and-right position is occupied.
+One of the classic ciphers of pre-modern cryptography, the Caesar cipher obscures a message by rotating each letter a set number of positions in the alphabet. The cipher is named after Julius Caesar, who allegedly used a three-position rotation to encrypt is personal communications. For example,
 
 ```
-int row = 0;
-int col = n / 2;
+ATTACKATDAWN
+------------
+CWWCFNCWGCZQ
+```
 
-for (int i = 1; i <= n * n; i++) {
+More generally, the rotation can be any number of positions. *ROT13* is a thirteen-position rotation, often used to obscure spoilers or hints on the old Internet.
 
-  // Calculate the position that would be found if we moved up
-  // and right, wrapping around if necessary
+Write a C program called `caesar.c` with functions called `encrypt` and `decrypt` that perform rotational encryption and decryption.
 
-  // Check if that square is occupied
-  
-  // If it's not, put the current value of i there and
-  // update row and col to the new position
-  
-  // If it is occupied, move down instead, put the current
-  // value of i there, and update row and col
-  
+- `encrypt` takes a `char *` representing the message string and an `int n` representing the number of positions to rotate.
+- `decrypt` takes the same input and performs the reverse rotation.
+
+You can assume the message consists of only uppercase letters, `'A'` through `'Z'`, and no spaces or punctuation, which is common for cryptography messages. Here's some starting code:
+
+```
+/**
+ * Caesar-style rotational cipher
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+char * encrypt(char *msg, int n) {
+  // Allocate memory for the output string
+  //
+  // Use malloc to allocate a number of bytes equal to the length
+  // of the input message
+  char* output = malloc(strlen(msg));
+
+  // Do the encryption
+
+  return output;
 }
 
-// Print the complete square
+char * decrypt(char *msg, int n) {
+  // Allocate memory for the output string
+  char* output = malloc(strlen(msg));
+
+  // Do the decryption
+
+  return output;
+}
+
+int main(void) {
+  char *cipher = encrypt("ATTACKATDAWN", 5);
+  printf("%s\n", cipher);
+
+  char *plaintext = decrypt(cipher, 5);
+  printf("%s\n", plaintext);
+}
 ```
+
+Use character arithmetic to compute the position of a character in the alphabet:
+```
+char pos = c - 'A';
+```
+You can reverse this operation to turn an alphabet position into a letter, assuming that `pos` is a `char` variable in the range 0 to 25.
+```
+char c = pos + 'A';
+```
+Think about how to use a loop over the string, get the position of every character, then calculate the shifted position and turn it back into a letter. Remember to loop around the alphabet if you go beyond `'Z'`.
+
 
 ### Treblecross
 
