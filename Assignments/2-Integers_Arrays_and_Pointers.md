@@ -33,12 +33,80 @@ answers in the text file named `sums.txt` on the repl.it workspace.
 
 ## Bitwise operators
 
+C supports **bitwise operators** that *operate directly on the underlying bits* of a variable. I've give you a short summary below. Read [this note](LINK TO NOTE) for a more detailed overview and a discussion of bit shifting operators.
 
+Suppose that you declare a variable:
+
+```
+int a = 0xFA
+int b = 0x87
+```
+
+We can think of `a` and `b` as containers that hold collections of bits. In bit form:
+
+```
+a = 11111010
+
+b = 10000111
+```
+
+The **bitwise AND* operator performs an AND operation on the corresponding bits of its two inputs. For example, to compute `a & b`, write down their underlying bits and take the AND of each pair:
+```
+a =       11111010
+b =       10000111
+------------------
+a & b =   10000010
+```
+In hex form, the result is 0x82.
+
+There are three other bitwise operators:
+
+- `|` is the bitwise OR operator, it performs an OR operation on corresponding bits. In our example above, `a | b = 0xFF`.
+
+```
+a =       11111010
+b =       10000111
+------------------
+a & b =   11111111
+```
+
+- `~` is the bitwise inverse, which inverts the bits of one variable. In the example above, `~a = 0x05`.
+
+- `^` is the **bitwise exclusive OR** (XOR) operator. It output a 1 if the two bits are different and a 0 if they're the same. In the example above, `a ^ b = 0x7D`.
+
+```
+a =       11111010
+b =       10000111
+------------------
+a & b =   01111101
+```
+
+Use this knowledge to compute the following bitwise operations. Give your answers in hexadecimal and show your work:
+
+- `0xC7 | 0xA8`
+- `0xC7 & 0xA8`
+- `~0xC7`
+- `0xC7 ^ 0xA8` (where ^ is the exclusive-or operator)
 
 ## Bit twiddling
 
-If you want to learn more about bit-level hacking, you can read about the [Fast Inverse Square Root method](https://en.wikipedia.org/wiki/Fast_inverse_square_root) used in *Quake III Arena*, the greatest piece of code ever written.
+Bitwise operators enable a number of fun manipulations. Suppose that you have a `char c` that's an uppercase letter, `A` to `Z`. What's the effect of the following calculations? What if `c` is a lowercase character?
 
+```
+c | ' '  // Bitwise OR with space
+
+c & '_'  // Bitwise AND with underscore
+```
+
+Tip: look at the ASCII table and think about the underlying bits of characters like `'A'` and `' '`, then reason about what character results when you do the bitwise operation.
+
+What does the following bit-hack do if `c` is an upper or lower case letter?
+
+```
+c ^ ' '  // bitwise XOR with space
+```
+
+You're now ready to read about the greatest function ever written: the [Fast Inverse Square Root method](https://en.wikipedia.org/wiki/Fast_inverse_square_root) used in *Quake III Arena*.
 
 ## Magic squares
 
