@@ -81,7 +81,7 @@ b =       10000111
 a & b =   01111101
 ```
 
-Use this knowledge to compute the following bitwise operations. Give your answers in hexadecimal and show your work:
+Use this knowledge to compute the following bitwise operations. Give your answers in hexadecimal and show your work. Put your answers in a file called `bitwise.txt`.
 
 - `0xC7 | 0xA8`
 - `0xC7 & 0xA8`
