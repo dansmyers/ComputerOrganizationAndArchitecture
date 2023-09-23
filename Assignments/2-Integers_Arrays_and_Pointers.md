@@ -1,6 +1,6 @@
 # Integers, Arrays, and Pointers
 
-## Due Thursday, 9/29
+## Due Friday, 10/6
 
 ## Overview
 
