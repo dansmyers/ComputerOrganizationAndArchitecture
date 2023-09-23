@@ -159,18 +159,17 @@ if(x flag is set) {
   cmd_flags = cmd_flags | 0x4;
 }
 ...
+```
 
 Make sure you understand why the bitwise or operator sets specific bits in the above pseudo-code.
 
 We can also use **bitmasking** to extract individual bits.  Say that we want to know if the x flag was set in our variable `cmd_flags`.  We can use the code:
 
+```
 int x_flag = cmd_flags & 0x4;
 if(x_flag) {
   //change behavior of program
 }
-
-Again, make sure you understand why using the bitwise and operator would leave us with only the value of the x flag and would not include other flags in the variable `x_flag`.
-
-Any time we have options which can be treated independently of one another, using a bit array can be a good strategy for saving memory space (particularly valuable in embedded systems).
-
 ```
+
+Again, make sure you understand why using the bitwise and operator would leave us with only the value of the x flag and would not include other flags in the variable `x_flag`. Any time we have options which can be treated independently of one another, using a bit array can be a good strategy for saving memory space (particularly valuable in embedded systems).
