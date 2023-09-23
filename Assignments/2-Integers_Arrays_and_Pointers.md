@@ -33,7 +33,7 @@ answers in the text file named `sums.txt` on the repl.it workspace.
 
 ## Bitwise operators
 
-C supports **bitwise operators** that *operate directly on the underlying bits* of a variable. I've give you a short summary below. Read [this note](LINK TO NOTE) for a more detailed overview and a discussion of bit shifting operators.
+C supports **bitwise operators** that *operate directly on the underlying bits* of a variable. I've give you a short summary below. Read [this note](https://github.com/dansmyers/ComputerOrganizationAndArchitecture/blob/master/Notes/03f-Bitwise_Operators.md) for a more detailed overview and a discussion of bit shifting operators.
 
 Suppose that you declare a variable:
 
