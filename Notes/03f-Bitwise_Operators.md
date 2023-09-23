@@ -119,7 +119,7 @@ Complete the following chart, if `a = 60` and `b = 13`, and `c = -15`.  For simp
 | expression | resulting bit pattern |
 |---------------|------------|
 | `a & b` |
-| `a | b` |
+| `a \| b` |
 | `~a` |
 | `a << 2` |
 | `c >> 2` | 
