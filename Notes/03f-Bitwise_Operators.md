@@ -2,7 +2,7 @@
 
 The **bitwise operators** in C are operators that are designed to manipulate a binary pattern at the bit level.  That is, we think of the "+" operator (for example) of operating on two numerical values and the result is also a numerical value.  However, the bitwise operators change the bit pattern of the variables.  It is then up to the program to determine how to interpret the new bit pattern.
 
-In this class, we'll be focussing on the following bitwise operators:
+In this class, we'll be focusing on the following bitwise operators:
 * `>>` - right shift (arithmetic or sign-extending)
 * `>>>` - right sign (logical)
 * `<<` - left shift
