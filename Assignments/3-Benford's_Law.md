@@ -2,7 +2,7 @@
 
 <img src="https://imgs.xkcd.com/comics/insurance_2x.png" width="60%" />
 
-## Due Wednesday, 10/12
+## Due Wednesday, 10/25
 
 ## You can work with a partner to complete this assignment
 
@@ -36,7 +36,9 @@ A full description of the Law and the associated probabilities is given in the [
 
 This is surprising, because you might expect the distribution of leading digits to be uniform; that is, about 11% of data values should start with a 1, another 11% with 2, and so forth, with 1's and 9's being equally common.
 
-The law is named after physicist Frank Benford, who called it *The Law of Anomalous Numbers* in a 1938 paper. Benford's Law has applications to fraud detection and accounting. Criminals faking financial data are unlikely to make their numbers correspond with the true probtabilities made by the law. *Facilitating white collar crime is not one of the learning outcomes of this course*.
+The law is named after physicist Frank Benford, who called it *The Law of Anomalous Numbers* in a 1938 paper. Benford's Law has applications to fraud detection and accounting. Criminals faking financial data are unlikely to make their numbers correspond with the true probabilities made by the law.
+
+**Facilitating white collar crime is not one of the learning outcomes of this course**.
 
 Suppose that the data you're considering consists of counts of items of interest, such as votes, sales figures, defective items, etc. If you've counted 100 items, you would need to double that figure to increase to the next leading digit, a proportional increase of 100%. To move from a count of 200 to 300, you still need to count 100 more items, but that's only a 50% proportional increase. If you've counted 900 items, you only need to increase the count by about 11\%, to get to 1000. This is an intuitive explanation for Benford's Law: the proportional increase required to raise a number to the next leading digit is largest when the leading digit is small. Benford's Law doesn't apply to every data set. It tends to be most applicable when the data values are not naturally restricted to a range and span multiple orders of magnitude.
 
