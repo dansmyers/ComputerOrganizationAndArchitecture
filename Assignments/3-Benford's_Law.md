@@ -54,18 +54,18 @@ The 2020-2021 county-level population estimates are availble on the Census Burea
 
 https://www.census.gov/data/tables/time-series/demo/popest/2020s-counties-total.html
 
-Download the file named `co-est2022-alldata.csv` and then upload it to your Assignment 3 repl.it workspace. If you open the file, you'll see a series of lines link the following:
+Download the file named `co-est2022-alldata.csv` near the bottom of the page and then upload it to your Assignment 3 repl.it workspace. If you open the file, you'll see a series of lines link the following:
 
 ```
-SUMLEV,REGION,DIVISION,STATE,COUNTY,STNAME,CTYNAME,ESTIMATESBASE2020,POPESTIMATE2020,POPESTIMATE2021
-040,3,6,01,000,Alabama,Alabama,5024279,5024803,5039877
-050,3,6,01,001,Alabama,Autauga County,58805,58877,59095
-050,3,6,01,003,Alabama,Baldwin County,231767,233140,239294
-050,3,6,01,005,Alabama,Barbour County,25223,25180,24964
-050,3,6,01,007,Alabama,Bibb County,22293,22223,22477
+SUMLEV,REGION,DIVISION,STATE,COUNTY,STNAME,CTYNAME,ESTIMATESBASE2020,POPESTIMATE2020,POPESTIMATE2021, POPESTIMATE2022
+040,3,6,01,000,Alabama,Alabama,5024356,5031362,5049846,5074296
+050,3,6,01,001,Alabama,Autauga County,58802,58902,59210,59759
+050,3,6,01,003,Alabama,Baldwin County,231761,233219,239361,246435
+050,3,6,01,005,Alabama,Barbour County,25224,24960,24539,24706
+050,3,6,01,007,Alabama,Bibb County,22300,22183,22370,22005
 ```
 
-The first line lists the names of each field. The data is organized alphabetically by state, then by county within each state. The first line of data is the population for the entire state of Alabama, followed by the estimate for Autauga county, and so forth. The first entries on each line include some numerical encodings used by the census bureau to identify each county (notice that the entire state has a `COUNTY` code of `000`). Individual fields are separated by commas with no spaces. If you've worked with Excel, you may have used CSV files to encode spreadsheet data in text format: each line corresponds to one row in the spreadsheet and each comma-separated value to a column within the row.
+The first line lists the names of each field. The data is organized alphabetically by state, then by county within each state. The first line of data is the population for the entire state of Alabama, followed by the estimate for Autauga county, and so forth. The first entries on each line are some numerical encodings used by the census bureau to identify each county (notice that the entire state has a `COUNTY` code of `000`). Individual fields are separated by commas with no spaces. If you've worked with Excel, you may have used CSV files to encode spreadsheet data in text format: each line corresponds to one row in the spreadsheet and each comma-separated value to a column within the row.
 
 ### Reading the file
 
@@ -157,9 +157,9 @@ Add these lines after the code that reads and prints the first token, then verif
 
 ### Data
 
-You need to read the **tenth value** on each line, which represents the 2021 population estimate. You could do this by calling `strtok` ten consecutive times, but that's bogus. A better approach, which you will do, is to call `strtok` one time to get the first token (with `buf` as its input), then write a loop that runs nine more times to get up to the tenth token.
+You need to read the **eleventh value** on each line, which represents the 2022 population estimate. You could do this by calling `strtok` eleven consecutive times, but that's bogus. A better approach, which you will do, is to call `strtok` one time to get the first token (with `buf` as its input), then write a loop that runs ten more times to get up to the eleventh token.
 
-Start by extracting and printing the tenth value and make sure that you have the right number.
+Start by extracting and printing the eleventh value and make sure that you have the right number.
 
 Once you've verified that your token extraction is correct, you need to extract the first digit. This is easy:
 
