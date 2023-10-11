@@ -54,7 +54,7 @@ The 2020-2021 county-level population estimates are availble on the Census Burea
 
 https://www.census.gov/data/tables/time-series/demo/popest/2020s-counties-total.html
 
-Download the file named `co-est2021-alldata.csv` and then upload it to your Assignment 3 repl.it workspace. If you open the file, you'll see a series of lines link the following:
+Download the file named `co-est2022-alldata.csv` and then upload it to your Assignment 3 repl.it workspace. If you open the file, you'll see a series of lines link the following:
 
 ```
 SUMLEV,REGION,DIVISION,STATE,COUNTY,STNAME,CTYNAME,ESTIMATESBASE2020,POPESTIMATE2020,POPESTIMATE2021
