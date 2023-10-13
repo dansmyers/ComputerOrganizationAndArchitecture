@@ -2,7 +2,7 @@
 
 <img src="https://imgs.xkcd.com/comics/insurance_2x.png" width="60%" />
 
-## Due Wednesday, 10/27
+## Due Friday, 10/27
 
 ## You can work with a partner to complete this assignment
 
