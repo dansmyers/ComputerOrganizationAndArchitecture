@@ -7,6 +7,8 @@
 ### Description
 You'll implement the Polybius square, a classical substitution cipher. The cipher takes a message (the "plaintext") and converts it to an encoded output (the "ciphertext"). Basic substitution ciphers like these are much too weak to be used for any real purpose nowadays, but implementing these will give you practice working with arrays, strings, and matrices in C.
 
+This project is **optional**, but completing it will raise your final grade by one part of a letter, e.g. B to B+. To earn an A for the course, you'll need to complete all three challenge projects in addition to the regular course work and exams.
+
 ### Files and Grading
 
 Write one `.c` source file for each problem named `encrypt.c` and `decrypt.c` respectively.
