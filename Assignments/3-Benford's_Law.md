@@ -83,7 +83,7 @@ The following program opens the file and prints its lines. Use it as your starti
 int main(int argc, char *argv[]) {
 
   // Open the file
-  FILE *f = fopen("co-est2021-alldata.csv", "r");
+  FILE *f = fopen("co-est2022-alldata.csv", "r");
 
   // Check the return code
   if (f == NULL) {
