@@ -50,7 +50,7 @@ You're going to write a program to validate Benford's Law against a real-world d
 
 ### Get the data
 
-The 2020-2021 county-level population estimates are availble on the Census Bureau's web site:
+County-level population estimates are availble on the Census Bureau's web site:
 
 https://www.census.gov/data/tables/time-series/demo/popest/2020s-counties-total.html
 
