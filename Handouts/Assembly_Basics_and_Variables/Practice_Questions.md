@@ -2,7 +2,7 @@
 
 ## Subtraction
 
-Write a program that calculates the sum `55 - 12`. Put the final result in `r0` at the end of the program. You can use the instruction
+Write a program that calculates the difference `55 - 12`. Put the final result in `r0` at the end of the program. You can use the instruction
 
 ```
 sub rA, rB, rC
