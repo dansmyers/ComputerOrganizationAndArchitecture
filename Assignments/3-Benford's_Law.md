@@ -171,13 +171,21 @@ char firstDigit = *token;
 You need to keep track of two things:
 
 - The total number of lines that you process.
-- The number of occurrences of each leading digit. Use an array called `int counts[10]` to record how many times each digit appears.
+- The number of occurrences of each leading digit. Use an array called `counts` to record how many times each digit appears.
 
 Tip: remember that the `firstDigit` value given above is a `char`. You'll need to map it to an `int` if you want to use it as an array index. The easiest way to do this is with character arithmetic:
 
 ```
 int value = firstDigit - '0';
 ```
+
+Second tip: remember that C does not automatically zero the values in an array like Java does. Your array elements might be initialized to something other than zero, which will give you bad results. Create an array of all zeros:
+
+```
+int counts[] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+```
+
+Or declare an array of ten elements and then use a loop to zero it out before you start counting.
 
 ### Output
 
