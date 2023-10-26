@@ -43,7 +43,7 @@ The omitted letter may be one that is infrequently used, like `z` or `q`, or the
 
 In the example above, the square has been generated using the keyword `labor`.
 
-To encipher a message, locate its entry in the matrix, then replace it with the two-digit combination formed from the row index and the column index. For example, the letter `n` would be encoded as `31` because it is in row 3 and column 1.
+To encipher a message, locate its entry in the matrix, then replace it with the two-digit combination formed from the row index and the column index. For example, the letter `n` would be encoded as `30` because it is in row 3 and column 0.
 
 Here is an example:
 ```
