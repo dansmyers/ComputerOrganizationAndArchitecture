@@ -27,7 +27,7 @@ stack and restore them before returning.
 
 ## GPT Guidelines
 
-ChatGPT (or another AI) is pretty good at these kinds of problems. However, the code it generates may use different structures or techniques than the examples we worked on in class. **I won't give credit to solutions that aren't compatible with what we learned in class**.
+ChatGPT (or another AI) is pretty good at these kinds of problems. However, the code it generates may use different structures or techniques than the examples we worked on in class. **I won't give credit to solutions that aren't compatible with what we learned in class**. All of your programs have to run in the CPUlator.
 
 ## Problems
 
