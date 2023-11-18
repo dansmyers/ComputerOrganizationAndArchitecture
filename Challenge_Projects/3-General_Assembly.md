@@ -4,7 +4,7 @@
 
 *The United Nations General Assembly hall*
 
-## Due Friday December 2 (the last day of classes)
+## Due Friday December 8 (the last day of exams)
 
 ## You can work with a partner to complete this project
 
