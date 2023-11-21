@@ -1,4 +1,4 @@
-# Assignment 5: General Assembly
+# Challenge Project 3: General Assembly
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/UN_General_Assembly_hall.jpg" width="40%" />
 
