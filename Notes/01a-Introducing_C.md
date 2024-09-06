@@ -11,7 +11,7 @@ Many popular and critical projects are written primarily in C, including:
   - The Perl, Ruby, and Python reference implementations
   - The Apache and nginx webservers and the sendmail e-mail server
   - The Redis and memcached distributed caching systems
-  - Doom
+  - *Doom*
   
 ## C vs. Java
 
